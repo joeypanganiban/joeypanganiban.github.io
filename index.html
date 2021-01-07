@@ -27,8 +27,8 @@
         Last Updated: <span id="date"></span>
     </footer>
     <script>
-        const todaysDate = new Date();
-        console.log(todaysDate);
+        const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+        document.getElementById("date").textContent = new Date().toLocaleDateString('en-US', options);
     </script>
 </body>
 </html>
