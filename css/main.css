@@ -1,4 +1,4 @@
 header, main, footer {
-    margin: 1.2em;
+    margin: 1.2em auto;
     max-width: 760px;
 }
