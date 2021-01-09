@@ -1,11 +1,12 @@
 body {
+    font-size: 1rem;
     line-height: 1.5;
-    align-content: ;
 }
 
 header, main, footer {
     max-width: 760px;
     padding: 20px;
+    margin: auto;
 }
 
 header {
@@ -58,6 +59,7 @@ main a:hover, footer a:hover {
 div img {
     float: right;
     box-shadow:  10px 10px 20px #0c1735;
+    max-height: 200px;
 }
 
 
