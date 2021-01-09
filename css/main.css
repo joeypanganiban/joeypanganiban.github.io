@@ -4,20 +4,25 @@ body {
 
 header, main, footer {
     max-width: 760px;
+    padding: 45px;
 }
 
 header {
     margin-top: 1.2em;
+    font-size: 125%;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 footer {
     margin-bottom: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 header, footer {
     background-color: #000080;
     color: white;
-    padding: 45px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
