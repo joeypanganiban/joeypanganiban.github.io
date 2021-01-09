@@ -6,3 +6,29 @@ header, main, footer {
     margin: 1.2em auto;
     max-width: 760px;
 }
+
+header, footer {
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    background-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main ul li {
+    font-weight: bold;
+}
+
+div img {
+    float: right;
+}
+
+
+
+
+
+
