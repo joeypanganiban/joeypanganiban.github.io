@@ -3,13 +3,21 @@ body {
 }
 
 header, main, footer {
-    margin: 1.2em auto;
     max-width: 760px;
+}
+
+header {
+    margin-top: 1.2em;
+}
+
+footer {
+    margin-bottom: 1.2em;
 }
 
 header, footer {
     background-color: #000080;
     color: white;
+    padding: 45px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -25,6 +33,7 @@ main ul li {
 
 div img {
     float: right;
+    box-shadow: 2px;
 }
 
 
