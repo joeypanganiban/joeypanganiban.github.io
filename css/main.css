@@ -21,8 +21,12 @@ footer {
     padding-bottom: 10px;
 }
 
+footer div {
+    color: darkgoldenrod;
+}
+
 header, footer {
-    background-color: #000080;
+    background-color: #0c1735;
     color: white;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -34,13 +38,26 @@ main {
     font-size: 120%;
 }
 
-main ul li a {
+main ul li a, footer a {
     font-weight: bold;
+    text-decoration: none;
+}
+
+main a:link, main a:visited {
+    color: #0c1735;
+}
+
+footer a:link, footer a:visited{
+    color: white;
+}
+
+main a:hover, footer a:hover {
+    color:darkgoldenrod;
 }
 
 div img {
     float: right;
-    box-shadow: 10px 10px;
+    box-shadow:  10px 10px 20px #0c1735;
 }
 
 
