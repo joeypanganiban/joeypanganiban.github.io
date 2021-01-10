@@ -27,15 +27,15 @@ footer div {
 }
 
 header, footer {
-    background-color: #0c1735;
+    background-color: #273c3d;
     color: white;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
     background-color: lightgray;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 120%;
 }
 
@@ -45,7 +45,7 @@ main ul li a, footer a {
 }
 
 main a:link, main a:visited {
-    color: #0c1735;
+    color: #273c3d;
 }
 
 footer a:link, footer a:visited{
