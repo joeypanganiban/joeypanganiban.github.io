@@ -4,16 +4,14 @@ body {
 }
 
 header, main, footer {
-    max-width: 760px;
-    padding: 30px;
+    padding: 10px;
     margin: auto;
 }
 
 header {
     margin-top: 1.2em;
     padding-top: 25px;
-    padding-bottom: 25px;
-    font-size:120%;
+    padding-bottom: 5px;
 }
 
 footer {
@@ -31,6 +29,19 @@ header, footer {
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;  
+}
+
+h2 {
+    font-size: 1rem;
+    color: #273c3d;
+}
+
+li {
+    font-size: .85rem;
 }
 
 main {
@@ -57,7 +68,6 @@ main a:hover, footer a:hover {
 }
 
 div img {
-    float: right;
-    box-shadow:  10px 10px 20px #0c1735;
+    float: center;
     max-height: 200px;
 }
