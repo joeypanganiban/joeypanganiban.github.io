@@ -1,80 +1,98 @@
-body {
-    font-size: 1rem;
-}
+@media (min-width: 10em) {
+    body {
+        font-size: 1rem;
+    }
+    
+    header, main, footer {
+        padding: 10px;
+        margin: auto;
+    }
+    
+    header {
+        margin-top: 1.2em;
+        padding-top: 25px;
+        padding-bottom: 5px;
+    }
+    
+    footer {
+        margin-bottom: 1.2em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    footer div {
+        color: rgb(255, 185, 8);
+    }
+    
+    header, footer {
+        background-color: #273c3d;
+        color: white;
+        text-align: center;
+        font-family: 'Amiri', serif;
+    }
+    
+    h1 {
+        font-size: 1.5rem;  
+        color:  rgb(255, 185, 8);
+        margin-bottom: 0;
+    }
+    
+    h2 {
+        font-size: 1rem;
+        color: #273c3d;
+        font-weight: lighter;
+        line-height: 0px;
+        margin-bottom: 50px;
+    }
 
-header, main, footer {
-    padding: 10px;
-    margin: auto;
-}
+    article h2, h3, h4 {
+        text-align: left;
+    }
 
-header {
-    margin-top: 1.2em;
-    padding-top: 25px;
-    padding-bottom: 5px;
-}
-
-footer {
-    margin-bottom: 1.2em;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-footer div {
-    color: darkgoldenrod;
-}
-
-header, footer {
-    background-color: #273c3d;
-    color: white;
-    text-align: center;
-    font-family: 'Amiri', serif;
-}
-
-h1 {
-    font-size: 1.5rem;  
-}
-
-h2 {
-    font-size: 1rem;
-    color: #273c3d;
-}
-
-main {
-    background-color: lightgray;
-    font-family: 'Rubik', sans-serif;
-}
-
-main section article h4 a, footer a {
-    font-weight: bold;
-    text-decoration: none;
-}
-
-main a:link, main a:visited {
-    color: #273c3d;
-}
-
-footer a:link, footer a:visited{
-    color: white;
-}
-
-main a:hover, footer a:hover {
-    color:darkgoldenrod;
-}
-
-p img {  
-    width: auto;
-}
-
-section {
-    text-align: center;
-    box-sizing: border-box;
-}
-
-article {
-    border: 1px solid #fff;
-    padding: 10px;
-}
-
-article:hover {
-    border: 2px solid #273c3d;
-}
+    .myName {
+        color: #fff;
+    }
+    
+    main {
+        background-color: lightgray;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    main section article h4 a, footer a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    main a:link, main a:visited {
+        color: #273c3d;
+    }
+    
+    footer a:link, footer a:visited{
+        color: white;
+    }
+    
+    main a:hover, footer a:hover {
+        color: rgb(255, 185, 8);
+    }
+    
+    p img {  
+        width: 100%;
+    }
+    
+    section {
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    article {
+        border: 1px solid #fff;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: darkgrey;
+    }
+    
+    article:hover {
+        border: 2px solid #273c3d;
+    }
+    
+} 
