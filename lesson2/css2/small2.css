@@ -38,15 +38,23 @@
     }
     
     h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: #273c3d;
-        font-weight: lighter;
-        line-height: 0px;
+        margin-top: 0;
         margin-bottom: 50px;
+    }
+
+    h3 {
+        color: #273c3d;
     }
 
     article h2, h3, h4 {
         text-align: left;
+        margin: 0;
+    }
+
+    article h2 {
+        margin-bottom: 10px;
     }
 
     .myName {
@@ -71,10 +79,13 @@
         color: white;
     }
     
-    main a:hover, footer a:hover {
-        color: rgb(255, 185, 8);
+    main a:hover {
+        background-color: rgb(255, 185, 8);
     }
     
+    footer a:hover {
+        color: rgb(255, 185, 8);
+    }
     p img {  
         width: 100%;
     }
