@@ -1,4 +1,4 @@
-@media  (min-width: 25.5em) {
+@media  only screen and (min-width: 18.5em) {
     header, main, footer {
         max-width: 721px;
         width: 100%;

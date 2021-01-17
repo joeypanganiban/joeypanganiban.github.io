@@ -1,6 +1,7 @@
-@media (min-width: 50em) {
+@media only screen and (min-width: 32.5em) {
     header, main, footer {
         max-width:721px;
+        margin: 0 auto;
     }
 
     main {
