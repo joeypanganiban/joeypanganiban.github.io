@@ -38,14 +38,23 @@
     }
     
     h2 {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: #273c3d;
         margin-top: 0;
         margin-bottom: 50px;
     }
 
+    main h2 {
+        font-size: 1.3rem;
+    }
+
     h3 {
         color: #273c3d;
+        font-size: .8rem;
+    }
+
+    h4 {
+        font-size: .6rem;
     }
 
     article h2, h3, h4 {

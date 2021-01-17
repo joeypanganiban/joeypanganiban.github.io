@@ -1,7 +1,6 @@
-@media  (min-width: 33em) {
+@media  (min-width: 32.5em) {
     header, main, footer {
         max-width: 721px;
-        width: 100%;
     }
 
     section {
@@ -11,12 +10,10 @@
     }
 
     h1 {
-        font-size: 4rem;  
+        font-size: 3rem;  
     }
     
     h2 {
         font-size: 2rem;
     }
-
-    * { box-sizing: border-box;}
 }
