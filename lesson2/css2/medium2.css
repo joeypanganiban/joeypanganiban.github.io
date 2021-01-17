@@ -1,9 +1,10 @@
-@media  (min-width: 32.5em) {
+@media  (min-width: 25.5em) {
     header, main, footer {
         max-width: 721px;
+        width: 100%;
     }
 
-    section {
+    main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;

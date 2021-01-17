@@ -50,32 +50,32 @@
 
     h3 {
         color: #273c3d;
-        font-size: .8rem;
+        font-size: .9rem;
     }
 
     h4 {
-        font-size: .6rem;
+        font-size: .8rem;
     }
 
-    article h2, h3, h4 {
+    p {
+        font-size: .8rem;
+    }
+
+    section h2, h3, h4 {
         text-align: left;
         margin: 0;
     }
 
-    article h2 {
+    section h2 {
         margin-bottom: 10px;
     }
 
-    .myName {
-        color: #fff;
-    }
-    
     main {
         background-color: lightgray;
         font-family: 'Rubik', sans-serif;
     }
     
-    main section article h4 a, footer a {
+    main section h4 a, footer a {
         font-weight: bold;
         text-decoration: none;
     }
@@ -84,7 +84,7 @@
         color: #273c3d;
     }
     
-    footer a:link, footer a:visited{
+    .myName, .myName a:visited, footer a:link, footer a:visited{
         color: white;
     }
     
@@ -92,9 +92,15 @@
         background-color: rgb(255, 185, 8);
     }
     
-    footer a:hover {
+    h2.myName a:hover, footer a:hover {
         color: rgb(255, 185, 8);
+        text-decoration: none;
     }
+
+    h2.myName a{
+        text-decoration: none;
+    }
+
     p img {  
         width: 100%;
     }
@@ -104,14 +110,14 @@
         box-sizing: border-box;
     }
     
-    article {
+    section {
         border: 1px solid #fff;
         padding: 10px;
         margin-top: 10px;
         background-color: darkgrey;
     }
     
-    article:hover {
+    section:hover {
         border: 2px solid #273c3d;
     }
     
