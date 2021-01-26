@@ -3,7 +3,6 @@ body {
 }
 
 body {
-    padding: 10px;
     max-width:1000px;
     margin: 0 auto;
 }
@@ -43,7 +42,7 @@ nav ul{
 }
 
 nav ul li {
-    padding: 5px;
+    padding: 15px;
     text-align: center;
     list-style-position: outside;
 }
@@ -62,10 +61,6 @@ h2 {
     margin-top: 0;
 }
 
-main {
-    padding: 20px;
-}
-
 h3 {
     color: #273c3d;
 }
@@ -81,11 +76,12 @@ main h2, main h3 {
 main {
     background-color: lightgray;
     font-family: sans-serif;
+    padding: 25px;
 }
 
 section {
     margin: 5px;
-    padding: 10px;
+    padding-bottom: 25px;
 }
 
 main section div {
@@ -98,6 +94,12 @@ nav ul li a, footer a {
     text-decoration: none;
     color: #fff;
 }
+
+nav ul li a {
+    color: #273c3d;
+}
+
+
 
 nav ul li a:visited, footer a:link, footer a:visited{
     color: white;
@@ -114,6 +116,23 @@ footer a:hover {
 
 div img {  
     max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color: darkgoldenrod;
 }
 
 

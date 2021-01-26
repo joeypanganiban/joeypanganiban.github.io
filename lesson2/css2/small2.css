@@ -58,6 +58,8 @@
 
     p {
         font-size: .8rem;
+        text-align: justify;
+        font-weight: normal;
     }
 
     section h2, h3, h4 {
@@ -102,6 +104,7 @@
 
     p img {  
         width: 100%;
+        box-shadow: 2px 2px 4px 2px gray;
     }
     
     section {
@@ -113,7 +116,7 @@
         border: 1px solid #fff;
         padding: 10px;
         margin-top: 10px;
-        background-color: darkgrey;
+        background-color: white;
     }
     
     section:hover {
