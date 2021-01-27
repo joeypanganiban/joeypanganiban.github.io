@@ -44,7 +44,6 @@ nav ul{
 nav ul li {
     padding: 15px;
     text-align: center;
-    list-style-position: outside;
 }
 
 nav ul li:hover {
@@ -74,7 +73,7 @@ main h2, main h3 {
 }
 
 main {
-    background-color: lightgray;
+    background-color: rgb(192, 192, 192);
     font-family: sans-serif;
     padding: 25px;
 }
@@ -120,10 +119,12 @@ div img {
 
 table {
     border-collapse: collapse;
+    padding-top: 225px;
+    width: 100%;
 }
 
 th, td {
-    border: 1px solid;
+    border: 1px solid lightgray;
     padding: 8px;
 }
 
