@@ -1,0 +1,35 @@
+body {
+    width: 480px;
+    height: auto;
+    margin: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 280px;
+    padding: 25px;
+    border: 8px dashed rgba(240, 240,240, .5);
+    margin: 25px;
+}
+
+h1 {
+    background-color: darkorange;
+    width: 280px;
+    height: 100px;
+    padding: 25px;
+    border: 8px solid rgba(240, 240,240, .5);
+    margin: 25px;
+    margin-bottom: -25px;
+}
+
+p {
+    background-color: greenyellow;
+    width: 280px;
+    padding: 25px;
+    border: 8px solid rgba(241, 129, 129, 0.5);
+    margin: 25px; 
+}
+

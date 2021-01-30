@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Earth Weather website for WDD 230 Web Development 1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="css/small.css"  rel="stylesheet">
+    <link href="css/medium.css"  rel="stylesheet">
+    <link href="css/large.css"  rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+    <title>Earth Weather</title>
+</head>
+<body>
+    <header>
+        <picture><img src="images/weather-logo.png" alt="weather-logo"></picture>
+        <section>
+            <h1>Earth Weather</h1>
+            <div>Your real time online weather forecaster</div>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;<span> Menu</span></button> 
+        <ul id="primaryNav" class="">
+            <li ><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li ><a href="#">Soda Springs</a></li>
+            <li ><a href="#">Fish Haven</a></li>
+            <li ><a href="#">Storm Center</a></li>
+            <li ><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="titlePage">Preston Idaho</h1>
+        <section>
+            <h2>Hero w/ weather summary</h2>
+        </section>
+        <section>
+            <h2>5 Day Forecast</h2>
+        </section>
+        <section>
+            <h2>Article</h2>
+        </section>
+        <section>
+            <h2>Contact Information</h2>
+        </section>
+    </main>
+    <footer>
+        &COPY; Earth Weather | Attributions | Joey M. Panganiban 
+        <div><span id="date"></span></div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
