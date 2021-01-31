@@ -93,6 +93,12 @@ nav ul.hide {
     display: none;
 }
 
+main h1 {
+    font-family: 'EB Garamond', serif;
+    color:  #DF1001;
+    text-shadow: 2px 2px 2px #ccc;
+}
+
 main section {
     background-color: #c0c0c0;
     padding: 3px;
