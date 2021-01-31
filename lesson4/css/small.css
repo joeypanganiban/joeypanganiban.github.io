@@ -16,6 +16,7 @@ header section h1 {
     margin: 0 auto;
     color: #f8e323;
     text-shadow: 2px 2px 1px rgb(65, 64, 64);
+    font-size: 3.2rem;
 }
 
 header section div {
@@ -93,7 +94,7 @@ nav ul.hide {
     display: none;
 }
 
-main h1 {
+main h2 {
     font-family: 'EB Garamond', serif;
     color:  #DF1001;
     text-shadow: 2px 2px 2px #ccc;
