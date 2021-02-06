@@ -18,16 +18,22 @@
     <link rel="icon" href="/PATH_TO_ANIMATED_FAVICON/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <banner>
+        <div id="banner">Saturday = Preston Pancakes in the Park! 9 AM, Saturday at the 
+        city park pavilion.</div>
+    </banner>
     <header>
-        <picture><img src="images/weather-logo.png" alt="weather-logo"></picture>
-        <section>
-            <h1>Earth Weather</h1>
-            <div>Your real time online weather forecaster</div>
+        <div class="heading">
+        <picture class="logo"><img src="images/weather-logo.png" alt="weather-logo"></picture>
+        <section class="titleHeadings">
+            <h1 class="title">Earth Weather</h1>
+            <div class="subTitle">Your real time online weather forecaster</div>
         </section>
+        </div>
     </header>
-    <nav class="clearfix">
-        <button onclick="toggleMenu()">&#9776;<span> Menu</span></button> 
-        <ul id="primaryNav" class="">
+    <nav class="clearfix">    
+        <ul id="primaryNav">
+            <li onclick="toggleMenu()">&#9776;<span> Menu</span></li>
             <li ><a href="#">Home</a></li>
             <li class="active"><a href="#">Preston</a></li>
             <li ><a href="#">Soda Springs</a></li>
@@ -38,22 +44,119 @@
     </nav>
     <main>
         <h2 class="titlePage">Preston Idaho</h2>
-        <section>
-            <h3>Hero w/ weather summary</h3>
+        <section class="hero">
+          
+            <div class="weatherSummary">
+                <h3>Weather Summary</h3>
+                <table>
+                    <tr>
+                        <th>Currently:</th>
+                        <td>Sunny</td>
+                    </tr>
+                    <tr>
+                        <th>High:</th>
+                        <td>76 &#x2109; </td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td>&#x2109;</td>
+                    </tr>
+                    <tr>
+                        <th>Humidity:</th>
+                        <td>69&#176;</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Speed:</th>
+                        <td>5 mph</td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="heroImage">
+                <!-- hero Image -->
+               <img src="images/preston-bay-area.jpg" alt="preston-pic"></picture>
+            </div>
         </section>
-        <section>
+        <section class="fiveDayForecast">
             <h3>5 Day Forecast</h3>
+            <div>
+            <table class="tableForecast">
+                <tr>
+                    <th>Weekday</th>
+                </tr>
+                <tr>
+                    <td><img src="images/icon-weather.png" alt="icon-weather"></td>
+                </tr>
+                <tr>
+                    <td>69&#176;</td>
+                </tr>
+            </table>
+            <table class="tableForecast">
+                <tr>
+                    <th>Weekday</th>
+                </tr>
+                <tr>
+                    <td><img src="images/icon-weather.png" alt="icon-weather"></td>
+                </tr>
+                <tr>
+                    <td>69&#176;</td>
+                </tr>
+            </table>
+            <table class="tableForecast">
+                <tr>
+                    <th>Weekday</th>
+                </tr>
+                <tr>
+                    <td><img src="images/icon-weather.png" alt="icon-weather"></td>
+                </tr>
+                <tr>
+                    <td>69&#176;</td>
+                </tr>
+            </table>
+            <table class="tableForecast">
+                <tr>
+                    <th>Weekday</th>
+                </tr>
+                <tr>
+                    <td><img src="images/icon-weather.png" alt="icon-weather"></td>
+                </tr>
+                <tr>
+                    <td>69&#176;</td>
+                </tr>
+            </table>
+            <table class="tableForecast">
+                <tr>
+                    <th>Weekday</th>
+                </tr>
+                <tr>
+                    <td><img src="images/icon-weather.png" alt="icon-weather"></td>
+                </tr>
+                <tr>
+                    <td>69&#176;</td>
+                </tr>
+            </table>
+            </div>
         </section>
-        <section>
+        <section class="article">
             <h3>Article</h3>
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nesciunt 
+                asperiores nulla est voluptate atque eligendi eum voluptatum. A, autem ut 
+                aliquid odio voluptate rerum aperiam mollitia? Incidunt tempora ipsum animi. 
+                Ipsam ipsa laudantium quos iste labore doloremque quam? Asperiores alias 
+                dignissimos recusandae tempora perferendis at ipsa blanditiis distinctio 
+                dolores!
+            </div>
+            <div><img src="images/preston-picnic.jpg" alt="preston-picnic"></div>
         </section>
         <section>
             <h3>Contact Information</h3>
         </section>
     </main>
     <footer>
-        &COPY; Earth Weather | Attributions | Joey M. Panganiban 
-        <div><span id="date"></span></div>
+        <div>            
+            &COPY; Earth Weather | Attributions | Joey M. Panganiban 
+            <div><span id="date"></span></div>
+        </div>
     </footer>
     <script src="js/script.js"></script>
 </body>

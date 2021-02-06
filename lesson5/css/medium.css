@@ -1,0 +1,42 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em){
+    
+    .titleHeadings  { margin: 5px 20px auto; }
+
+    .title { font-size: 2rem; }
+
+    .subTitle { font-size: 1.2rem;}
+
+    .heading, #primaryNav, main, footer div {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+
+    #primaryNav { display: flex; }
+
+    #primaryNav li:first-child { display: none; }
+
+    #primaryNav li {
+        display: block;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+    }
+
+    #primaryNav li a{
+        font-size: .9rem;
+        padding: 1rem 0;
+    }
+
+    main section {
+        margin: auto 0; 
+    }
+
+    div.weatherSummary h3 {
+        font-size: 1.5rem;
+    }
+    div.weatherSummary table {
+        font-size: 1.2rem;
+    }
+
+}

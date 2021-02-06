@@ -2,9 +2,6 @@ html {
     box-sizing: border-box;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 header {
     display: flex;
@@ -74,8 +71,6 @@ nav {
     font-weight: bold;
     text-align: center;
     font-size: .8rem;
-    display: block;
-    max-width: 100%;
 }
 
 nav ul {
