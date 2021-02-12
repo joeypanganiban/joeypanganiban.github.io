@@ -1,0 +1,178 @@
+/******************* Body **********************/
+
+
+body {
+    margin: 0;
+}
+
+/******************* header **********************/
+
+header, footer {
+    background-color: #98df95;
+}
+
+.heading {
+    display: flex;  
+    padding: 10px 0 6px;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.title {
+    color: #fff;
+    margin: 0;
+    margin-top: 4px;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px #000;
+    font-family:'Catamaran', sans-serif;
+}
+
+.subTitle {
+    color: rgba(0,0,0,0.8);
+    font-style: italic;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+
+/***************** Navigation **********************/
+
+nav {
+    background-color: #176bca;
+    display:block;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-top: 2px rgb(0, 0, 0);
+}
+
+.hide li {
+    display: none;
+}
+
+nav ul li a, nav ul li:first-child  {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    font-size: .8rem;
+    padding: 4px;
+    display: block;
+}
+
+
+
+nav ul li:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.3);;
+}
+
+/******************* Main **********************/
+
+
+.titlePage {
+    text-align: center;
+}
+
+
+
+/** Hero Section >>>>>>>>>>>>>>>>>> **/
+
+div.heroImage img {
+    max-width: 100%;
+}
+
+.hero {
+    position: relative;
+
+}
+
+div.weatherSummary {
+    position: absolute;
+    top: .8rem;
+    left: 2rem ;
+    background-color: rgba(0, 76, 162, 0.585);
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 1px rgb(26, 26, 26);
+    text-align: left;
+    padding: 1rem;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.461);
+}
+
+
+
+div.weatherSummary h3 {
+    padding-bottom: .5rem;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
+    margin-top: .1rem;
+    margin-bottom: .5rem;
+    text-align: left;
+    text-decoration-color: rgba(176, 175, 175, 0.8);
+    -moz-text-decoration-color: rgba(176, 175, 175, 0.8);
+}
+
+div.weatherSummary table {
+    font-family: 'Catamaran', sans-serif;
+}
+
+div.weatherSummary table th {
+    text-align: left;
+}
+
+/***************** 5 Day Forcast ***************/
+
+
+.fiveDayForecast {
+    display: none;
+}
+
+
+/**************** Article **************/
+
+.article div img {
+    max-width: 100%;
+} 
+
+.article {
+    padding:  1rem 3rem;
+}
+
+.article img {
+    margin-top: 1rem;
+}
+
+
+
+
+
+/****************** Footer *********************/
+
+footer {
+    color: rgba(0,0,0,0.8);
+    font-size: .9rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/************ iphone view ******************/
+@media only screen and (min-width: 371px){
+
+    .titleHeadings {
+        margin-top: 10px;
+    }
+}
