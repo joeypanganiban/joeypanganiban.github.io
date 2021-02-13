@@ -7,9 +7,9 @@
 
     .subTitle { font-size: 1.2rem;}
 
-    .heading, #primaryNav, main, footer div {
+    .heading, #primaryNav, main, .contact div.information, .barContent {
         max-width: 750px;
-        margin: 0 auto;
+        margin: auto;
     }
 
     #primaryNav { display: flex; }
@@ -39,11 +39,16 @@
     /************ 5 day Forcast *********/
     section.fiveDayForecast {
         display: block;
+        max-width: 100%;
+        margin: auto;
     }
-    .fiveDayForecast div {
+    .tableForecast {
         display: grid;
-        grid-template-columns: repeat(6, auto);
-        text-align: center;
+        grid-template-columns: repeat(5, auto);
+        justify-items: center;
+        justify-content: center;
+        
+        
     }
     
 
@@ -58,4 +63,19 @@
         box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
     } 
 
+    /*************** Footer *************/
+    .map img {
+        max-width: 15rem;
+    }
+
+    .infoContent {
+        align-content: center;
+    }
+    .map {
+        display: grid;
+    }
+
+    .info { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 }

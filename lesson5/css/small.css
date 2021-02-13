@@ -1,26 +1,28 @@
 /******************* Body **********************/
+body { margin: 0;}
 
-
-body {
-    margin: 0;
+#banner { 
+    text-align: center;
+    font-size: bold;
+    padding: 15px 0;
+    background-color: rgba(238, 241, 77, 0.3);
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.461);
 }
 
 /******************* header **********************/
-
-header, footer {
-    background-color: #98df95;
-}
+header { background-color: #98df95;}
 
 .heading {
     display: flex;  
     padding: 10px 0 6px;
-    margin-left: 20px;
+    margin-left: 3rem;
 }
-
 .logo img {
-    width: 70px;
+   width: 70px;
+   filter: drop-shadow(0 0 3px #000);
+   margin-right: .5rem;
+   margin-left: 3rem;
 }
-
 .title {
     color: #fff;
     margin: 0;
@@ -29,7 +31,6 @@ header, footer {
     text-shadow: 2px 2px 2px #000;
     font-family:'Catamaran', sans-serif;
 }
-
 .subTitle {
     color: rgba(0,0,0,0.8);
     font-style: italic;
@@ -45,16 +46,14 @@ nav {
     display:block;
     text-align: center;
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+nav ul li { border-top: 2px rgb(0, 0, 0); }
 
-nav ul li {
-    border-top: 2px rgb(0, 0, 0);
-}
+.hide li { display: none; }
 
 nav ul li a, nav ul li:first-child  {
     text-decoration: none;
@@ -65,113 +64,137 @@ nav ul li a, nav ul li:first-child  {
     padding: 4px;
     display: block;
 }
+nav ul li:hover { background-color: rgba(0,0,0,0.5); }
 
-.hide li {
-    display: none;
-}
+nav ul li.active a { background-color: rgba(0,0,0,0.3); }
 
-nav ul li:hover {
-    background-color: rgba(0,0,0,0.5);
-}
-
-nav ul li.active a {
-    background-color: rgba(0,0,0,0.3);;
-}
 
 /******************* Main **********************/
-
-
-.titlePage {
-    text-align: center;
-}
+.titlePage { margin-left: 3rem; }
 
 
 
 /** Hero Section >>>>>>>>>>>>>>>>>> **/
+div.heroImage img { max-width: 100%; }
 
-div.heroImage img {
-    max-width: 100%;
-}
-
-.hero {
-    position: relative;
-
-}
+.hero { position: relative; }
 
 div.weatherSummary {
     position: absolute;
-    top: 2rem;
+    top: .8rem;
     left: 2rem ;
     background-color: rgba(0, 76, 162, 0.585);
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.9);
     text-shadow: 1px 1px 1px rgb(26, 26, 26);
-    font-size: .8rem;
+    text-align: left;
     padding: 1rem;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.461);
 }
-
-
-
 div.weatherSummary h3 {
-    font-size: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid rgba(0,0,0,0.5);
     margin-top: .1rem;
-    text-align: center;
+    margin-bottom: .5rem;
+    text-align: left;
     text-decoration-color: rgba(176, 175, 175, 0.8);
-    -moz-text-decoration-color: rgba(176, 175, 175, 0.8);
 }
+div.weatherSummary table { font-family: 'Catamaran', sans-serif; }
 
-div.weatherSummary table {
-    font-family: 'Catamaran', sans-serif;
-    margin: auto;
-}
-
-div.weatherSummary table th {
-    text-align: right;
-}
+div.weatherSummary table th { text-align: left; }
 
 /***************** 5 Day Forcast ***************/
-
-
-div table.tableForecast {
-    background-color: rgba(108, 108, 109, 0.461);
-    border: 2px solid rgb(51, 51, 51);
-    display: inline-flex;
-    margin: 2px;
-    width: 15%;
-
+section.fiveDayForecast { 
+    display: none;
+    margin: auto;
+    padding:  1rem 3rem;
 }
-
-.fiveDayForecast{
+.weatherDayForecast {
+    width: 5rem;
+    text-align: center;
+    background-color: rgba(0, 76, 162, 0.585);
+    margin: auto 10px;
+    border-radius: 3px;
+    font-family:'Catamaran', sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.weatherDayForecast img {
+   max-width: 50%;
+   filter: drop-shadow(0 0 5px #000);
+}
+.weatherDayForecast h4 {
     margin: 0;
-    max-width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 76, 162, 0.585);
+    color: rgba(255, 255, 255, 0.9);
 
 }
-
-.tableForecast img {
-    max-width: 50%;
-    align-content: center;
+.weatherDayForecast p {
+    margin: 0 0 15px 0;
+    font-style: bold;
 }
 
 
 /**************** Article **************/
-section.article div img {
-    max-width: 100%;
+.article { 
+    padding:  2rem 3rem;
+    background-color: rgba(0, 76, 162, 0.1);
+    margin: 10px 5px;
 } 
 
+.textImage p {
+    display: grid;
+    grid-template-rows: image text;
+    font-family:'Catamaran', sans-serif;
+}
+.article div img {
+    max-width: 100%;
+    margin-top: 1.2rem;
+} 
+
+.article h3 { margin-bottom: 5px; }
+
+.article h4 {
+    margin-top: 0;
+    font-family:'Catamaran', sans-serif;
+    color: rgb(0, 76, 162 );
+}
 
 
 
 
 /****************** Footer *********************/
+/*<<<<<<<< Contact Information >>>>>>>>*/
+.contact {  
+    background-color: #98df95; 
+    padding: 20px 0;     
+}
 
-footer {
+.contactTitle, .info { margin-left: 3rem; }
+
+.info { font-family:'Catamaran', sans-serif; }
+
+.contactTitle { margin-top: 0;}
+
+.social { padding: 10px 0; }
+
+.address img{ width: 1rem;}
+
+.social img{ width: 2rem; padding: 10px} 
+
+.map { display: none}
+
+/**<<<<<<< Bar >>>>>>>>>>>> */
+.bar {
     color: rgba(0,0,0,0.8);
+    background-color:  #176bca;
     font-size: .9rem;
     font-weight: bold;
     text-align: center;
     padding: 10px;
 }
-
 
 /************ iphone view ******************/
 @media only screen and (min-width: 371px){
