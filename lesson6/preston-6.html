@@ -19,12 +19,15 @@
     <div id="banner">Saturday = Preston Pancakes in the Park! 9 AM, Saturday at the 
         city park pavilion.</div>
 
-    <header>
+    <header class="clearfix">
         <div class="heading">
-        <div class="logo"><img src="images/weather-logo.png" alt="weather-logo"></div>
+        <picture class="logo">
+            <img src="images/weather-logo0.png" alt="logo" srcset="images/weather-logo1.png 1x,
+            images/weather-logo2.png 2x, images/weather-logo3.png 3x">
+        </picture>
         <section class="titleHeadings">
             <h1 class="title">Earth Weather</h1>
-            <div class="subTitle">Your real time online weather forecaster</div>
+            <h2 class="subTitle">Your real time online weather forecaster</h2>
         </section>
         </div>
     </header>
@@ -56,7 +59,7 @@
                     </tr>
                     <tr>
                         <th>Wind Chill:</th>
-                        <td>&#x2109;</td>
+                        <td><span id="windchill"></span>&#x2109;</td>
                     </tr>
                     <tr>
                         <th>Humidity:</th>
@@ -71,7 +74,14 @@
             </div>
             <div class="heroImage">
                 <!-- hero Image -->
-               <img src="images/preston-bay-area.jpg" alt="preston-pic"></picture>
+               <picture>
+                   <img src="images/prestonview.jpeg" alt="preston-pic" sizes="50vw"
+                   srcset="images/small.jpg 200w,
+                           images/medium.jpg 500w,
+                           images/large.jpg 800w,
+                           images/extralarge.jpg 1100w,"
+                   >
+                </picture>
             </div>
         </section>
         <section class="fiveDayForecast">
@@ -105,10 +115,11 @@
             </div>
         </section>
         <section class="article">
-            <h3>Article</h3>
-            <div class="textImage">
-                <p> <img src="images/preston-picnic.jpg" alt="preston-picnic">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nesciunt 
+            <div class="textImage"> 
+                <img src="images/preston-picnic.jpg" alt="preston-picnic">
+                <h3>Article of the Earth Weather</h3>
+                <h4>by Joey Panganiban</h4>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit nesciunt 
                     asperiores nulla est voluptate atque eligendi eum voluptatum. A, autem ut 
                     aliquid odio voluptate rerum aperiam mollitia? Incidunt tempora ipsum animi. 
                     Ipsam ipsa laudantium quos iste labore doloremque quam? Asperiores alias 
@@ -119,12 +130,10 @@
                     atque sit quo magni distinctio possimus, assumenda nemo! Consequuntur quasi 
                     nisi sint autem obcaecati temporibus. Eligendi quam perferendis error officiis 
                     sint dicta ad obcaecati mollitia deserunt aperiam accusamus nesciunt quasi 
-                    magni veniam saepe nihil, rem eius alias nobis molestias!
-                    
+                    magni veniam saepe nihil, rem eius alias nobis molestias!<a href='#'> ...continue reading</a>
                 </p>
             </div>
         </section>
-        
     </main>
     <footer>
         <section class="contact">
@@ -153,5 +162,6 @@
         </section>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 </html>

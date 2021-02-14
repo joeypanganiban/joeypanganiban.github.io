@@ -46,22 +46,24 @@
         display: grid;
         grid-template-columns: repeat(5, auto);
         justify-items: center;
-        justify-content: center;
-        
-        
+        justify-content: center;   
     }
     
 
     /************  Article  ***************/
     .textImage p { display: block; }
 
-    .article div p img {
+    .article div img {
         float: right;
         width: 45%;
         max-width: 98%;
-        margin: 0 0 20px 20px;
+        margin: 4rem 0 20px 20px;
         box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
     } 
+
+    .article { 
+        margin: 5rem 0;
+    }
 
     /*************** Footer *************/
     .map img {
@@ -78,4 +80,5 @@
     .info { 
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
 }
