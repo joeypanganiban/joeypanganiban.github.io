@@ -138,7 +138,7 @@ section.fiveDayForecast {
 /**************** Article **************/
 .article { 
     padding:  2rem 3rem;
-    background-color: rgba(0, 76, 162, 0.1);
+    background-color: rgba(0, 76, 162, 0.2);
     margin: 10px 5px;
 } 
 
