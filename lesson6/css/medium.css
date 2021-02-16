@@ -8,7 +8,7 @@
     .subTitle { font-size: 1.2rem;}
 
     .heading, #primaryNav, main, .contact div.information, .barContent {
-        max-width: 750px;
+        max-width: 1024px;
         margin: auto;
     }
 
