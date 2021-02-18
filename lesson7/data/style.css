@@ -1,0 +1,17 @@
+article img[data-src] {
+	filter: blur(0.2em);
+}
+article img {
+	filter: blur(0em);
+	transition: filter 0.5s;
+}
+
+article picture {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    justify-content: center;
+}
+
+main {
+    text-align: center;
+}
