@@ -1,9 +1,7 @@
-<script>
   WebFont.load({
     google: {
         families: [
-          'Catamaran', 'Droid Serif'
+          'Catamaran','EB Garamond'
         ]
     }
   });
-</script>
