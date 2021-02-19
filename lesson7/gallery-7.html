@@ -1,0 +1,93 @@
+<!DOCTYPE html>9
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Earth Weather website for WDD 230 Web Frontend Development 1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="css/small.css"  rel="stylesheet">
+    <link href="css/medium.css"  rel="stylesheet">
+    <link href="css/large.css"  rel="stylesheet">
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <title>Gallery | Earth Weather</title>
+</head>
+<body>
+    <div id="banner">Saturday = Preston Pancakes in the Park! 9 AM, Saturday at the 
+        city park pavilion.</div>
+
+    <header class="clearfix">
+        <div class="heading">
+        <picture class="logo">
+            <img src="images/weather-logo0.png" alt="logo" srcset="images/weather-logo1.png 1x,
+            images/weather-logo2.png 2x, images/weather-logo3.png 3x">
+        </picture>
+        <section class="titleHeadings">
+            <h1 class="title">Earth Weather</h1>
+            <h2 class="subTitle">Your real time online weather forecaster</h2>
+        </section>
+        </div>
+    </header>
+    <nav class="clearfix">    
+        <ul id="primaryNav">
+            <li onclick="toggleMenu()">&#9776;<span> Menu</span></li>
+            <li ><a href="#">Home</a></li>
+            <li ><a href="#">Preston</a></li>
+            <li ><a href="#">Soda Springs</a></li>
+            <li ><a href="#">Fish Haven</a></li>
+            <li ><a href="#">Storm Center</a></li>
+            <li class="active"><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2 class="titlePage">Gallery</h2>
+            <picture><img src="../images/one.png" alt="storm" srcset="../images/one.jpg"></picture>
+            <picture><img src="../images/two.png" alt="" srcset="../images/two.jpg"></picture>
+            <picture><img src="../images/three.png" alt="" srcset="./images/three.jpg"></picture>
+            <picture><img src="../images/four.png" alt="" srcset="./images/four.jpg"></picture>
+            <picture><img src="../images/five.png" alt="" srcset="./images/five.jpg"></picture>
+            <picture><img src="../images/six.png" alt="" srcset="./images/six.jpg"></picture>
+            <picture><img src="../images/seven.png" alt="" srcset="./images/seven.jpg"></picture>
+            <picture><img src="../images/eight.png" alt="" srcset="./images/eight.jpg"></picture>
+            <picture><img src="../images/nine.png" alt="" srcset="./images/nine.jpg"></picture>
+        </article>
+        
+    </main>
+    <footer>
+        <section class="contact">
+        <div class="information"><h3 class="contactTitle">Contact Information</h3>
+            <div class="info">
+                <div class="map"><img src="images/preston-map.png" alt="Prenton Idaho Map"></div>
+                <div class="infoContent">
+                    <div class="address"><img src="images/pin.png" alt="address pin icon"> 30 N 1st E Preston, ID 83263</div>
+                    <div> &#x260E;  999-999-999</div>
+                    <div> &#x1F4E7; myemail.edu.com</div>
+                    <div class="social">
+                        <img src="images/facebook.png" alt="facebooke pic">
+                        <img src="images/youtube.png" alt="youtube pic">
+                        <img src="images/linkedin.png" alt="linkedin pic">
+                        <img src="images/instagram.png" alt="instagram icon">            
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <div class="bar">            
+            <div class="barContent">
+                &COPY; Earth Weather | Attributions | Joey M. Panganiban 
+                <div><span id="date"></span></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="app.js" defer></script>
+</body>
+</html>
