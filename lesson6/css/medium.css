@@ -26,8 +26,9 @@
         padding: 1rem 0;
     }
     main section { margin: auto 0; }
-
     div.weatherSummary {
+        position: absolute;
+        text-align: left;
         top: 2rem;
         left: 2rem ;
     }
