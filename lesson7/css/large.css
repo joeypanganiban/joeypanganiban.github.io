@@ -4,10 +4,16 @@
     #primaryNav li a {
         padding: .8rem 0;
     }
+main article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0;
+}
 
-    section.fiveDayForecast { margin-top: 3rem;}
+main h2{ margin: 20px 0;}
 
-    .weatherDayForecast {
-        margin: 20px 15px;
-    }
+figcaption {
+    font-size: 100%;
+}
 }

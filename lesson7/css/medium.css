@@ -25,45 +25,21 @@
         font-size: .9rem;
         padding: 1rem 0;
     }
-    main section { margin: auto 0; }
 
-    div.weatherSummary {
-        top: 2rem;
-        left: 2rem ;
+    /*************** GALLERY ************/
+
+    main { margin: auto; }
+
+    main article {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        margin: 20px;
     }
-    div.weatherSummary h3 { font-size: 1.5rem;}
 
-    div.weatherSummary table { font-size: 1.2rem; }
+    main h2 { margin-left: 20px;}
 
-    
-    /************ 5 day Forcast *********/
-    section.fiveDayForecast {
-        display: block;
-        max-width: 100%;
-        margin: auto;
-    }
-    .tableForecast {
-        display: grid;
-        grid-template-columns: repeat(5, auto);
-        justify-items: center;
-        justify-content: center;   
-    }
-    
 
-    /************  Article  ***************/
-    .textImage p { display: block; }
 
-    .article div img {
-        float: right;
-        width: 45%;
-        max-width: 98%;
-        margin: 4rem 0 20px 20px;
-        box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
-    } 
-
-    .article { 
-        margin: 5rem 0;
-    }
 
     /*************** Footer *************/
     .map img {
