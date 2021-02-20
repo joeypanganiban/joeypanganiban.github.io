@@ -3,16 +3,14 @@ article img[data-src] {
 }
 article img {
 	filter: blur(0em);
-	transition: filter 1s;
+	transition: filter 1.5s;
 	margin: 5px;
 }
-
 article picture {
     display: grid;
     grid-template-rows: repeat(6, auto);
     justify-content: center;
 }
-
 main {
     text-align: center;
 }
