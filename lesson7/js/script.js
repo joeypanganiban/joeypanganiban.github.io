@@ -24,7 +24,7 @@ let months = [
     "December"
 ];
 
-let d  = new Date();
+let d           = new Date();
 let hours       = d.getHours();
 let minutes     = d.getMinutes();
 let dayName     = daynames[d.getDay()];
@@ -53,14 +53,6 @@ if (d.getDay() === 6) {
 } else {
     banner.style.display = "none";
 }
-
-
-
-
-
-
-
-
 
 /*************** Navigation ***************/
 function toggleMenu() {
