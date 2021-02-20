@@ -87,6 +87,7 @@ div.weatherSummary {
     text-shadow: 1px 1px 1px rgb(26, 26, 26);
     padding: 1rem 3rem;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.461);
+    margin-top: -4px;
 }
 div.weatherSummary h3 {
     padding-bottom: .5rem;
@@ -96,7 +97,7 @@ div.weatherSummary h3 {
     text-align: left;
     text-decoration-color: rgba(176, 175, 175, 0.8);
 }
-div.weatherSummary table { font-family: 'Catamaran', sans-serif; }
+div.weatherSummary table { font-family: 'Catamaran', sans-serif;   }
 
 div.weatherSummary table th { text-align: left; padding-right: 2rem;}
 
@@ -139,13 +140,12 @@ section.fiveDayForecast {
 } 
 
 .textImage p {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
     font-family:'Catamaran', sans-serif;
+    margin: 0;
 }
 .article div img {
     max-width: 100%;
-    margin-top: 1.2rem;
+    box-shadow: 0 0 15px 10px rgba(0,0,0,0.5);
 } 
 
 .article h3 { margin-bottom: 5px; }
