@@ -27,7 +27,12 @@
     }
     main section { margin: auto 0; }
 
+    .logo img {
+        margin-left: 1rem;
+    }
+
     div.weatherSummary {
+        position: absolute;
         top: 2rem;
         left: 2rem ;
     }
@@ -82,4 +87,5 @@
     .info { 
         display: grid;
         grid-template-columns: 1fr 1fr;
+}
 }

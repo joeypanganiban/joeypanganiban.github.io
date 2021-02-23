@@ -17,13 +17,12 @@ header { background-color: #98df95;}
 .heading {
     display: flex;  
     padding: 10px 0 6px;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 .logo img {
    width: 70px;
    filter: drop-shadow(0 0 3px #000);
    margin-right: .5rem;
-   margin-left: 3rem;
 }
 .title {
     color: #fff;
@@ -82,14 +81,11 @@ div.heroImage img { max-width: 100%; }
 .hero { position: relative; }
 
 div.weatherSummary {
-    position: absolute;
-    top: .8rem;
-    left: 2rem ;
     background-color: rgba(0, 76, 162, 0.585);
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 1px 1px 1px rgb(26, 26, 26);
     text-align: left;
-    padding: 1rem;
+    padding: 1rem 3rem;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.461);
 }
 div.weatherSummary h3 {
@@ -102,7 +98,7 @@ div.weatherSummary h3 {
 }
 div.weatherSummary table { font-family: 'Catamaran', sans-serif; }
 
-div.weatherSummary table th { text-align: left; }
+div.weatherSummary table th { text-align: left; padding-right: 2rem;}
 
 /***************** 5 Day Forcast ***************/
 section.fiveDayForecast { 
