@@ -1,0 +1,19 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    #primaryNav li a {
+        padding: .8rem 0;
+    }
+main article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 20px auto;
+}
+
+main h2{ margin: 30px 0 0;}
+
+figcaption {
+    font-size: 100%;
+}
+}

@@ -1,0 +1,164 @@
+/******************* Body **********************/
+body { margin: 0;}
+
+#banner { 
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+    background-color: rgba(238, 241, 77, 0.3);
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.461);
+    font-family: 'EB Garamond', serif;
+}
+
+/******************* header **********************/
+header { 
+    padding: 1rem 2%;
+    background-color: #98df95;
+}
+header h2 {margin: 0; font-weight: normal;}
+
+.logo img {
+   filter: drop-shadow(0 0 3px #000);
+   float: left;
+   margin: 0 2% 0 0;
+}
+header h1.title {
+    margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-family:'Catamaran', sans-serif;
+}
+.subTitle {
+    color: rgba(0,0,0,0.8);
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/***************** Navigation **********************/
+
+nav {
+    background-color: #176bca;
+    display:block;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li { border-top: 2px rgb(0, 0, 0); }
+
+.hide li { display: none; }
+
+nav ul li:first-child { display: block;}
+
+nav ul li a, nav ul li:first-child  {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: bold;
+    font-size: .8rem;
+    padding: 4px;
+}
+nav ul li a { display: block; }
+
+nav ul li:hover { background-color: rgba(0,0,0,0.5); }
+
+nav ul li.active a { background-color: rgba(0,0,0,0.3); }
+
+
+/******************* Main **********************/
+main { margin: 20px; }
+
+/****>>>>>>>>>>> Galerry */
+
+main h2 {
+    font-family: 'Catamaran';
+    color: #176bca;
+    font-size: 50%;
+}
+
+/** PROGRESSIVE IMAGES */
+article img[data-src] {
+	filter: blur(0.2em);
+}
+article img {
+	filter: blur(0em);
+	transition: filter 2s;
+}
+/**END OF PROGRESSIVE IMAGES */
+
+
+main article {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+figcaption {
+    padding: 2px 5px;
+    font-family: 'Catamaran';
+    font-weight: bold;
+    font-size: 120%;
+}
+article picture {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #000;
+}
+article picture:hover {
+    box-shadow: 5px 5px 5px #000;
+}
+
+article picture img {
+    width: 100%;
+}
+
+
+/****************** Footer *********************/
+/*<<<<<<<< Contact Information >>>>>>>>*/
+.contact {  
+    background-color: #98df95; 
+    padding: 20px 0;     
+}
+
+.contactTitle, .info { margin-left: 3rem; }
+
+.info { font-family:'Catamaran', sans-serif; }
+
+.contactTitle { margin-top: 0;}
+
+.social { padding: 10px 0; }
+
+.address img{ width: 1rem;}
+
+.social img{ width: 2rem; padding: 10px} 
+
+.map { display: none}
+
+/**<<<<<<< Bar >>>>>>>>>>>> */
+.bar {
+    color: rgba(0,0,0,0.8);
+    background-color:  #176bca;
+    font-size: .9rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/************ iphone view ******************/
+@media only screen and (min-width: 371px){
+
+    .titleHeadings {
+        margin-top: 10px;
+    }
+}
