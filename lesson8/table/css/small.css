@@ -17,29 +17,29 @@ table, th, td {
     padding: 10px;
     color: rgb(41, 41, 41);
 }
-tr:first-child th {
+thead tr:first-child th {
     background-color: #7fb9c2;
     color: #000;
     font-size: 140%;
     font-weight: bold;
 }
-th {
+thead tr:nth-child(2) th{
     color: #fff;
     background-color: #628ca6;
     padding: 10px auto;
 }
-tr:nth-child(6) td:nth-child(3) {
+tbody tr:nth-child(4) td:nth-child(3) {
     background-color: #628ca6;
     color: #fff;
 }
-tr:nth-child(7) td:first-child {
+tbody tr:nth-child(5) td:first-child {
     font-style: italic;
 }
-tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
     background-color: #e7f0ed;
 }
-tr:nth-child(even) { background-color: #e7ffed;}
-tr:nth-last-child(1) td {
+tbody tr:nth-child(even) { background-color: #e7ffed;}
+tfoot tr:nth-last-child(1) td {
     background-color: #7fb9c2;
     font-size: 75%;
 }
