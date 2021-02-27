@@ -21,6 +21,7 @@ header h2 {margin: 0; font-weight: normal;}
    filter: drop-shadow(0 0 3px #000);
    float: left;
    margin: 0 2% 0 0;
+   -webkit-filter: drop-shadow(0 0 3px #000);
 }
 header h1.title {
     margin: 0;
@@ -79,87 +80,41 @@ main h2 {
     color: #176bca;
 }
 
-
 form fieldset {
-    display: block;
-    margin: 2rem 0;
-    border: 1px solid #445ba9;
-    border-radius: 10px;
-    padding: .5rem 2%;
-    width: 100%;
-}
-form legend {
-    color: #445ba9;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-}
-
-form label.top, form div {
-    display: block;
-    padding-top: 1rem;
-    color: #176bca;
-    font-size: .8rem;
-}
-form label.top input, form label.top select {
-    -webkit-appearance: none;
-    display: block;
-    font-size: 1rem;
-    border: solid 1px #999;
-    border-radius: 4px;
-    padding: .75rem;
-    color: #555;
-    width: 90%;
     max-width: 20rem;
-    background-color: rgba(0, 0, 0, 0.1);
 }
 
-form label.sbs {
+form fieldset label {
+    display:block;
+}
+form label.top, form label.sbs,form div.top {
+    padding-top: 10px;
+}
+label.top input {
     display: block;
-    padding: .75rem 0;
-    color: #555;
+}
+label.top input,textarea, select {
+    width: 97%;
 }
 
-form input.submitBtn {
-    border: none;
-    background-color: #9c2c13;
-    color: white;
-    border-radius: .5rem;
-    padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
-    max-width: 20rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
-}
-
-/**END OF PROGRESSIVE IMAGES */
 
 
-main article {
-    display: grid;
-    grid-gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-figcaption {
-    padding: 2px 5px;
-    font-family: 'Catamaran';
-    font-weight: bold;
-    font-size: 120%;
-}
-article picture {
-    background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 10px #000;
-}
-article picture:hover {
-    box-shadow: 5px 5px 5px #000;
-}
 
-article picture img {
-    width: 100%;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /****************** Footer *********************/
