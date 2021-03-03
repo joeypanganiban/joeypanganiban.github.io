@@ -48,6 +48,7 @@
         <h2>Storm Center</h2>
         <form action="thanks.html" method="get">
             <fieldset>
+                <legend>Form</legend>
                 <label class="top" for="">Full Name* <input type="text" name="name" pattern="[A-Zs-z].{5,}" required></label>
                 <label class="top" for="">Email <input type="email" name="email" placeholder="someone@gmail.com" ></label>
                 <label class="top" for="">Phone Number* <input type="tel" name="phone" required></label>
@@ -84,6 +85,7 @@
                 </datalist>
                 <label class="top" for="">Storm Region </label>
                     <select name="Region" id="region">
+                        <option value="" selected disabled hidden>Select Region...</option>
                         <option value="Preson">Preston</option>
                         <option value="Soda Spring">Soda Spring</option>
                         <option value="Fish Haven">Fish Haven</option>
