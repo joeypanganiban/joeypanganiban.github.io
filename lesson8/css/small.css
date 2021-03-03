@@ -89,7 +89,12 @@ form fieldset {
     font-size: 12px;
     font-weight: bold;
     border: none;
+    border-radius: 10px;
     margin: auto auto 2rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 legend {
     display: none;
@@ -157,6 +162,7 @@ label.top input,
     color: #fff;
     background-image: linear-gradient(to right, #1d5596 ,#05366e);
     border: transparent;
+    border-radius: 5px;
 }
 
 .submitBtn:hover {
