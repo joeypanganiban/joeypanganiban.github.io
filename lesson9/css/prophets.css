@@ -1,0 +1,40 @@
+header, footer {
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(to right,#06366d ,#287fe2 );
+    font-family: 'Catamaran';
+    padding: 20px;
+}
+main {
+    margin: 50px auto;
+}
+section {
+    margin: auto;
+    background-color: #287fe2;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Catamaran';
+    border: solid transparent 2px;
+    border-radius: 10px;
+}
+h2 {
+    background-image: linear-gradient(to right,#06366d ,#287fe2 );
+    color: #fff;
+    padding: 15px 20px;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+p {
+    margin: 0;
+    font-weight: bold;
+}
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+}
+img {
+    object-fit: cover;
+    width: 15rem;
+    height: 20rem;
+    padding: 10px;
+}
