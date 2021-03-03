@@ -155,13 +155,14 @@ label.top input,
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    background-color: #176bca;
+    background-image: linear-gradient(to right, #1d5596 ,#05366e);
     border: transparent;
 }
 
 .submitBtn:hover {
     box-shadow:3px 3px 6px #000;
     cursor: pointer;
+    background-image: linear-gradient(to right, #176bca , #176bca);
 }
 
 /******* THANKS.HTML */
