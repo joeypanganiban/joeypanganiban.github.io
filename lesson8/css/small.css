@@ -82,22 +82,79 @@ main h2 {
 
 form fieldset {
     max-width: 20rem;
+    font-family: 'Catamaran';
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    margin: auto auto 2rem;
+
+}
+legend {
+    display: none;
 }
 
-form fieldset label {
-    display:block;
-}
-form label.top, form label.sbs,form div.top {
-    padding-top: 10px;
-}
-label.top input {
+form fieldset label,
+#rating {
     display: block;
 }
-label.top input,textarea, select {
-    width: 97%;
+
+/*** PADDING TOP */
+form label.top, 
+form label.sbs,
+form div.top {
+    padding-top: 20px;
 }
 
+/*** BORDER */
+label.top input,
+#storm-type,
+#textarea, #region {
+    width: 97%;
+    height: 44px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    font-size: 16px;
 
+}
+/*** REGION */
+#region {
+    width: 99.7%;
+    height: 50px;
+}
+/*** CALENDAR */
+.top #date {
+    width: 98%;
+    height: 46px;
+}
+/***  RATING */
+.rating { 
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+.rating span {
+    padding-left: 1rem;
+}
+/*** TEXTAREA */
+#textarea {
+    width: 97%;
+    height: 70px;
+}
+
+/*** BUTTON */
+.submitBtn {
+    margin: 20px auto 30px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #176bca;
+    border: transparent;
+}
+
+.submitBtn:hover {
+    box-shadow: 2px 2px 4px #000;
+}
 
 
 

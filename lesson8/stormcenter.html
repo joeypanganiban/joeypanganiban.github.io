@@ -49,11 +49,11 @@
         <form action="thanks.html" method="get">
             <fieldset>
                 <legend>Form</legend>
-                <label class="top" for="">Full Name* <input type="text" name="name" pattern="[A-Zs-z].{8,}" required></label>
+                <label class="top" for="">Full Name* <input type="text" name="name" pattern="[A-Zs-z].{5,}" required></label>
                 <label class="top" for="">Email <input type="email" name="email" placeholder="someone@gmail.com" ></label>
                 <label class="top" for="">Phone Number* <input type="tel" name="phone" required></label>
                 <label class="top" for="">Zip Code* <input type="number" name="Zip"  required></label>
-                <label class="top" for="">Storm Date <input type="date" name="completeDate"></label>
+                <label class="top" for="">Storm Date <input type="date" name="completeDate" id="date"></label>
                 <label class="top" for="storm-type">Storm Type </label>
                     <input list="storm-types" id="storm-type" name="storm-type" >
                     <datalist id="storm-types">
@@ -64,8 +64,10 @@
                         <option value="Tornado"></option>
                     </datalist>
                 <label class="sbs" for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
-                    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">5</span>
+                    <div class="rating">
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </div>
                 </label>
                     <datalist id="tickmarks">
                         <option value="0">
@@ -81,7 +83,7 @@
                         <option value="10">
                     </datalist>
                 <label class="top" for="">Storm Region </label>
-                <select name="Region" id="">
+                <select name="Region" id="region">
                     <option value="">Select Region...</option>
                     <option value="Preson">Preston</option>
                     <option value="Soda Spring">Soda Spring</option>
@@ -95,8 +97,8 @@
                     </div>
                 <label class="top" for="textarea">Additional Information or Comments </label>
                 <textarea id="textarea" name="textarea" ></textarea>
+                <input type="submit" value="Report My Weather" class="submitBtn">
             </fieldset>
-            <input type="submit" value="Report My Weather" class="submitBtn">
         </form>
 
 
