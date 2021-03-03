@@ -45,64 +45,7 @@
         </ul>
     </nav>
     <main>
-        <h2>Storm Center</h2>
-        <form action="thanks.html" method="get">
-            <fieldset>
-                <label class="top" for="">Full Name* <input type="text" name="name" pattern="[A-Zs-z].{5,}" required></label>
-                <label class="top" for="">Email <input type="email" name="email" placeholder="someone@gmail.com" ></label>
-                <label class="top" for="">Phone Number* <input type="tel" name="phone" required></label>
-                <label class="top" for="">Zip Code* <input type="number" name="Zip"  required></label>
-                <label class="top" for="">Storm Date <input type="date" name="completeDate" id="date"></label>
-                <label class="top" for="storm-type">Storm Type 
-                    <input list="storm-types" id="storm-type" name="storm-type" >
-                    <datalist id="storm-types">
-                        <option value="Flash Flood"></option>
-                        <option value="Hail"></option>
-                        <option value="Hurricane"></option>
-                        <option value=Thunderstorm"></option>
-                        <option value="Tornado"></option>
-                    </datalist>
-                    </label>
-                <label class="sbs" for="rating">Storm Severity &nbsp;&nbsp;&nbsp;
-                    <div class="rating">
-                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span>
-                    </div>
-                </label>
-                <datalist id="tickmarks">
-                    <option value="0">
-                    <option value="1">
-                    <option value="2">
-                    <option value="3">
-                    <option value="4">
-                    <option value="5">
-                    <option value="6">
-                    <option value="7">
-                    <option value="8">
-                    <option value="9">
-                    <option value="10">
-                </datalist>
-                <label class="top" for="">Storm Region </label>
-                    <select name="Region" id="region">
-                        <option value="Preson">Preston</option>
-                        <option value="Soda Spring">Soda Spring</option>
-                        <option value="Fish Haven">Fish Haven</option>
-                    </select>
-                </label>
-                <div class="top">User In-Danger level</div>
-                <div class="radio">
-                    <label for=""><input type="radio" name="danger" > yes</label>
-                    <label for=""><input type="radio" name="danger" > maybe</label>
-                    <label for=""><input type="radio" name="danger" > no</label>
-                </div>
-                <label class="top" for="textarea">Additional Information or Comments 
-                    <textarea id="textarea" name="textarea" ></textarea>
-                </label>
-                <input type="submit" value="Report My Weather" class="submitBtn">
-            </fieldset>
-        </form>
-
-
+        <p>Thank you for your response. We will process your report shortly.</p>
     </main>
     <footer>
         <section class="contact">

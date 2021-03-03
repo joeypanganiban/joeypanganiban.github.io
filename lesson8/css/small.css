@@ -73,6 +73,9 @@ nav ul li.active a { background-color: rgba(0,0,0,0.3); }
 /******************* Main **********************/
 main { margin: 20px; }
 
+
+
+
 /****>>>>>>>>>>> FORM ********************/
 
 main h2 {
@@ -87,14 +90,12 @@ form fieldset {
     font-weight: bold;
     border: none;
     margin: auto auto 2rem;
-
 }
 legend {
     display: none;
 }
 
-form fieldset label,
-#rating {
+form fieldset label {
     display: block;
 }
 
@@ -109,12 +110,13 @@ form div.top {
 label.top input,
 #storm-type,
 #textarea, #region {
-    width: 97%;
+    display: block;
+    width: 95%;
     height: 44px;
     border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, .5);
+    border: 2px solid #176bca;
     font-size: 16px;
-
+    padding-left: 10px;
 }
 /*** REGION */
 #region {
@@ -123,7 +125,7 @@ label.top input,
 }
 /*** CALENDAR */
 .top #date {
-    width: 98%;
+    width: 95%;
     height: 46px;
 }
 /***  RATING */
@@ -134,9 +136,14 @@ label.top input,
 .rating span {
     padding-left: 1rem;
 }
+/**** RADIO */
+.radio { 
+    font-size: 15px;
+    padding-top: 5px;
+}
+
 /*** TEXTAREA */
 #textarea {
-    width: 97%;
     height: 70px;
 }
 
@@ -153,22 +160,18 @@ label.top input,
 }
 
 .submitBtn:hover {
-    box-shadow: 2px 2px 4px #000;
+    box-shadow:3px 3px 6px #000;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/******* THANKS.HTML */
+ p {
+    margin: auto;
+    padding: 4rem;
+    font-family: 'Catamaran';
+    font-size: 125%;
+}
+/***************** */
 
 
 
