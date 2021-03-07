@@ -1,0 +1,66 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em){
+    
+    .titleHeadings  { margin: 5px 20px auto; }
+
+    .title { font-size: 2rem; }
+
+    .subTitle { font-size: 1.2rem;}
+
+    .heading, #primaryNav, main, .contact div.information, .barContent {
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    #primaryNav { display: flex; }
+
+    #primaryNav li:first-child { display: none; }
+
+    #primaryNav li {
+        display: block;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+    }
+    #primaryNav li a{
+        font-size: .9rem;
+        padding: 1rem 0;
+    }
+
+    /*************** FORM ************/
+    main h2 {
+        margin-left: 2rem;
+    }
+
+    form fieldset {
+        border: 2px solid rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, .5);
+        padding-inline: 40px;
+        padding-top: 20px;
+    }
+        
+    legend {
+        display: block;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+
+
+
+    /*************** Footer *************/
+    .map img {
+        max-width: 15rem;
+    }
+
+    .infoContent {
+        align-content: center;
+    }
+    .map {
+        display: grid;
+    }
+
+    .info { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
