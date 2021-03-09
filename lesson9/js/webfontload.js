@@ -1,7 +1,7 @@
   WebFont.load({
     google: {
         families: [
-          'Catamaran'
+          'Catamaran','EB Garamond'
         ]
     }
   });

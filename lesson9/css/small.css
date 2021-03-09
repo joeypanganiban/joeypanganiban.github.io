@@ -75,14 +75,64 @@ main { margin: 20px; }
 
 
 
+/**>>>>>>>>>>>>>>>>> HOME PAGE <<<<<<<<<<<<<<<<<<*/
+h2.pagetitle {
+    color: #176bca;
+    font-family: 'Catamaran';
+}
+
+div.homeimg {
+    margin: 20px auto;
+}
+div.homeimg img {
+    width: 100%;
+    margin: 0;
+}
+
+div.utah section {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 5px auto 20px;
+    padding: 20px;
+    font-family: 'Catamaran';
+    border-radius: 10px;
+}
+div.utah h2 {
+    line-height: 0;
+    color: #176bca;
+    letter-spacing: 1px;
+}
+div.utah h3 {
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+div.utah p {
+    line-height: 0;
+    color: #000;
+}
+
+div.utah img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /**************** WIREFRAMES **************/
 .wireframes div {
     text-align: center;
     color: #000;
 }
-
-
-
 
 
 

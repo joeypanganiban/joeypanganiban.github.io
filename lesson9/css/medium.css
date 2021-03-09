@@ -26,23 +26,38 @@
         padding: 1rem 0;
     }
 
-    /*************** FORM ************/
-    main h2 {
-        margin-left: 2rem;
+    /*************** HOME PAGE ************/
+  
+    h2.pagetitle {
+        padding-left: 1.1rem;
     }
 
-    form fieldset {
-        border: 2px solid rgba(0, 0, 0, 0.25);
-        box-shadow: 0 0 3px 1px rgba(0, 0, 0, .5);
-        padding-inline: 40px;
-        padding-top: 20px;
+    div.utah section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 10px 5%;
+            flex-direction: row;
     }
-        
-    legend {
-        display: block;
-        padding: 5px;
-        font-size: 16px;
+    div.utah img {
+            width: 40%;
+            align-items: center;
+            margin: 10px 5%;
     }
+
+    div.utah article {
+        font-size: 125%;
+        width: 40%;
+        text-align: right;
+        padding: 10px 5%;
+    }
+    div.utah section:nth-child(even) {
+            flex-direction: row-reverse;
+    }
+    div.utah section:nth-child(even) article {
+            text-align: left;
+}
+
 
 
 
