@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//timeanddate.com//Time Zone Converter
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20210311T183000Z
+DTEND:20210311T193000Z
+TRANSP:TRANSPARENT
+SUMMARY:Converted Times
+DESCRIPTION:Time Zone Conversion: \n\nManila: Friday, 12 March 2021 at 2:3
+ 0 a.m.\nSalt Lake City: Thursday, 11 March 2021 at 11:30 a.m.\n\n\nList g
+ enerated using timeanddate.com's Time Zone Converter\nhttps://www.timeand
+ date.com/worldclock/converter.html?iso=20210311T1830&p1=145&p2=220\n
+LOCATION:Manila, Salt Lake City
+URL;VALUE=URI:https://www.timeanddate.com/worldclock/converter.html?iso=20
+ 210311T1830&p1=145&p2=220
+UID:https://www.timeanddate.com/worldclock/converter.html?iso=20210311T183
+ 0&p1=145&p2=220
+DTSTAMP:20210311T183000Z
+END:VEVENT
+END:VCALENDAR
