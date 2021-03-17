@@ -21,12 +21,22 @@ fetch(forecast)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject)
-        const dayofweek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
         let day = 0;
-        let d   = new Date(jsObject.list[4].dt_txt);
-        console.log(d);
-        document.getElementById(`dayofweek${1}`).textContent = jsObject[d.getDate()];
-        
+        const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        // reduce the list array to the five forecasts ... 40
+        for (let i = 0; 1<jsObject.list.length; i++){
+            // filter
+                // feed the filter a condition ...18:00:00    dt_txt and see if it includes()
+            // loop through each of the forecast days
+            let d   = new Date(jsObject.list[i].dt_txt);
+
+            let time = jsObject.list[i].dt_txt.includes('18:00:00');
+            if (time == true){
+                console.log(d);
+                document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
+                day++
+            }
+        }
     });
     
 
