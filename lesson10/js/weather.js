@@ -21,19 +21,29 @@ fetch(forecast)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject)
+        
         let day = 0;
         const dayofWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        // reduce the list array to the five forecasts ... 40
-        for (let i = 0; 1<jsObject.list.length; i++){
-            // filter
-                // feed the filter a condition ...18:00:00    dt_txt and see if it includes()
-            // loop through each of the forecast days
-            let d   = new Date(jsObject.list[i].dt_txt);
+        for (let i = 0; 1 < jsObject.list.length; i++ ){
+            let d = new Date(jsObject.list[i].dt_txt);
 
+            // get tbe forecast that includes 18:00:00 on weather's day time
             let time = jsObject.list[i].dt_txt.includes('18:00:00');
             if (time == true){
-                console.log(d);
+                console.log(d)
+
+                // weather's day for five day forcast
                 document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
+                
+                // weather's temperature for 5 days Forcast
+                document.getElementById(`temp${day+1}`).textContent = jsObject.list[i].main.temp;
+                
+                // weather icon's source and description
+                const icon = `https://openweathermap.org/img/wn/${jsObject.list[i].weather[0].icon}.png`;
+                const name  = jsObject.list[i].weather[0].description;
+                document.getElementById(`icon${day+1}`).setAttribute('src', icon);
+                document.getElementById(`icon${day+1}`).setAttribute('alt', name);
+                console.log(icon)
                 day++
             }
         }

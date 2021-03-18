@@ -1,0 +1,47 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    #primaryNav li a {
+        padding: .8rem 0;
+    }
+
+    section.fiveDayForecast { margin-top: 3rem;}
+
+    .weatherDayForecast {
+        margin: 20px 15px;
+    }
+
+    /* <<<<<<<<<<<< INDEX >>>>>>>>>>>>*/
+    div.utah {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    div.utah section {
+        display: grid;
+        grid-template-rows: 2.5fr 2fr;
+        align-items: center;
+        margin: 10px 2%;
+   }
+   div.utah img {
+        width: 90%;
+        align-items: center;
+   }
+   div.utah article {
+       font-size: 125%;
+       width: 90%;
+       text-align: right;
+   }
+   div.utah section:nth-child(even) {
+        flex-direction: row;
+   }
+   div.utah section:nth-child(odd) article {
+        text-align: left;
+}
+
+
+
+
+    figcaption {
+        font-size: 100%;
+    }
+}
