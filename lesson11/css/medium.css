@@ -100,7 +100,7 @@
 
 
     /*************** FORM ************/
-    main h2 {
+    main.stormcenter h2 {
         margin-left: 2rem;
     }
 
@@ -120,15 +120,15 @@
 
     /*************** GALLERY ************/
 
-    main { margin: auto; }
+    main#gallery  { margin: auto; }
 
-    main article {
+    main#gallery article {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 1fr);
         margin: 20px;
     }
 
-    main h2 { margin-left: 20px;}
+    main#gallery h2 { margin-left: 20px;}
 
 
 

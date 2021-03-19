@@ -223,11 +223,6 @@ section.fiveDayForecast {
 
 /****>>>>>>>>>>> FORM ********************/
 
-main h2 {
-    font-family: 'Catamaran';
-    color: #176bca;
-}
-
 form fieldset {
     max-width: 20rem;
     font-family: 'Catamaran';
@@ -317,7 +312,7 @@ label.top input,
 }
 
 /******* THANKS.HTML */
- p {
+ p.thank {
     margin: auto;
     padding: 4rem;
     font-family: 'Catamaran';
@@ -333,41 +328,40 @@ label.top input,
 main h2 {
     font-family: 'Catamaran';
     color: #176bca;
-    font-size: 50%;
 }
 
 /** PROGRESSIVE IMAGES */
-article img[data-src] {
+article.gallery img[data-src] {
 	filter: blur(0.2em);
 }
-article img {
+article.gallery img {
 	filter: blur(0em);
 	transition: filter 2s;
 }
 /**END OF PROGRESSIVE IMAGES */
 
 
-main article {
+main article.gallery {
     display: grid;
     grid-gap: 20px;
     justify-content: center;
     align-items: center;
 }
-figcaption {
+article.gallery figcaption {
     padding: 2px 5px;
     font-family: 'Catamaran';
     font-weight: bold;
     font-size: 120%;
 }
-article picture {
+article.gallery picture {
     background-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px #000;
 }
-article picture:hover {
+article.gallery picture:hover {
     box-shadow: 5px 5px 5px #000;
 }
 
-article picture img {
+article.gallery picture img {
     width: 100%;
 }
 
