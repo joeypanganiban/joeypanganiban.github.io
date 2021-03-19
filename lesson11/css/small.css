@@ -221,6 +221,162 @@ section.fiveDayForecast {
 
 
 
+/****>>>>>>>>>>> FORM ********************/
+
+main h2 {
+    font-family: 'Catamaran';
+    color: #176bca;
+}
+
+form fieldset {
+    max-width: 20rem;
+    font-family: 'Catamaran';
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    margin: auto auto 2rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+legend {
+    display: none;
+}
+
+form fieldset label {
+    display: block;
+}
+
+/*** PADDING TOP */
+form label.top, 
+form label.sbs,
+form div.top {
+    padding-top: 20px;
+}
+
+/*** BORDER */
+label.top input,
+#storm-type,
+#textarea, #region {
+    display: block;
+    width: 95%;
+    height: 44px;
+    border-radius: 5px;
+    border: 2px solid #176bca;
+    font-size: 16px;
+    padding-left: 10px;
+}
+/*** REGION */
+#region {
+    width: 99.7%;
+    height: 50px;
+}
+/*** CALENDAR */
+.top #date {
+    width: 95%;
+    height: 46px;
+}
+/***  RATING */
+.rating { 
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+.rating span {
+    padding-left: 1rem;
+}
+/**** RADIO */
+.radio { 
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+/*** TEXTAREA */
+#textarea {
+    height: 70px;
+}
+
+/*** BUTTON */
+.submitBtn {
+    margin: 20px auto 30px;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-image: linear-gradient(to right, #1d5596 ,#05366e);
+    border: transparent;
+    border-radius: 5px;
+}
+
+.submitBtn:hover {
+    box-shadow:3px 3px 6px #000;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #176bca , #176bca);
+}
+
+/******* THANKS.HTML */
+ p {
+    margin: auto;
+    padding: 4rem;
+    font-family: 'Catamaran';
+    font-size: 125%;
+}
+/***************** */
+
+
+
+
+/****>>>>>>>>>>> Gallery <<<<<<<<<<<<<*/
+
+main h2 {
+    font-family: 'Catamaran';
+    color: #176bca;
+    font-size: 50%;
+}
+
+/** PROGRESSIVE IMAGES */
+article img[data-src] {
+	filter: blur(0.2em);
+}
+article img {
+	filter: blur(0em);
+	transition: filter 2s;
+}
+/**END OF PROGRESSIVE IMAGES */
+
+
+main article {
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+figcaption {
+    padding: 2px 5px;
+    font-family: 'Catamaran';
+    font-weight: bold;
+    font-size: 120%;
+}
+article picture {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #000;
+}
+article picture:hover {
+    box-shadow: 5px 5px 5px #000;
+}
+
+article picture img {
+    width: 100%;
+}
+
+
+
+
+
+
+
 /****************** Footer *********************/
 /*<<<<<<<< Contact Information >>>>>>>>*/
 .contact {  
