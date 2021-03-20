@@ -61,15 +61,12 @@
     } 
 
     .article { 
-        margin: 5rem 0;
+        margin: 1rem 0;
     }
 
 
     /*************** INDEX ************/
   
-    h2.pagetitle {
-        padding-left: 1.1rem;
-    }
 
     div.utah section {
             display: flex;
@@ -100,9 +97,7 @@
 
 
     /*************** FORM ************/
-    main.stormcenter h2 {
-        margin-left: 2rem;
-    }
+ 
 
     form fieldset {
         border: 2px solid rgba(0, 0, 0, 0.25);
@@ -127,8 +122,6 @@
         grid-template-rows: repeat(4, 1fr);
         margin: 20px;
     }
-
-    main#gallery h2 { margin-left: 20px;}
 
 
 

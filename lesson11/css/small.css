@@ -68,7 +68,11 @@ nav ul li.active a { background-color: rgba(0,0,0,0.3); }
 
 
 /******************* Main **********************/
-.titlePage { margin-left: 3rem; }
+h2.titlePage { 
+    margin-left: 1.2rem;
+    color: #176bca;
+    font-family: 'Catamaran';
+}
 
 
 
@@ -84,10 +88,7 @@ nav ul li.active a { background-color: rgba(0,0,0,0.3); }
 
 
 /**>>>>>>>>>>>>>>>>> INDEX <<<<<<<<<<<<<<<<<<*/
-h2.pagetitle {
-    color: #176bca;
-    font-family: 'Catamaran';
-}
+
 
 div.homeimg {
     margin: 20px auto;
@@ -325,7 +326,7 @@ label.top input,
 
 /****>>>>>>>>>>> Gallery <<<<<<<<<<<<<*/
 
-main h2 {
+h2 {
     font-family: 'Catamaran';
     color: #176bca;
 }
