@@ -74,10 +74,11 @@ nav ul li.active a { background-color: rgba(0,0,0,0.3); }
 
 /******************* Main **********************/
 h2.titlePage { 
-    color: #093e7a;
+    color: #fff;
     font-family: 'Merriweather Sans';
-    font-size: xx-large;
+    font-size: x-large;
     margin: 3rem 1.2rem .5rem;
+    text-shadow: 2px 2px 2px #000;
 }
 
 
@@ -446,11 +447,7 @@ article.gallery picture img {
 }
 .contactTitle {
     color: #fff;
-    text-shadow: 2px 2px 2px #000;
-    font-weight: lighter;
-    font-size: larger;
-    margin-top: 0;
-}
+    margin-top: 0;}
 
 .info { 
     font-family:'Catamaran', sans-serif;

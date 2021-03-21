@@ -1,0 +1,151 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em){
+    
+    .titleHeadings  { margin: 5px 20px auto; }
+
+    .title { font-size: 2rem; }
+
+    .subTitle { font-size: 1.2rem;}
+
+    .heading, #primaryNav, main, .contact div.information, .barContent {
+        max-width: 1024px;
+        margin: auto;
+    }
+    header h1.title {
+        font-size: xx-large;
+    }
+
+    #primaryNav { display: flex; }
+
+    #primaryNav li:first-child { display: none; }
+
+    #primaryNav li {
+        display: block;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+    }
+    #primaryNav li a{
+        font-size: 1rem;
+        padding: 1rem 0;
+    }   
+
+    body {
+        background-image: repeating-linear-gradient(to left, #06366d ,#bac966 ););
+    }
+    main section { margin: auto 0; }
+    div.weatherSummary {
+        position: absolute;
+        text-align: left;
+        top: 2rem;
+        left: 2rem ;
+    }
+    div.weatherSummary h3 { font-size: 1.5rem;}
+
+    div.weatherSummary table { font-size: 1.2rem; }
+
+    
+    /************ 5 day Forcast *********/
+    section.fiveDayForecast {
+        display: block;
+        max-width: 100%;
+        margin: auto;
+    }
+    .tableForecast {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        justify-items: center;
+        justify-content: center;   
+    }
+    
+
+    /************  Article  ***************/
+    .textImage p { display: block; }
+
+    .article div img {
+        float: right;
+        width: 48%;
+        margin: 10px;
+    } 
+
+    .article { 
+        margin: 1rem 0;
+    }
+
+
+    /*************** INDEX ************/
+  
+
+    div.utah section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 10px 5%;
+            flex-direction: row;
+    }
+    div.utah img {
+            width: 40%;
+            align-items: center;
+            margin: 10px 5%;
+    }
+
+    div.utah article {
+        font-size: 125%;
+        width: 40%;
+        text-align: right;
+        padding: 10px 5%;
+    }
+    div.utah section:nth-child(even) {
+            flex-direction: row-reverse;
+    }
+    div.utah section:nth-child(even) article {
+            text-align: left;
+}
+
+
+
+    /*************** FORM ************/
+ 
+
+    form fieldset {
+        border: 2px solid rgba(0, 0, 0, 0.25);
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, .5);
+        padding-inline: 40px;
+        padding-top: 20px;
+    }
+        
+    legend {
+        display: block;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+
+    /*************** GALLERY ************/
+
+    main#gallery  { margin: auto; }
+
+    main#gallery article {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        margin: 20px;
+    }
+
+
+
+    /*************** Footer *************/
+    .map img {
+        max-width: 15rem;
+    }
+
+    .infoContent {
+        align-content: center;
+    }
+    .map {
+        display: grid;
+    }
+
+    .info { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

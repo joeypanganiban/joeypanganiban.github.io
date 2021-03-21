@@ -1,9 +1,5 @@
 /******************* Body **********************/
-
-body {
-    background-image: repeating-linear-gradient(to left, #c9d8eb ,#90dbc5 );
-    margin: 0; 
-}
+body { margin: 0;}
 
 #banner { 
     text-align: center;
@@ -74,9 +70,10 @@ nav ul li.active a { background-color: rgba(0,0,0,0.3); }
 
 /******************* Main **********************/
 h2.titlePage { 
-    color: #093e7a;
+    color: #176bca;
     font-family: 'Merriweather Sans';
-    font-size: xx-large;
+    font-weight: bolder;
+    font-size:xx-large;
     margin: 3rem 1.2rem .5rem;
 }
 
@@ -111,8 +108,7 @@ div.utah section {
 }
 div.utah h2 {
     line-height: 0;
-    color: #fff;
-    text-shadow: 2px 2px 2px #000;
+    color: #176bca;
     letter-spacing: 1px;
     font-size: larger;
 }
@@ -184,8 +180,6 @@ section.fiveDayForecast {
     display: none;
     margin: auto;
     padding:  1rem 3rem;
-    border-radius: 10px;
-    background-color: rgba(0, 76, 162, 0.2);
 }
 .weatherDayForecast {
     width: 5rem;
@@ -203,6 +197,7 @@ section.fiveDayForecast {
 .fiveDayForecast h3 { 
     margin-bottom: 5px; 
     font-family: 'Merriweather Sans';
+    font-size: larger;
 }
 .weatherDayForecast h4 {
     margin: 0;
@@ -221,20 +216,12 @@ section.fiveDayForecast {
 
 
 /***************  EVENTS ***************/
-.events h3, 
-.article h3,
-.fiveDayForecast h3 { 
-    color: #fff;
-    text-shadow: 2px 2px 2px #000;
-    font-weight: lighter;
-    font-size: larger;
-}
+
 .events {
     padding: 1rem 3rem;
     background-color: rgba(0, 76, 162, 0.2);
     font-family: 'Merriweather Sans';
     border-radius: 10px;
-    margin-top: 1rem;
 }
 
 .upcomingEvents {
@@ -446,11 +433,7 @@ article.gallery picture img {
 }
 .contactTitle {
     color: #fff;
-    text-shadow: 2px 2px 2px #000;
-    font-weight: lighter;
-    font-size: larger;
-    margin-top: 0;
-}
+    margin-top: 0;}
 
 .info { 
     font-family:'Catamaran', sans-serif;
