@@ -11,6 +11,9 @@
         max-width: 1024px;
         margin: auto;
     }
+    header h1.title {
+        font-size: xx-large;
+    }
 
     #primaryNav { display: flex; }
 
@@ -22,7 +25,7 @@
         flex-wrap: wrap;
     }
     #primaryNav li a{
-        font-size: .9rem;
+        font-size: 1rem;
         padding: 1rem 0;
     }
     main section { margin: auto 0; }
