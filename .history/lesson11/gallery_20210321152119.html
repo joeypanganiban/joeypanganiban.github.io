@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">-->
-    <title>Storm Center | Earth Weather</title>
+    <title>Gallery | Earth Weather</title>
 </head>
 <body>
     <div id="banner">Saturday = Preston Pancakes in the Park! 9 AM, Saturday at the 
@@ -22,7 +22,7 @@
     <header class="clearfix">
         <div class="heading">
         <picture class="logo">
-            <img src="images/weather-logo0.png" alt="website's weather logo" srcset="images/weather-logo1.png 1x,
+            <img src="images/weather-logo0.png" alt="logo" srcset="images/weather-logo1.png 1x,
             images/weather-logo2.png 2x, images/weather-logo3.png 3x">
         </picture>
         <section class="titleHeadings">
@@ -33,20 +33,28 @@
     </header>
     <nav class="clearfix">    
         <ul id="primaryNav">
-            <li onclick="toggleMenu()">&#9776;</li>
-            <li class="active"><a href="../lesson11/index.html">Home</a></li>
+            <li onclick="toggleMenu()">&#9776;<span> Menu</span></li>
+            <li ><a href="../lesson11/index.html">Home</a></li>
             <li ><a href="../lesson11/preston.html">Preston</a></li>
-            <li ><a href="../lesson11/sodasprings.html">Soda Springs</a></li>
-            <li ><a href="../lesson11/fishhaven.html">Fish Haven</a></li>
+            <li ><a href="#">Soda Springs</a></li>
+            <li ><a href="#">Fish Haven</a></li>
             <li ><a href="../lesson11/stormcenter.html">Storm Center</a></li>
-            <li ><a href="../lesson11/gallery.html">Gallery</a></li>
+            <li class="active"><a href="../lesson11/gallery.html">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <h2 class="titlePage">Latest Forecast!</h2>
-        <div class="homeimg"><img src="images/preston-bay-area.jpg" alt="bay area main picture"></div>  
-        
-        <div class="utah"></div>
+    <main id="gallery">
+            <h2 class="titlePage">Gallery</h2>
+        <article class="gallery">
+            <picture><img src="images/placeholder.png" alt="storm"       data-src="images/storm.jpg">           <figcaption>Stormy</figcaption></picture>
+            <picture><img src="images/placeholder.png" alt="fog"         data-src="images/fog.jpg">             <figcaption>Fog</figcaption></picture>
+            <picture><img src="images/placeholder.png" alt="cloudy"      data-src="images/cloudy.jpg">          <figcaption>Cloudy</figcaption></picture>
+            <picture><img src="images/placeholder.png" alt="snow"        data-src="images/snow.jpg">            <figcaption>Snow</figcaption></picture>
+            <picture><img src="images/placeholder.png" alt="overcast"    data-src="images/overcast.jpg">        <figcaption>Overcast</figcaption></picture>
+            <picture><img src="images/placeholder.png" alt="rain"        data-src="images/rain.jpg">            <figcaption>Rain</figcaption></picture>
+            <picture><img src="images/placeholder.png" alt="sunny"       data-src="images/sunny.jpg">           <figcaption>Sunny/Clear</figcaption></picture>
+            <picture><img src="images/placeholder.png" alt="partly"      data-src="images/partially-cloudy.jpg"><figcaption>Partially Cloudy</figcaption></picture>
+            <picture><img src="images/placeholder.png" alt="drizzle"     data-src="images/drizzle.jpg">         <figcaption>Drizzle</figcaption></picture>
+        </article>
         
     </main>
     <footer>
@@ -78,6 +86,6 @@
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/lazy.js"></script>
 </body>
 </html>

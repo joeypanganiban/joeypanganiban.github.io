@@ -44,8 +44,12 @@ fetch(requestURL)
             article.append(content);
             article.append(population);
             article.append(rainFall);
-            card.append(image);
-
-            
+            card.append(image); 
         });
     });
+
+
+    
+
+
+  

@@ -27,8 +27,9 @@
     #primaryNav li a{
         font-size: 1rem;
         padding: 1rem 0;
-    }   
-
+    }
+ body  {
+        background-image: linear-gradient(to right, #a3c1e4 ,#bce4ba );
     }
     main section { margin: auto 0; }
     div.weatherSummary {

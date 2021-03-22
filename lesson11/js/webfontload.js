@@ -1,7 +1,7 @@
   WebFont.load({
     google: {
         families: [
-          'Catamaran','EB Garamond'
+          'Catamaran','EB Garamond', 'Merriweather Sans'
         ]
     }
   });
