@@ -35,6 +35,7 @@ fetch(requestURL)
             rainFall.textContent    = `Annual Rain Fall: ${townselect.averageRainfall}`;
             
             image.setAttribute('src', 'images/' + townselect.photo);
+            image.setAttribute('alt', 'images/' + townselect.photo);
 
             
             template.append(card);
