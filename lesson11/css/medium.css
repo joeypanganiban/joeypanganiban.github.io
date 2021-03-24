@@ -46,6 +46,13 @@
         display: block;
         max-width: 100%;
         margin: auto;
+        font-family: 'Merriweather Sans';
+        font-weight: lighter;
+    }
+    .fiveDayForecast h3 {
+        margin-bottom: 1rem;
+        color: #176bca;
+        font-size: x-large;
     }
     .tableForecast {
         display: grid;
