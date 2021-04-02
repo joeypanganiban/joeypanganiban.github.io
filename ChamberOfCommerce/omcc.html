@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Chamber of Commerce at Oriental Mindoro">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="css/small.css"  rel="stylesheet">
     <link href="css/medium.css"  rel="stylesheet">
@@ -13,19 +14,78 @@
 </head>
 <body>
     <header>
-        <title>
-            <img src="" alt="">
-        </title>
-        <nav>
-
-        </nav>
+        <img src="images/chamber-of-commerce-logo.png" alt="Chamber of Commerce! Oriental Mindoro logo">
+        <h1>Oriental Mindoro</h1>
+        <div>Chamber of Commerce</div> 
     </header>
+    <nav>    
+        <ul>
+            <li onclick="toggleMenu()">&#9776;</li>
+            <li class="active"><a href="../ChamberOfCommerce/omcc.html">Home</a></li>
+            <li ><a href="../ChamberOfCommerce/city.html">City</a></li>
+            <li ><a href="../ChamberOfCommerce/join.html">Join</a></li>
+            <li ><a href="../ChamberOfCommerce/directory.html">Directory</a></li>
+        </ul>
+    </nav>
     <main>
+      <div class="slideshow-container">
 
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/pinamalayan.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/naujan-lake.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/rice-field.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
     </main>
     <footer>
 
     </footer>
+    
     <script src="js/script.js"></script>
+
+    <div>
+      sources:  https://vectr.com/joeymp30/b6wOAmAxB
+                http://www.traveltothephilippines.info/tag/festivals-in-oriental-mindoro/page/7/
+                https://mindoropost.files.wordpress.com/2015/08/calapan-city-hall.jpg
+                https://scontent.fmnl3-3.fna.fbcdn.net/v/t1.6435-9/fr/cp0/e15/q65/61759214_1256326974534860_8525559972900110336_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=7aed08&efg=eyJpIjoidCJ9&_nc_ohc=K-clUSn1hQgAX8lpUjl&tn=cW_k0QfiHUTWcduc&_nc_ht=scontent.fmnl3-3.fna&tp=14&oh=f1eac0fb3af11f480b0789883ac57e3e&oe=608D0B40
+                http://www.puertogalera.gov.ph/puerto-galera/front-28/
+                http://www.angelynsdiveresort.com/diving.html
+                http://selecttravelphilippines.com/pst_locations/puerto-galera/
+                https://www.pinterest.ph/pin/383931936962741029/
+                https://i.pinimg.com/originals/62/f3/67/62f367a34df90a2038ff3eb136781f15.jpg
+                https://photos.ferdzdecena.com/Travel/2018/Oriental-Mindoro/Bulalacao-Island-Hopping/
+                https://www.flickr.com/photos/-lucie-/4309067444
+                https://mindorotv.com/oriental-mindoro-the-next-big-thing-in-agri-tourism-in-southern-tagalog/
+                http://www.traveltothephilippines.info/wp-content/uploads/2019/07/Mindoro-Oriental-Banana-Festival6-768x576.jpg
+                https://ormindoro.gov.ph/
+                https://mnlop.com.ph/2019/09/11/mangyans-life-and-culture/
+                https://upload.wikimedia.org/wikipedia/commons/e/ec/Naujan_Lake_National_Park_View_3.jpg
+                https://www.pinterest.ph/pin/571746115166438711/
+                https://www.tripadvisor.com/Tourism-g294254-Puerto_Galera_Oriental_Mindoro_Province_Mindoro-Vacations.html  
+                https://www.lakwatsero.com/destinations/travel-guide-bulalacao-2/#sthash.Mn5Gpwzq.dpbs
+    </div>
 </body>
 </html>
