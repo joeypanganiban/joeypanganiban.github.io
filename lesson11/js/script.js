@@ -1,4 +1,11 @@
 
+/*************** Navigation ***************/
+function toggleMenu() {
+    document.getElementById("primaryNav")
+            .classList.toggle("hide");
+    }
+
+    
 /****************** Date String ******************/
 let daynames = [
     "Sunday",
@@ -57,11 +64,6 @@ if (d.getDay() === 5) {
 
 
 
-/*************** Navigation ***************/
-function toggleMenu() {
-document.getElementById("primaryNav")
-        .classList.toggle("hide");
-}
 
 
 
@@ -69,4 +71,6 @@ document.getElementById("primaryNav")
 const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
     document.getElementById("date").textContent = new Date()
             .toLocaleDateString('en-US', options);
-
+const currentYear ={year: 'numeric'}
+    document.getElementById("year").textContent = new Date()
+            .toLocaleDateString('en-US', currentYear);

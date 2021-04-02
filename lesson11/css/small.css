@@ -104,7 +104,7 @@ div.homeimg img {
 }
 div.utah section {
     background-color: rgba(0, 0, 0, 0.1);
-    margin: 5px auto 20px;
+    margin: 5px 10px 20px;
     padding: 20px;
     font-family: 'Catamaran';
     border-radius: 10px;
@@ -415,6 +415,7 @@ main article.gallery {
     grid-gap: 20px;
     justify-content: center;
     align-items: center;
+    margin: auto 15px;
 }
 article.gallery figcaption {
     padding: 2px 5px;
