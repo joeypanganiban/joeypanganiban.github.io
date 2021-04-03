@@ -26,7 +26,7 @@ fetch(eventsAPI)
           return response.json();
       })
       .then(function (jsonObject) {
-        //console.table(jsonObject); // temporary checking for valid response and data parsing
+        console.table(jsonObject); // temporary checking for valid response and data parsing
         const towns = jsonObject['events'];
         // select output location
         const events = document.querySelector('.upcomingEvents');
