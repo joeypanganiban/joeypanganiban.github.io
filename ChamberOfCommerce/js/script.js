@@ -31,4 +31,17 @@ fetch(eventsAPI)
         // select output location
         const events = document.querySelector('.upcomingEvents');
         // filter the towns
+            let card    = document.createElement('div');
+            let p1      = document.createElement('p');
+            let p2      = document.createElement('p');
+            let p3      = document.createElement('p');
+
+            p1.textContent    = `${events[0]}`;
+            p2.textContent    = `${events[1]}`;
+            p3.textContent    = `${events[2]}`;
+
+            events.append(card);
+            card.append(p1);
+            card.append(p2);
+            card.append(p3);
         });
