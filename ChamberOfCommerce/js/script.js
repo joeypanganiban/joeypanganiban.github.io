@@ -1,3 +1,5 @@
+
+
 // slides images 
 var slideIndex = 0;
     showSlides();
@@ -27,9 +29,9 @@ fetch(eventsAPI)
       })
       .then(function (jsonObject) {
         console.table(jsonObject); // temporary checking for valid response and data parsing
-        const towns = jsonObject['events'];
+        const events = jsonObject['events'];
         // select output location
-        const events = document.querySelector('.upcomingEvents');
+        const event = document.querySelector('.upcomingEvents');
         // filter the towns
             let card    = document.createElement('div');
             let p1      = document.createElement('p');
@@ -40,7 +42,7 @@ fetch(eventsAPI)
             p2.textContent    = `${events[1]}`;
             p3.textContent    = `${events[2]}`;
 
-            events.append(card);
+            event.append(card);
             card.append(p1);
             card.append(p2);
             card.append(p3);

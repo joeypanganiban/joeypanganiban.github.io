@@ -7,6 +7,8 @@
     <meta name="description" content="Chamber of Commerce at Oriental Mindoro">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Texturina:wght@700&display=swap" rel="stylesheet"> -->
     <link href="css/small.css"  rel="stylesheet">
     <link href="css/medium.css"  rel="stylesheet">
     <link href="css/large.css"  rel="stylesheet">
@@ -14,20 +16,25 @@
 </head>
 <body>
     <header>
+      <div id="logo">
         <img src="images/chamber-of-commerce-logo.png" alt="Chamber of Commerce! Oriental Mindoro logo">
-        <h1>Oriental Mindoro</h1>
-        <div>Chamber of Commerce</div> 
+      </div>
+      <div id="title">
+        <h1>Oriental Mindoro<img src="images/design.png" alt="Design leaves" style="width: 40px;"></h1>
+        <div id="subtitle">Chamber of Commerce </div>  
+      </div>
+      <div class="header_toggle" onclick="toggleMenu()">&#9776;</div>
     </header>
-    <nav>    
+    <nav id="navbar">     
         <ul>
-            <li onclick="toggleMenu()">&#9776;</li>
-            <li class="active"><a href="../ChamberOfCommerce/omcc.html">Home</a></li>
+            <li onclick="toggleMenu()"><ion-icon name="close-outline"></ion-icon></li>
+            <li class="active"><a href="../ChamberOfCommerce/index.html">Home</a></li>
             <li ><a href="../ChamberOfCommerce/city.html">City</a></li>
             <li ><a href="../ChamberOfCommerce/join.html">Join</a></li>
             <li ><a href="../ChamberOfCommerce/directory.html">Directory</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="content">
       <!-- Engaging images of municipalities-->
       <div class="slideshow-container">
 
@@ -91,8 +98,13 @@
       </section>
       
       <!-- an upcoming events area, -->
-      <div class="upcomingEvents"></div>
-
+      <div class="upcomingEvents">
+        <h2>Upcomming Events</h2>
+        <p>April 24 : Bahag-hari Festival </p>
+        <p> April 25-29 : The Sabutan Festival and Mini- Trade Fair </p>
+        <p>June 24 : Lechon Festival and Gabi ng Pakulo  </p>
+        <p>June 29 : Biniray Festival</p>
+      </div>
       <!-- the current weather information, obtained from the One Call API at openweathermap.org   -->
 
       
@@ -102,18 +114,32 @@
 
     </main>
     <footer>
+      <!-- contact information, -->
+      <div>
+        <div ><img src="images/pin.png" alt="address pin icon" style='width: 18px;'>  #21 Molave, Zone 4, Socorro, Oriental Mindoro 5207</div>
+        <div> &#x260E;  999-999-999</div>
+        <div> &#x1F4E7; myemail.omcc.com</div>
+      </div>
+      <div class="social">
+        <img src="images/facebook.png" alt="facebooke pic"  style='width: 48px;'>
+        <img src="images/linkedin.png" alt="linkedin pic"  style='width: 48px;'>          
+    </div>
+
+
       <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592021.1735733894!2d120.901068588105!3d12
         .889385355184588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bb61471e778851%3A0x94f1306262b234f
         !2sOriental%20Mindoro!5e0!3m2!1sen!2sph!4v1617362104992!5m2!1sen!2sph" 
         width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-      <!-- contact information, -->
       <!-- social media links (at least two and it is OK if they are not linked to a real account), -->
 
     </footer>
     
     <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="js/webfontload.js"></script>
 
     <div>
       sources:  https://vectr.com/joeymp30/b6wOAmAxB

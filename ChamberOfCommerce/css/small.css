@@ -1,3 +1,7 @@
+
+
+
+
 * {box-sizing: border-box}
 
 body {
@@ -115,7 +119,7 @@ img {vertical-align: middle;}
   font-size: larger;
 }
 
-/* Join the Chamber! */
+/**************** Join the Chamber! *************************/
 .join-images {
   display: grid;
   justify-items: center;
@@ -138,3 +142,61 @@ img {vertical-align: middle;}
   cursor: pointer;
   border: none;
 }
+
+/****************** Header ****************************/
+header {
+  background-image: linear-gradient(to left, #14177D, #1E22FF);
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+}
+
+header img {
+  width: 100%;
+}
+header h1 {
+  color: #F4EFEA;
+  font-family: 'Texturina';
+  font-size: 350%;
+  margin: 0;
+  margin-left: 1rem 5%;
+  font-weight: normal;
+}
+#subtitle {
+  color: #F4EFEA;
+  font-family: 'Mulish';
+  font-size: 150%;
+}
+#title {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  margin: auto 5px;
+  position: relative;
+}
+
+/******************** Navigation *****************************/
+nav {
+  font-family: 'Mulish';
+  transition: .5s;
+  position: sticky;
+  width: 100%;
+  background-image: linear-gradient(to left, #14177D, #1E22FF);
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #F4EFEA;
+  font-size: 150%;
+  display: block;
+}
+nav ul li {
+  padding: 20px;
+}
+nav ul li.active { background-color: rgba(0,0,0,0.5); }
+nav ul li:hover { background-color: rgba(0,0,0,0.8); }
