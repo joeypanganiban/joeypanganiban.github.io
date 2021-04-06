@@ -8,6 +8,7 @@
     header button, nav button { display: none;}
     nav {
         display: block;
+        width: 100%;
     }
     
 .slideshow-container {width: 100%;}
