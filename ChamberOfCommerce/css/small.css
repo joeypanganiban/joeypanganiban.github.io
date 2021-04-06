@@ -1,17 +1,13 @@
 * {box-sizing: border-box}
-html {
-  width: 100%;
-}
 body {
   margin: 0; 
-  width: fit-content;
+  width: 100%;
 }
 .mySlides {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
   position: relative;
   margin: auto;
 }
@@ -23,7 +19,6 @@ img {vertical-align: middle;}
 .join-images img {
   width: 100%;
 }
-
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -58,7 +53,6 @@ img {vertical-align: middle;}
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
   text-align: center;
 }
 
@@ -104,7 +98,6 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 /****************** Advertisements ************************/
 .advertisements {
   margin: auto 30px;
@@ -126,7 +119,6 @@ img {vertical-align: middle;}
 .join-images h2 {
   position: absolute;
   bottom: 3rem;
-  font-size: 400%;
   padding-left: 20px;
 
 }
@@ -135,7 +127,6 @@ img {vertical-align: middle;}
   left: 20px;
   bottom: 1.5rem;
   padding: 10px 20px;
-  font-size: 200%;
   cursor: pointer;
   border: none;
 }
@@ -145,18 +136,21 @@ header {
   background-image: linear-gradient(to left, #14177D, #1E22FF);
   padding: 30px 20px;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 2fr 4fr 1fr;
   align-items: center;
   z-index: 1;
 }
 
-header img {
+header div#logo img {
   width: 100%;
+}
+.design {
+  width: 10px;
+  margin-bottom: 10px;
 }
 header h1 {
   color: #F4EFEA;
   font-family: 'Texturina';
-  font-size: 300%;
   margin: 0;
   margin-left: 1rem 5%;
   font-weight: normal;
@@ -164,35 +158,31 @@ header h1 {
 #subtitle {
   color: #F4EFEA;
   font-family: 'Mulish';
-  font-size: 150%;
 }
 #title {
-  display: grid;
-  grid-template-rows: 2fr 1fr;
   margin: auto 5px;
   position: relative;
+  width: 100%;
 }
 
 /******************** Navigation *****************************/
 nav {
   font-family: 'Mulish';
   transition: .5s;
-  width: 100%;
   background-image: linear-gradient(to left, #14177D, #1E22FF);
   margin: 0;
   overflow: hidden;
   z-index: 1;  
-  left: -100%;
 }
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  transition: .5s;
 }
 nav ul li a {
   text-decoration: none;
   color: #F4EFEA;
-  font-size: 150%;
   display: block;
 }
 nav ul li {
@@ -201,7 +191,6 @@ nav ul li {
 }
 nav ul li.active { 
   background-color: #0e6e3e ; 
-  font-size: 120%;
 }
 
 nav ul li:hover {
@@ -209,19 +198,17 @@ nav ul li:hover {
   transition: .2s;
   cursor: pointer;
 }
+nav ul.hide { display: none;}
 .menu-toggle, .close-toggle {
   color: #F4EFEA;
-  font-size: 350%;
   text-align: center;
+  align-items: center;
   border: none;
-  width: 6rem;
-  border-radius: 70px;
-  background-image: linear-gradient(to bottom, #14177D, #1E22FF);
-}
-#clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+  font-size: 2rem;
+  width: 45px;
+  padding: 5px;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, #f4efeA, #0e6e3e);
 }
 
 .sticky {
@@ -233,7 +220,9 @@ nav ul li:hover {
 .sticky + .content {
   padding-top: 60px;
 }
-/*Aparecer menu*/
-.show {
-  left: 0;
+
+#clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }

@@ -12,6 +12,25 @@ function myFunction() {
   }
 }
 
+// close button
+var closebtns = document.getElementsByClassName("close-toggle");
+var i;
+
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
+
+// Navigation 
+
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("hide");
+    document.getElementsByClassName("menu-toggle")
+        .addEventListener("click", function toggleMenu() {
+        document.getElementsByClassName("menu-toggle").innerHTML = "x"
+    });
+}
 
  
 // slides images 

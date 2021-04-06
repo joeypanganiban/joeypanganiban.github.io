@@ -20,14 +20,15 @@
         <img src="images/chamber-of-commerce-logo.png" alt="Chamber of Commerce! Oriental Mindoro logo">
       </div>
       <div id="title">
-        <h1>Oriental Mindoro<img src="images/design.png" alt="Design leaves" style="width: 40px;"></h1>
-        <div id="subtitle">Chamber of Commerce </div>  
+        <h1>Oriental Mindoro</h1>
+        <div id="subtitle">Chamber of Commerce<img src="images/design.png" alt="Design leaves" class="design"></div>  
       </div>
-      <button class="menu-toggle">&#9776;</button>
+      <div class="dropdown">   
+      <button onclick="toggleMenu()" class="menu-toggle">&#9776;</button>    
+      </div>
     </header>
-    <nav id="clearfix" class="hide">     
-        <button class="close-toggle">&times;</button>
-        <ul>
+    <nav id="clearfix">     
+        <ul id="primaryNav" class="hide">
             <li class="active"><a href="../ChamberOfCommerce/index.html">Home</a></li>
             <li ><a href="../ChamberOfCommerce/city.html">City</a></li>
             <li ><a href="../ChamberOfCommerce/join.html">Join</a></li>
@@ -38,7 +39,7 @@
     
     <main class="content">
       <!-- Engaging images of municipalities-->
-      <div class="slideshow-container">
+      <div class="slideshow-container crop">
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
@@ -127,13 +128,6 @@
         <img src="images/linkedin.png" alt="linkedin pic"  style='width: 48px;'>          
     </div>
 
-
-      <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592021.1735733894!2d120.901068588105!3d12
-        .889385355184588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bb61471e778851%3A0x94f1306262b234f
-        !2sOriental%20Mindoro!5e0!3m2!1sen!2sph!4v1617362104992!5m2!1sen!2sph" 
-        width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
       <!-- social media links (at least two and it is OK if they are not linked to a real account), -->
 
     </footer>
@@ -142,28 +136,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfontload.js"></script>
 
-    <div>
-      sources:  https://vectr.com/joeymp30/b6wOAmAxB
-                https://www.facebook.com/chookstogo/photos/a.10151006257013604/10158778326183604
-                https://www.facebook.com/luzonpetron/
-                http://www.traveltothephilippines.info/tag/festivals-in-oriental-mindoro/page/7/
-                https://mindoropost.files.wordpress.com/2015/08/calapan-city-hall.jpg
-                https://scontent.fmnl3-3.fna.fbcdn.net/v/t1.6435-9/fr/cp0/e15/q65/61759214_1256326974534860_8525559972900110336_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=7aed08&efg=eyJpIjoidCJ9&_nc_ohc=K-clUSn1hQgAX8lpUjl&tn=cW_k0QfiHUTWcduc&_nc_ht=scontent.fmnl3-3.fna&tp=14&oh=f1eac0fb3af11f480b0789883ac57e3e&oe=608D0B40
-                http://www.puertogalera.gov.ph/puerto-galera/front-28/
-                http://www.angelynsdiveresort.com/diving.html
-                http://selecttravelphilippines.com/pst_locations/puerto-galera/
-                https://www.pinterest.ph/pin/383931936962741029/
-                https://i.pinimg.com/originals/62/f3/67/62f367a34df90a2038ff3eb136781f15.jpg
-                https://photos.ferdzdecena.com/Travel/2018/Oriental-Mindoro/Bulalacao-Island-Hopping/
-                https://www.flickr.com/photos/-lucie-/4309067444
-                https://mindorotv.com/oriental-mindoro-the-next-big-thing-in-agri-tourism-in-southern-tagalog/
-                http://www.traveltothephilippines.info/wp-content/uploads/2019/07/Mindoro-Oriental-Banana-Festival6-768x576.jpg
-                https://ormindoro.gov.ph/
-                https://mnlop.com.ph/2019/09/11/mangyans-life-and-culture/
-                https://upload.wikimedia.org/wikipedia/commons/e/ec/Naujan_Lake_National_Park_View_3.jpg
-                https://www.pinterest.ph/pin/571746115166438711/
-                https://www.tripadvisor.com/Tourism-g294254-Puerto_Galera_Oriental_Mindoro_Province_Mindoro-Vacations.html  
-                https://www.lakwatsero.com/destinations/travel-guide-bulalacao-2/#sthash.Mn5Gpwzq.dpbs
-    </div>
+    
 </body>
 </html>
