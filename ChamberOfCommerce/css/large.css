@@ -1,0 +1,17 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+    header  {
+        font-size: 150%;
+    }
+    header img {
+        width: 30%;
+    }
+    div#logo {
+        display: grid;
+        justify-items: end;
+        padding-right: 10px;
+    }
+    nav   {
+        z-index: 3;
+    }
+}/* End Large*/

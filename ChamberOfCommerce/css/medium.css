@@ -1,0 +1,19 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em){
+    header  {
+        width: 100%;
+    }
+    header button, nav button { display: none;}
+    nav {
+        display: block;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        text-align: center;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    nav ul li {
+        padding: 20px;
+    }
+} /* End Medium */
