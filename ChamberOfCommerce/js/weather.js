@@ -4,8 +4,8 @@
 let cityID  = 1693620;      // Pinamalayan, Oriental Mindoro
 let appKEY  = '696163ebec7f78354faaee5bc55c62fe'
 
-const summary  = `http://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${appKEY}`;
-const forecast = `http://api.openweathermap.org/data/2.5/forecast?id=${cityID}&units=imperial&appid=${appKEY}`;
+const summary  = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${appKEY}`;
+const forecast = `https://api.openweathermap.org/data/2.5/forecast?id=${cityID}&units=imperial&appid=${appKEY}`;
 
 fetch(summary)
     .then((response) => response.json())
