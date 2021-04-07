@@ -1,75 +1,60 @@
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 70rem) {
     
     header  {
         font-size: 150%;
-        background-image: none;
-        max-width: 1024px;
+        max-width: 1100px;
     }
     .header {
-        background-image: linear-gradient(to left, #14177D, #1E22FF);
         width: 100%;
     }
     header img {
         width: 30%;
     }
-    .slideshow-container {
-        max-width: 100%;
+    nav ul li {
+        padding: 10px;
     }
     .prev, .next {
         top: 60%
     }
-    .group {
-        margin: auto;
-        max-width: 1900px;
-        position: relative;
-    }
-    .groupA {
-        display: grid;
-        grid-template-columns: 4fr 1fr;
-        font-size: 150%;
-    }
-    .join-images {
-        width: 100%;
-        background-size: cover;
-    }
-    .join {
-        position: static;
-    }
-    .join-images img {
-        height: auto;
-    }
         
 
     .weatherSummary {
-        position: absolute;
         right: 25%;
         right: 0;
         max-width: 55%;
         padding: 3rem;
     }
     .advertisements {
-        display: block;
         margin: 0;
-    }
-    aside {
-        grid-area: 1/2;
+    }.advertisements {
         display: grid;
-        align-items: end;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3rem;
+        margin: 6rem auto;
+        background-color: #f4efea;}
+    .advertisements div.store {
+        display: grid;
+        background-color: #f4efea;
+        grid-template-rows: 1fr 3fr;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
     }
-    .sections {
+    .advertisements div.store img{
         width: 100%;
-        grid-area: 1/1;
-        margin: auto;
+    }
+    .advertisements div.adds {
+        font-size: 100%;
     }
     .description {
         font-size: 100%;
         display: grid;
-        grid-template-rows: 1fr 2fr;
         margin: 2rem;
     }
     .event {
-        max-width: 1024px;
+        max-width: 1200px;
         margin: auto;
     }
     div#logo {

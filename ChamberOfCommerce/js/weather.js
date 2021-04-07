@@ -1,7 +1,7 @@
 
 // PRESTON WEATHER
 
-let cityID  = 1693620;      // Pinamalayan, Oriental Mindoro
+let cityID  = 1720561;      // Calapan City, Oriental Mindoro
 let appKEY  = '696163ebec7f78354faaee5bc55c62fe'
 
 const summary  = `https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=imperial&appid=${appKEY}`;

@@ -5,6 +5,10 @@
         font-size: 150%;
         grid-template-columns: 1fr 5fr;
     }
+    
+    #logo {
+        width: 75%;
+    }
     header button, nav button { display: none;}
     nav {
         display: block;
@@ -12,13 +16,33 @@
     }
     .content {
         margin: auto;
-        max-width: 1024px;
+    }
+    .group,
+    .advertisements,
+    .upcomingEvents,
+    .threeDaysForecast {
+        max-width: 1025px;
+        margin: auto;
     }
     .slideshow-container {
         width: 100%;
     }
     .text {
         font-size: 500%;
+    }
+    .join {
+        position: absolute;
+        bottom: 3rem;
+        padding: 2rem;
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        font-size: 110%;
+        align-items: end;
+        background-color: #f4efea95;
+    }
+    .join-images {
+        display: grid;
+        align-content: center;
     }
     nav ul {
         display: grid;
@@ -36,16 +60,28 @@
     nav ul li {
         padding: 20px;
     }
-    
-    .advertisements {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 3rem;
-        margin: 6rem auto;
-        background-color: #f4efea;
+    .advertisements div img {
+        width: 45%;
+        margin: 10px 2%;
     }
-    .advertisements p {
+    .advertisements div:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    .advertisements p,
+    .advertisements h3 {
         margin: 0;
+        display: block;
+    }
+
+    .advertisements div.store {
+        display: flex;
+    }
+    .advertisements div.adds {
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     .sections {
@@ -79,10 +115,29 @@
     .logo img {
         width: 3rem;
     }
+    .weatherSummary {
+        margin: 5rem auto;
+        background-color: #f4efea;
+        font-size: 150%;
+    }
+    .weatherSummary div#top {
+        align-items: center;
+    }
+    
+    .tableForecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        max-width: 780px;
+        margin: auto;
+        grid-gap: 1rem;
+    }
+    /***  Contact Information ****/
+    .contact{
+        font-size: 120%;
+    }
 
 
-
-
-
-
-} /* End Medium */
+    } /* End Medium */

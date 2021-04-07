@@ -13,6 +13,7 @@ img {vertical-align: middle;}
 .slideshow-container {
   position: relative;
   margin: auto;
+  max-width: 1025px;
 }
 
 
@@ -53,16 +54,19 @@ img {vertical-align: middle;}
 }
 /****************** Header ****************************/
 header {
-  background-image: linear-gradient(to left, #14177D, #1E22FF);
   padding: 30px 20px;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
   justify-items: center;
   z-index: 1;
+  margin: auto;
+}
+.header{
+  background-image: linear-gradient(to top, #14177D, #1E22FF);
 }
 #logo {
-  width: 75%;
+  width: 100%;
 }
 header div#logo img {
   width: 100%;
@@ -80,7 +84,8 @@ header h1 {
 }
 #subtitle {
   color: #F4EFEA;
-  font-family: 'Mulish';
+  font-size: 125%;
+  font-family: 'Texturina';
 }
 #title {
   margin: auto 5px;
@@ -93,14 +98,11 @@ nav {
   font-family: 'Mulish';
   background-image: linear-gradient(to left, #14177D, #1E22FF);
   margin: 0;
-  overflow: hidden;
-  z-index: 1;  
 }
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  transition: 5s;
 }
 nav ul li a {
   text-decoration: none;
@@ -153,11 +155,15 @@ nav ul.hide { display: none;}
 .weatherSummary {
   display: grid;
   justify-items: center;
-  padding: 1rem;
   margin: 1rem auto;
   width: 100%;
-  max-width: 20rem;
   align-content: center;
+  background-color: #0e6e3e50;
+  border-radius: 10px;
+}
+.weatherSummary #top, 
+.weatherSummary #bot{
+  padding:  1rem 2rem;
 }
 .weatherSummary div#top {
   display: flex;
@@ -196,30 +202,24 @@ nav ul.hide { display: none;}
   margin: 5px auto 30px;
   font-size: larger;
 }
-
-.advertisements {
-  margin: 1rem auto;
+.advertisements div.store{
+  margin: 1rem;
   padding: 1rem;
+  background-color: #0e6e3e50;
+  border-radius: 10px;
+  text-align: center;
+}
+.advertisements div.adds {
+  font-size: 150%;
+}
+.advertisements img {
+  border-radius: 10px;
 }
 
 /**************** Join the Chamber! *************************/
 .join-images {
   display: grid;
   justify-items: center;
-  position: relative;
-}
-.join-images img {
-  width: 100%;
-  height: 100%;
-}
-.join {
-  position: absolute;
-  bottom: 3rem;
-  padding: 2rem;
-  display: grid;
-  grid-template-rows: 2fr 1fr;
-  font-size: 110%;
-  align-items: end;
 }
 .join div {
   grid-area: 2/1;
@@ -227,15 +227,21 @@ nav ul.hide { display: none;}
 .join h2 { 
   margin: 0;
 }
+.join {
+    margin: 1rem ;
+    position: static;
+}
 .button {
   left: 20px;
-  background-image: linear-gradient(to left, #14177D, #f4efeA);
+  background-image: linear-gradient(to left, #f4efeA);
   padding: 10px 20px;
   font-weight: bold;
   cursor: pointer;
   border: none;
 }
-
+div.sections{
+  margin: 5rem auto;
+}
 
 /* Descirptiom & Upcoming Events & 3 Days Forcast**/
 .description, 
@@ -252,9 +258,9 @@ nav ul.hide { display: none;}
 
 /** Upcomming Evnts **/
 .upcomingEvents p {
-  background-image: linear-gradient(to left, #14177D, #f4efeA);
+  background-image: linear-gradient(to left, #0e6e3e, #f4efeA);
   padding: .5rem;
-  border-radius: 5px;
+  border-radius: 50px;
 }
 .logo img{
   width: 2.5rem;
@@ -262,52 +268,88 @@ nav ul.hide { display: none;}
 .event {
   display: grid;
 }
+div.upcomingEvents {
+  margin: 5rem auto;
+}
 
 /** 3 Days Forecast **/
+section.threeDaysForecast{
+  margin: 5rem auto;
+}
 .tableForecast {
-  display: grid;
+  display: block;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   text-align: center;
-  max-width: 1024px;
+  max-width: 780px;
   margin: auto;
+  grid-gap: 1rem;
 }
 .weatherDayForecast{
   padding: auto 1rem;
+  width: 100%;
 }
-.weatherDayForecast 
-#icon1,
 #icon2,
-#icon3 {
-  padding: .1rem 0;
+#icon3,
+#icon1 {
   background-image: linear-gradient(to left, #14177D, #f4efeA);
   border-radius: 10px;
-  width: 100%;
-  margin: auto;
+  width: 50%;
 }
 .weatherDayForecast h3,
 .weatherDayForecast p {
   margin: 0;
+  text-align: center;
 }
 .weatherDayForecast p {
   font-size: larger;
   font-weight: bold;
 }
 
-/***  Contact Information ****/
-footer {
-  background-color: #0e6e3e;
-  padding: 1rem;
-  width: 100%;
-
+.weatherDayForecast {
+  border-radius: 50px;
+  background-color: #0e6e3e50;
 }
+/***  Contact Information ****/
 .contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  background-color: #0e6e3e;
   margin: auto;
-  max-width: 1024px;
+  padding: 2rem;
+  background: url(../images/calapan.jpg) bottom no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.contactus {
+  background-color: #F4EFEA90;
+  padding: 1rem;
+  max-width: 50%;
+}
+.contact h2, .contact div, .social {
+  margin: 1rem;
 }
 .social {
   display: end;
 }
+
+/** Signature ***/
+.signature {
+  background-image: linear-gradient(to left, #14177D, #1E22FF);
+}
+div.barContent {
+  max-width: 1025px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+  color: #F4EFEA;
+}
+/**************************** City *******************************/
+.cityimg {
+  margin: auto;
+  height: 20rem;
+  background: url(../images/calapan.jpg) top no-repeat;
+  background-attachment: fixed;
+}
+
