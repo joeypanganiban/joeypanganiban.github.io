@@ -26,7 +26,7 @@ fetch(summary)
             document.getElementById("icon").setAttribute('src', icon);
             document.getElementById("icon").setAttribute('alt', name);
     });
-fetch(forecast)
+    fetch(forecast)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject)
@@ -39,6 +39,8 @@ fetch(forecast)
             // get tbe forecast that includes 18:00:00 on weather's day time
             let time = jsObject.list[i].dt_txt.includes('18:00:00');
             if (time == true){
+                console.log(d)
+
                 document.getElementById(`dayofWeek${day+1}`).textContent = dayofWeek[d.getDay()];
                 document.getElementById(`temp${day+1}`).textContent = jsObject.list[i].main.temp;
                 
@@ -46,6 +48,7 @@ fetch(forecast)
                 const name  = jsObject.list[i].weather[0].description;
                 document.getElementById(`icon${day+1}`).setAttribute('src', icon);
                 document.getElementById(`icon${day+1}`).setAttribute('alt', name);
+                console.log(icon)
                 day++
             }
         }

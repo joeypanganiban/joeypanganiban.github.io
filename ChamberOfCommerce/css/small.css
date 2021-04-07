@@ -201,7 +201,6 @@ nav ul.hide { display: none;}
 
 /* Current Weather */
 .weatherSummary {
-  background-color: rgba(0,0,0,0.2);
   display: grid;
   justify-items: center;
   padding: 1rem;
@@ -250,7 +249,6 @@ nav ul.hide { display: none;}
 
 .advertisements {
   margin: 1rem auto;
-  background-color: rgba(0,0,0,0.2);
   padding: 1rem;
 }
 
@@ -270,7 +268,6 @@ nav ul.hide { display: none;}
   padding: 2rem;
   display: grid;
   grid-template-rows: 2fr 1fr;
-  background-color: rgba(0, 0, 0, .2);
   font-size: 110%;
   align-items: end;
 }
@@ -278,7 +275,6 @@ nav ul.hide { display: none;}
   grid-area: 2/1;
 }
 .join h2 { 
-  color: #F4EFEA;
   margin: 0;
 }
 .button {
@@ -296,7 +292,6 @@ nav ul.hide { display: none;}
 .upcomingEvents,
 .threeDaysForecast,
 .weatherDayForecast {
-  background-color: rgba(0,0,0,0.2);
   margin: 1rem auto;
   padding: 1rem;
 }
