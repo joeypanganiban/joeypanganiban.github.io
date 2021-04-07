@@ -1,6 +1,8 @@
 
 WebFont.load({
     google: {
-        families: ['Mulish', 'Texturina']
+      families: [
+         'Mulish', 'Texturina'
+      ]
     }
-});
+  });

@@ -1,10 +1,60 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
+    
     header  {
         font-size: 150%;
+        background-image: none;
+        max-width: 1024px;
+    }
+    .header {
+        background-image: linear-gradient(to left, #14177D, #1E22FF);
+        width: 100%;
     }
     header img {
         width: 30%;
+    }
+    .slideshow-container {
+        max-width: 100%;
+    }
+    .prev, .next {
+        top: 60%
+    }
+    .group {
+        margin: auto;
+        max-width: 1900px;
+        position: relative;
+    }
+    .groupA {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+        font-size: 150%;
+    }
+    .weatherSummary {
+        position: absolute;
+        right: 25%;
+    }
+    .advertisements {
+        display: block;
+        margin: 0;
+    }
+    aside {
+        grid-area: 1/2;
+        display: grid;
+        align-items: end;
+    }
+    .sections {
+        width: 100%;
+        grid-area: 1/1;
+        margin: auto;
+    }
+    .description {
+        font-size: 100%;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+    }
+    .event {
+        max-width: 1024px;
+        margin: auto;
     }
     div#logo {
         display: grid;
@@ -15,3 +65,11 @@
         z-index: 3;
     }
 }/* End Large*/
+
+@media only screen and (min-width: 1452px) {
+    .weatherSummary {
+        right: 0;
+        max-width: 300%;
+        padding: 3rem;
+    }
+}
