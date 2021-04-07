@@ -29,9 +29,24 @@
         grid-template-columns: 4fr 1fr;
         font-size: 150%;
     }
+    .join-images {
+        width: 100%;
+        background-size: cover;
+    }
+    .join {
+        position: static;
+    }
+    .join-images img {
+        height: auto;
+    }
+        
+
     .weatherSummary {
         position: absolute;
         right: 25%;
+        right: 0;
+        max-width: 55%;
+        padding: 3rem;
     }
     .advertisements {
         display: block;
@@ -51,6 +66,7 @@
         font-size: 100%;
         display: grid;
         grid-template-rows: 1fr 2fr;
+        margin: 2rem;
     }
     .event {
         max-width: 1024px;
@@ -65,11 +81,3 @@
         z-index: 3;
     }
 }/* End Large*/
-
-@media only screen and (min-width: 1452px) {
-    .weatherSummary {
-        right: 0;
-        max-width: 300%;
-        padding: 3rem;
-    }
-}

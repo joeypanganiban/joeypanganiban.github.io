@@ -10,12 +10,15 @@
         display: block;
         width: 100%;
     }
-    
+    .content {
+        margin: 7rem auto;
+        max-width: 1024px;
+    }
     .slideshow-container {
         width: 100%;
     }
     .text {
-        font-size: 1000%;
+        font-size: 500%;
     }
     .numbertext {
         top: 4.3rem;
@@ -61,6 +64,7 @@
         display: grid;
         align-content: center;
         font-size: 121%;
+        margin: auto 1rem;
     }
     
     .event {

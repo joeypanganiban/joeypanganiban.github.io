@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce at Oriental Mindoro">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Texturina:wght@700&display=swap" rel="stylesheet"> -->
+    <link href="css/small.css"  rel="stylesheet">
+    <link href="css/medium.css"  rel="stylesheet">
+    <link href="css/large.css"  rel="stylesheet">
+    <title>Oriental Mindoro | Chamber of Commerce</title>
+</head>
+<body>
+    <div class="header">
+      <header>
+        <div id="logo">
+          <img src="images/chamber-of-commerce-logo.png" alt="Chamber of Commerce! Oriental Mindoro logo">
+        </div>
+        <div id="title">
+          <h1>Oriental Mindoro</h1>
+          <div id="subtitle">Chamber of Commerce<img src="images/design.png" alt="Design leaves" class="design"></div>  
+        </div>
+        <div class="dropdown">   
+        <button type="button" onclick="toggleMenu()" class="menu-toggle">&#9776;</button>    
+        </div>
+      </header>
+      <nav id="clearfix">     
+          <ul id="primaryNav" class="hide">
+              <li ><a href="../ChamberOfCommerce/index.html">Home</a></li>
+              <li ><a href="../ChamberOfCommerce/city.html">City</a></li>
+              <li ><a href="../ChamberOfCommerce/join.html">Join</a></li>
+              <li class="active"><a href="../ChamberOfCommerce/directory.html">Directory</a></li>
+          </ul>
+      </nav>
+    </div>
+    
+    
+    <main class="content">
+      <!-- Engaging images of municipalities-->
+      <div class="slideshow-container crop">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/pinamalayan.jpg" >
+          <div class="text">Pinamalayan</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/naujan-lake.jpg">
+          <div class="text">Naujan Lake</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/rice-field.jpg">
+          <div class="text">Naujan Farm</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+      </div>
+      <br>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+
+    <div class="group"> <!-- Start of Group-->
+
+      <!-- the current weather information, obtained from the One Call API at openweathermap.org   -->
+      <div class="weatherSummary">
+        <h3><span id="city"></span> Weather Summary</h3>
+        <div id="table">
+              <div id="top"> 
+                    <div rowspan="4" id="currentimg"><img src="" alt="" id="icon"></div>
+                    <div id="cen">
+                          <div><span id="temperature"></span> &#x2109; </div>
+                          <div><span id="description"></span></div>
+                    </div>
+              </div>
+              <div id="bot">
+                    <div>Humidity: <span id="humidity"></span>&#176;</div>
+                    <div>Wind Speed: <span id="windspeed"></span> kph</div>
+              </div>
+        </div>
+      </div>
+
+      <div class="groupA">
+        <!-- local company advertisement section highlighting three local companies, -->
+        <aside>
+          <div class="advertisements"> 
+            <div>
+              <img src="images/aquabest-water-station.jpg" alt="Aquabest Water station Ads">
+              <p>Aquabest Franchise</p>
+            </div>
+            <div> 
+              <img src="images/petron-ads.jpg" alt="Petron Gas station Ads">
+              <p>Petron Gas Station</p>
+            </div>
+            <div>
+              <img src="images/robinsons-builders-ads.jpg" alt="Robinsons builders Ads">
+              <p>Robinsons Builders</p>
+            </div>
+          </div>
+        </aside>
+      
+        <div class="sections">
+          <!-- a call to action to join the chamber leading to a membership application,  -->
+          <div class="join-images">
+            <img src="images/bridge-and-people.jpg" alt="loangest bridge in Oriental Mindoro with people on car">
+            <h2>Let us build communities.<br> Be one of us!</h2>
+            <input type="button" value="Join Now" class="button">
+          </div>
+          <!-- a description of the purpose of the chamber and its goals, -->
+          <section class="description">
+            <div></div>
+            <div>
+              <h2>Our Purpose in OrMin Chamber of Commerce</h2>
+              <p>Our purpose is to help the small and large businesses including the young entrepreneur. In this organization,
+                we help them not just to raise more money but to see more business opportunities opened to them that would help 
+                their business grow faster and help the local communities find more employment. </p>
+            </div>
+          </section>
+        </div>
+
+    </div> <!-- End of Group A-->
+    
+  </div>  <!-- End of Group-->
+      
+      <!-- an upcoming events area, -->
+      <div class="upcomingEvents">
+        <h2>Upcomming Events</h2>
+        <div class="event">
+          <div class="logo"><img src="images/chamber-of-commerce-logo.png" alt=""></div><p>April 24 : Bahag-hari Festival </p>
+        </div>
+        <div class="event">
+            <div class="logo"><img src="images/chamber-of-commerce-logo.png" alt=""></div><p> April 25-29 : The Sabutan Festival and Mini- Trade Fair </p>
+        </div>
+        <div class="event">
+          <div class="logo"><img src="images/chamber-of-commerce-logo.png" alt=""></div><p>June 24 : Lechon Festival and Gabi ng Pakulo  </p>
+        </div>
+        <div class="event">
+          <div class="logo"><img src="images/chamber-of-commerce-logo.png" alt=""></div><p>June 29 : Biniray Festival</p>
+        </div>
+      </div>
+      
+
+      
+      <!-- - the current temperature, current condition description, and humidity-->
+      <!-- - weather alerts if available (applicable) from the government and display it as a closeable message at the top of the page. (closeable means the user can click to remove the alert)-->
+      <!-- - display and label a three day forecast of the "day" temperature using the current date. -->
+      <section class="threeDaysForecast">
+        <h2>3 Days Forecast</h2>
+        <div  class="tableForecast">
+          <div class="weatherDayForecast"> <h3><span id="dayofWeek1"></span></h3> <img src="" alt="" id="icon1"> <p><span id="temp1"></span>&#176;</p> </div>
+          <div class="weatherDayForecast"> <h3><span id="dayofWeek2"></span></h3> <img src="" alt="" id="icon2"> <p><span id="temp2"></span>&#176;</p> </div>
+          <div class="weatherDayForecast"> <h3><span id="dayofWeek3"></span></h3> <img src="" alt="" id="icon3"> <p><span id="temp3"></span>&#176;</p> </div>
+        </div>
+    </section>
+
+    </main>
+    <footer>
+      <!-- contact information, -->
+      <div class="contact">
+          <div>
+              <div ><img src="images/pin.png" alt="address pin icon" style='width: 18px;'>  #21 Molave, Zone 4, Socorro, Oriental Mindoro 5207</div>
+              <div> &#x260E;  999-999-999</div>
+              <div> &#x1F4E7; myemail.omcc.com</div>
+          </div>
+          <div class="social">
+              <img src="images/facebook.png" alt="facebooke pic"  style='width: 48px;'>
+              <img src="images/linkedin.png" alt="linkedin pic"  style='width: 48px;'>          
+          </div>
+      </div>
+      <!-- social media links (at least two and it is OK if they are not linked to a real account), -->
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/webfontload.js"></script>
+
+    
+</body>
+</html>

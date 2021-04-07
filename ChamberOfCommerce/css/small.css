@@ -258,20 +258,34 @@ nav ul.hide { display: none;}
 .join-images {
   display: grid;
   justify-items: center;
-  width: 100%;
   position: relative;
 }
-.join-images h2 {
+.join-images img {
+  width: 100%;
+  height: 100%;
+}
+.join {
   position: absolute;
   bottom: 3rem;
-  padding-left: 20px;
-
+  padding: 2rem;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  background-color: rgba(0, 0, 0, .2);
+  font-size: 110%;
+  align-items: end;
+}
+.join div {
+  grid-area: 2/1;
+}
+.join h2 { 
+  color: #F4EFEA;
+  margin: 0;
 }
 .button {
-  position: absolute;
   left: 20px;
-  bottom: 1.5rem;
+  background-image: linear-gradient(to left, #14177D, #f4efeA);
   padding: 10px 20px;
+  font-weight: bold;
   cursor: pointer;
   border: none;
 }
