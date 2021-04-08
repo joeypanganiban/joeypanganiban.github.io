@@ -560,7 +560,7 @@ box-shadow: #000 10px 10px 20px;
   background-image: linear-gradient(to top, #14177D, #1E22FF);
   padding: 1rem;
   border-radius: 10px;
-  margin-right: 1rem;
+  margin-right: 1rem; 
 }
 
 /**************************** Directory ******************************/
@@ -574,15 +574,42 @@ box-shadow: #000 10px 10px 20px;
 .directory section {
   background-color: #0e6e3e20;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 2fr;
   grid-gap: 1rem;
+  width: 100%;
   margin: 1rem auto;
   padding: 1rem;
   max-width: 780px;
+  justify-items: center;
+  align-items: center;
+}
+.directorylogo {
+  width: 100%;
+}
+.directorystore {
+  width: 100%;
+}
+.directorystore h2, 
+.directorystore p {
+  margin: .5rem auto;
 }
 .directory img {
   background-color: #0e6e3e;
-  width: 10rem;
+  width: 100%;
   border-radius: 10px;
   box-shadow: #000 0 0 8px;
+}
+.directory a{
+  text-decoration: none;
+  color: #f4efeA;
+}
+.directory button{
+  padding: 4px 8px;
+  background-image: linear-gradient(to bottom, #f4efeA, #0e6e3e);
+  border: none;
+  box-shadow: #000 0 0 8px;
+}
+.directory button:hover {
+  background-image: linear-gradient(to top, #f4efeA, #0e6e3e);
+  box-shadow: #000 2px 2px 8px;
 }

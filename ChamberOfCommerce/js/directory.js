@@ -12,27 +12,37 @@ fetch(requestURL)
       let h2 = document.createElement('h2');
       let div1 = document.createElement('div');
       let div2 = document.createElement('div');
+      let div3 = document.createElement('div');
+      let div4 = document.createElement('div');
       let contact = document.createElement('p');
       let image = document.createElement('img');
-      let website = document.createElement('p')
+      let website = document.createElement('button');
+      let a = document.createElement('a');  
             
       h2.textContent = calapan[i].name;
       contact.textContent = 'Contact: ' + calapan[i].contact;
       image.setAttribute('src', 'images/'+calapan[i].photo);
       image.setAttribute('alt', calapan[i].name);
-      website.textContent = calapan[i].website;
+      div3.setAttribute('class', 'directorylogo');
+      div4.setAttribute('class', 'directorystore');
+      a.setAttribute('href', calapan[i].website);
+      a.setAttribute('target', '_blank');
+      a.textContent = 'Visit Us';
       
 
       div1.appendChild(image);
       div2.appendChild(h2);
       div2.appendChild(contact);
       div2.appendChild(website);
-      card.appendChild(div1);
-      card.appendChild(div2);
+      website.appendChild(a);
+      div3.appendChild(div1);
+      div4.appendChild(div2);
+      card.appendChild(div3);
+      card.appendChild(div4);
       
       document.querySelector('div.directory').appendChild(card);
     }
   });
 
 
-  // addEventListener List Grind
+  // addEventListener List Grid
