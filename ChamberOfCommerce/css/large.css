@@ -30,7 +30,7 @@
     }.advertisements {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 3rem;
+        grid-gap: 2rem;
         margin: 6rem auto;
         background-color: #f4efea;}
     .advertisements div.store {
@@ -41,6 +41,10 @@
         justify-items: center;
         align-content: center;
         align-items: center;
+    }
+    .advertisements div.store:hover {
+        background-color: #0e6e3e50;
+        box-shadow: #000 0 0 8px;
     }
     .advertisements div.store img{
         width: 100%;
@@ -67,10 +71,9 @@
     }
     .contactpic {
         display: block;
-        padding-right: 3rem;
     }
-    .contactpic img {
-        border-radius: 10px;
+    .contactUs h2 {
+        display: none;
     }
     .contactform {
         display: grid;

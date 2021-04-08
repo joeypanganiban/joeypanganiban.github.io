@@ -57,9 +57,6 @@
         text-align: center;
         background-color: rgba(0, 0, 0, .5);
     }
-    nav ul li {
-        padding: 20px;
-    }
     .advertisements div img {
         width: 45%;
         margin: 10px 2%;
@@ -118,6 +115,7 @@
     .weatherSummary {
         margin: 5rem auto;
         background-color: #f4efea;
+        box-shadow: none;
         font-size: 150%;
     }
     .weatherSummary div#top {
@@ -134,7 +132,11 @@
         margin: auto;
         grid-gap: 1rem;
     }
-
+    
+    form fieldset:hover,
+    .mainjoin fieldset:hover {
+      box-shadow: #000 0 0 10px;
+    }
 
 
 
@@ -148,9 +150,6 @@
       }
       .contactUs {
           margin: 2rem 0;
-      }
-      .contactUs h2 {
-          margin-top: 1rem;
       }
       .contactpic {
           display: none;

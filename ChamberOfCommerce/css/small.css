@@ -6,7 +6,39 @@ body {
   font-family: 'Mulish';
 }
 
-.mySlides {display: none}
+/********************** Banner  ************************/
+ul.alert {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li.banner {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  position: relative;
+}
+
+ul li.banner:hover {
+  background-color: #eee;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {background: #bbb;}.mySlides {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -65,9 +97,6 @@ header {
 .header{
   background-image: linear-gradient(to top, #14177D, #1E22FF);
 }
-#logo {
-  width: 100%;
-}
 header div#logo img {
   width: 100%;
 }
@@ -108,19 +137,23 @@ nav ul li a {
   text-decoration: none;
   color: #F4EFEA;
   display: block;
-  font-size: 150%;
+  padding: 1rem;
 }
 nav ul li {
-  padding: 30px 5px 30px 50px;
   background-color: rgba(0,0,0,0.5);
+  display: block;
 }
 nav ul li.active { 
   background-color: #0e6e3e ; 
+  box-shadow: #f4efeA 2px 2px 0;
 }
-
-nav ul li:hover {
-  background-color: #0e6e3e25;
-  transition: .2s;
+nav ul li a:hover {
+  background-color: #F4EFEA;
+  text-decoration: underline;
+  text-underline-position: under;
+  transition: .5s;
+  color: #1E22FF;
+  font-weight: bold;
   cursor: pointer;
 }
 nav ul.hide { display: none;}
@@ -158,7 +191,6 @@ nav ul.hide { display: none;}
   margin: 1rem auto;
   width: 100%;
   align-content: center;
-  background-color: #0e6e3e50;
   border-radius: 10px;
 }
 .weatherSummary #top, 
@@ -200,20 +232,18 @@ nav ul.hide { display: none;}
 .advertisements p {
   text-align: center;
   margin: 5px auto 30px;
-  font-size: larger;
 }
 .advertisements div.store{
   margin: 1rem;
-  padding: 1rem;
-  background-color: #0e6e3e50;
+  padding: 2rem;
+  background-color: #0e6e3e20;
   border-radius: 10px;
+  box-shadow: #000 0 0 8px;
   text-align: center;
-}
-.advertisements div.adds {
-  font-size: 150%;
 }
 .advertisements img {
   border-radius: 10px;
+  box-shadow: #000 0 0 8px;
 }
 
 /**************** Join the Chamber! *************************/
@@ -287,15 +317,14 @@ section.threeDaysForecast{
   grid-gap: 1rem;
 }
 .weatherDayForecast{
-  padding: auto 1rem;
-  width: 100%;
+  padding: auto .5rem;
+  width: 80%;
 }
 #icon2,
 #icon3,
 #icon1 {
   background-image: linear-gradient(to left, #14177D, #f4efeA);
   border-radius: 10px;
-  width: 50%;
 }
 .weatherDayForecast h3,
 .weatherDayForecast p {
@@ -308,8 +337,9 @@ section.threeDaysForecast{
 }
 
 .weatherDayForecast {
-  border-radius: 50px;
-  background-color: #0e6e3e50;
+  border-radius: 10px;
+  background-color: #0e6e3e20;
+  box-shadow: #000 0 0 8px;
 }
 
 
@@ -335,14 +365,25 @@ section.threeDaysForecast{
   margin: 0;
 }
 .contactUs h2{
-  max-width: 25rem;
-  margin: 5rem auto 1rem;
+  display: none;
 }
 .contactUs {
-  margin: 5rem;
+  margin: 5rem auto;
+}
+.contactus {
+  background-color: #F4EFEA95;
 }
 .contactpic {
   display: none;
+  position: relative;
+}
+.contactpic h2 {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 250%;
+  color: #f4efeA;
+  text-shadow: #000 0 0 10px;
 }
 iframe {
   width: 100%;
@@ -368,6 +409,7 @@ div.barContent {
 }
 
 
+
 form fieldset {
   max-width: 25rem;
   font-family: 'Mulish';
@@ -376,7 +418,7 @@ form fieldset {
   font-weight: bold;
   border: none;
   border-radius: 10px;
-  margin: auto auto 2rem;
+  margin: auto;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -462,6 +504,11 @@ label.top input,
   margin: 5rem auto;
   max-width: 1025px;
 }
+.briefhistory h2,
+.briefhistory h3,
+.briefhistory p {
+  margin: 1rem;
+}
 img.statu, img.farm {
   width: 40%;
 }
@@ -483,13 +530,27 @@ article.gallery img {
   margin: 5rem auto;
   justify-items: center;
 }
+.gallery picture {
+  box-shadow: #000 0 0 8px;
+  border-radius: 10px;
+}
+.gallery picture img  {
+  
+  border-radius: 10px 10px 0 0;
+}
+.gallery picture:hover {
+box-shadow: #000 10px 10px 20px;
+}
+.gallery picture figcaption{
+  padding: .5rem;
+}
 .maincity h2.attraction {
   margin-left: 1rem;
 }
 
 /******** Join *****************************/
 .mainjoin {
-  margin-top: 5rem;
+  margin: 5rem auto;
 }
 .imagelogoform {
   text-align: center;
@@ -500,4 +561,28 @@ article.gallery img {
   padding: 1rem;
   border-radius: 10px;
   margin-right: 1rem;
+}
+
+/**************************** Directory ******************************/
+.directorypic{
+  background: url(../images/directoryimg.jpg) #f4efeA center no-repeat;
+  background-attachment: fixed;
+  height: 20rem;
+  background-size: cover;
+}
+/******* List ***********/
+.directory section {
+  background-color: #0e6e3e20;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 1rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 780px;
+}
+.directory img {
+  background-color: #0e6e3e;
+  width: 10rem;
+  border-radius: 10px;
+  box-shadow: #000 0 0 8px;
 }
