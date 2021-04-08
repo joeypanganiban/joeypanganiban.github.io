@@ -311,21 +311,41 @@ section.threeDaysForecast{
   border-radius: 50px;
   background-color: #0e6e3e50;
 }
-/***  Contact Information ****/
+
+
+
+
+
+
+/******************  Contact Information ***********************************/
 .contact {
   background-color: #0e6e3e;
   margin: auto;
-  padding: 2rem;
   background: url(../images/calapan.jpg) bottom no-repeat;
   background-attachment: fixed;
   display: grid;
   align-items: center;
   justify-items: center;
 }
-.contactus {
-  background-color: #F4EFEA90;
+.contacts {
+  background-color: #F4EFEA99;
+  font-family: 'Mulish';
   padding: 1rem;
-  max-width: 50%;
+  max-width: 1025px;
+  margin: 0;
+}
+.contactUs h2{
+  max-width: 25rem;
+  margin: 5rem auto 1rem;
+}
+.contactUs {
+  margin: 5rem;
+}
+.contactpic {
+  display: none;
+}
+iframe {
+  width: 100%;
 }
 .contact h2, .contact div, .social {
   margin: 1rem;
@@ -342,15 +362,142 @@ div.barContent {
   max-width: 1025px;
   margin: auto;
   padding: 1rem;
+  font-family: 'Texturina';
   text-align: center;
   color: #F4EFEA;
 }
+
+
+form fieldset {
+  max-width: 25rem;
+  font-family: 'Mulish';
+  background-color: #F4EFEA;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin: auto auto 2rem;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+legend {
+  display: none;
+}
+
+form fieldset label {
+  display: block;
+}
+
+/*** PADDING TOP */
+form label.top, 
+form label.sbs,
+form div.top {
+  padding-top: 20px;
+}
+
+/*** BORDER */
+label.top input,
+#storm-type,
+#textarea, #region {
+  display: block;
+  width: 95%;
+  height: 44px;
+  border-radius: 5px;
+  border: 2px solid #176bca;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+/*** TEXTAREA */
+#textarea {
+  height: 70px;
+}
+
+/*** BUTTON */
+.submitBtn {
+  margin: 20px auto 30px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-image: linear-gradient(to right, #1d5596 ,#05366e);
+  border: transparent;
+  border-radius: 5px;
+}
+
+.submitBtn:hover {
+  box-shadow:3px 3px 6px #000;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #176bca , #176bca);
+}
+
+/******* THANKS.HTML */
+.thanks {
+  margin: auto;
+  max-width: 1025px;
+  padding: 4rem;
+  font-family: 'Mulish';
+  font-size: 125%;
+}
+/***************** */
+
+
+
+
+
+
+
+
 /**************************** City *******************************/
 .cityimg {
-  margin: auto;
   height: 20rem;
-  background: url(../images/calapan.jpg) top no-repeat;
+  background: url(../images/calapan1.jpg) top no-repeat;
   background-attachment: fixed;
   
 }
+.briefhistory {
+  margin: 5rem auto;
+  max-width: 1025px;
+}
+img.statu, img.farm {
+  width: 40%;
+}
+/** PROGRESSIVE IMAGES */
+article.gallery img[data-src] {
+	filter: blur(0.2em);
+}
+article.gallery img {
+	filter: blur(0em);
+	transition: filter 2s;
+  width: 100%;
+}
+/**END OF PROGRESSIVE IMAGES */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  max-width: 1025px;
+  grid-gap: 3rem 1rem;
+  margin: 5rem auto;
+  justify-items: center;
+}
+.maincity h2.attraction {
+  margin-left: 1rem;
+}
 
+/******** Join *****************************/
+.mainjoin {
+  margin-top: 5rem;
+}
+.imagelogoform {
+  text-align: center;
+  font-family: 'Mulish';
+  color: #F4EFEA;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to top, #14177D, #1E22FF);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+}

@@ -30,50 +30,70 @@
       </header>
       <nav id="clearfix">     
           <ul id="primaryNav" class="hide">
-              <li ><a href="../ChamberOfCommerce/index.html">Home</a></li>
-              <li ><a href="../ChamberOfCommerce/city.html">City</a></li>
-              <li ><a href="../ChamberOfCommerce/join.html">Join</a></li>
-              <li class="active"><a href="../ChamberOfCommerce/directory.html">Directory</a></li>
+            <li ><a href="../ChamberOfCommerce/index.html">Home</a></li>
+            <li ><a href="../ChamberOfCommerce/city.html">City</a></li>
+            <li class="active"><a href="../ChamberOfCommerce/join.html">Join</a></li>
+            <li ><a href="../ChamberOfCommerce/directory.html">Directory</a></li>
+            <li ><a href="../ChamberOfCommerce/contact.html">Contact</a></li>
           </ul>
       </nav>
     </div>
     
     
-    <main class="content">
-        
-</main>
-<!-- contact information, -->
-<div class="contact">
-    <div class="contactus">
-      <h2>Contact Us!</h2>
-        <div ><img src="images/pin.png" alt="address pin icon" style='width: 18px;'>  #21 Molave, Camilmil, Calapan City, Oriental Mindoro 5207</div>
-        <div> &#x260E;  999-999-999</div>
-        <div> &#x1F4E7; myemail.omcc.com</div>
+  <main class="mainjoin">
     
-    <div class="social">
-        <img src="images/facebook.png" alt="facebooke pic"  style='width: 48px;'>
-        <img src="images/linkedin.png" alt="linkedin pic"  style='width: 48px;'>          
+    <form action="thanks.html" method="get">
+      <fieldset>
+        <div class="imagelogoform">
+          <img src="images/chamber-of-commerce-logo.png" width="100px">
+         <h2>Calapan City Chamber of Commerce</h2>
+      </div>
+        <label class="top" for="">First Name* <input type="text" name="fname" pattern="[A-Za-z]{3,}" title="*Minimum of 3 characters" required></label>
+        <label class="top" for="">Last Name*  <input type="text" name="lname" pattern="[A-Za-z]{3,}" title="*Minimum of 3 characters" required></label>
+        <label class="top" for="">Email* <input type="email" name="email" placeholder="someone@gmail.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required  ></label>
+        <label class="top" for="">Phone Number <input type="tel" name="phone" required></label>
+        <label class="top" for="">Business Name* <input type="text" name="bname"  pattern="[A-Za-z]{3,}" title="*Minimum of 3 characters" required></label>
+        <label class="top" for="">Business Address <input type="text" name="address" ></label>
+        <label class="top" for="">Business Website <input type="text" name="website" ></label>
+        <label class="top" for="">Business Description <input type="text" name="description" ></label>
+        <label class="top" for="">Membership </label>
+          <select name="Membership" id="region">
+              <option value="" selected disabled hidden>Select Membership...</option>
+              <option value="Non-profit">Non-profit ($100)</option>
+              <option value="Bronze">Bronze ($200)</option>
+              <option value="Silver">Silver ($400</option>
+              <option value="Gold">Gold ($1000)</option>
+          </select>
+        </label>
+        <div>
+          <p>
+            There are different levels and different perks depends on your level of membership like directory listings, business trainings, social media posts, luncheon tickets, sponsorships with levels of advertising, etc.
+          </p>
+        </div>
+        <input type="submit" value="Join in Calapan Chamber" class="submitBtn">
+      </fieldset>
+    </form>
+
+
+        
+  </main>
+  <footer>
+    <div class="signature">
+      <div class="bar">            
+        <div class="barContent">
+          &COPY;<span id="year"></span> Calapan City, Oriental Mindoro | Chamber of Commerce | Joey M. Panganiban 
+          <div><span id="date"></span></div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+    <!-- social media links (at least two and it is OK if they are not linked to a real account), -->
 
-<footer>
-<div class="signature">
-  <div class="bar">            
-    <div class="barContent">
-        &COPY;<span id="year"></span> Calapan City, Oriental Mindoro | Chamber of Commerce | Joey M. Panganiban 
-        <div><span id="date"></span></div>
-    </div>
-</div>
-</div>
-<!-- social media links (at least two and it is OK if they are not linked to a real account), -->
+  </footer>
 
-</footer>
-
-<script src="js/weather.js"></script>
-<script src="js/script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script src="js/webfontload.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfontload.js"></script>
 
 
 </body>
