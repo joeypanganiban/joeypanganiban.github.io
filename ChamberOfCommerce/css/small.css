@@ -570,8 +570,27 @@ box-shadow: #000 10px 10px 20px;
   height: 20rem;
   background-size: cover;
 }
+.buttons {
+  text-align: center;
+  margin: 5rem;
+}
+.buttons button {
+  padding: .5rem;
+  font-size: larger;
+  background-color: #0e6e3e;
+  color: #f4efeA;
+  border: none;
+  margin: .5rem;
+  border-radius: 5px;
+}
+.buttons button:hover {
+  color: #0e6e3e;
+  box-shadow: #000 5px 5px 8px;
+  background-color: #f4efeA;
+}
+
 /******* List ***********/
-.directory section {
+.card {
   background-color: #0e6e3e20;
   display: grid;
   grid-template-columns: 1fr 2fr;

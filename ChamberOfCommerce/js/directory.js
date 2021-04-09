@@ -19,6 +19,7 @@ fetch(requestURL)
       let website = document.createElement('button');
       let a = document.createElement('a');  
             
+      card.setAttribute('class', 'card');
       h2.textContent = calapan[i].name;
       contact.textContent = 'Contact: ' + calapan[i].contact;
       image.setAttribute('src', 'images/'+calapan[i].photo);
@@ -46,3 +47,10 @@ fetch(requestURL)
 
 
   // addEventListener List Grid
+const card = document.querySelector('.card')
+const list = document.querySelector('.list')
+const grid = document.querySelector('.grid')
+
+grid.addEventListener("click", e => {
+  console.log('list 1')
+})
