@@ -12,54 +12,58 @@
     <link href="css/small.css"  rel="stylesheet">
     <link href="css/medium.css"  rel="stylesheet">
     <link href="css/large.css"  rel="stylesheet">
-    <title>Oriental Mindoro | Chamber of Commerce</title>
+    <title>Calapan City, Oriental Mindoro | Chamber of Commerce</title>
 </head>
 <body>
+  <ul class="alert">
+    <li class="banner">
+      Alert! Covid-19 Pandemic   <span class="close">&times;</span>
+    </li>
+  </ul>
+  <div class="header">
     <header>
       <div id="logo">
         <img src="images/chamber-of-commerce-logo.png" alt="Chamber of Commerce! Oriental Mindoro logo">
-      </div>
-      <div id="title">
-        <h1>Oriental Mindoro<img src="images/design.png" alt="Design leaves" style="width: 40px;"></h1>
-        <div id="subtitle">Chamber of Commerce </div>  
-      </div>
-      <div class="header_toggle" onclick="toggleMenu()">&#9776;</div>
-    </header>
-    <nav id="navbar">     
-        <ul>
-            <li onclick="toggleMenu()"><ion-icon name="close-outline"></ion-icon></li>
-            <li class="active"><a href="../ChamberOfCommerce/index.html">Home</a></li>
-            <li ><a href="../ChamberOfCommerce/city.html">City</a></li>
-            <li ><a href="../ChamberOfCommerce/join.html">Join</a></li>
-            <li ><a href="../ChamberOfCommerce/directory.html">Directory</a></li>
-        </ul>
-    </nav>
+        </div>
+        <div id="title">
+          <h1>The Calapan City</h1>
+          <div id="subtitle">Chamber of Commerce<img src="images/design.png" alt="Design leaves" class="design"></div>  
+        </div>
+        <div class="dropdown">   
+        <button type="button" onclick="toggleMenu()" class="menu-toggle">&#9776;</button>    
+        </div>
+      </header>
+      <nav id="clearfix">     
+          <ul id="primaryNav" class="hide">
+              <li class="active"><a href="../ChamberOfCommerce/index.html">Home</a></li>
+              <li ><a href="../ChamberOfCommerce/city.html">City</a></li>
+              <li ><a href="../ChamberOfCommerce/join.html">Join</a></li>
+              <li ><a href="../ChamberOfCommerce/directory.html">Directory</a></li>
+              <li ><a href="../ChamberOfCommerce/contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+    
     
     <main class="content">
       <!-- Engaging images of municipalities-->
-      <div class="slideshow-container">
+      <div class="slideshow-container crop">
 
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="images/pinamalayan.jpg" >
-          <div class="text">Caption Text</div>
+          <img src="images/casa-resto.jpg" >
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="images/naujan-lake.jpg">
-          <div class="text">Caption Two</div>
+          <img src="images/xentro-mall.jpg">
         </div>
         
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="images/rice-field.jpg">
-          <div class="text">Caption Three</div>
+          <img src="images/bench.jpg">
         </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
+        <div class="join">
+          <h2>Let us build communities.<br> Be one of us!</h2>
+          <div><button class="button" onclick="myFunction()">Join Now</button></div>
+        </div>
       </div>
       <br>
       <div style="text-align:center">
@@ -67,103 +71,140 @@
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
       </div>
-      <!-- local company advertisement section highlighting three local companies, -->
-      <aside>
-        <div class="advertisements"> 
-          <div>
-            <img src="images/aquabest-water-station.jpg" alt="Aquabest Water station Ads">
-            <p>Aquabest Franchise</p>
+
+
+    <div class="group"> <!-- Start of Group-->
+
+        <div class="sections">
+          <!-- a call to action to join the chamber leading to a membership application,  -->
+          <div class="join-images">
+            <img src="images/toyotacalapancity.jpg" alt="Toyota ground breaking with Calapan Officials">
+            
           </div>
-          <div> 
-            <img src="images/petron-ads.jpg" alt="Petron Gas station Ads">
-            <p>Petron Gas Station</p>
+          <!-- a description of the purpose of the chamber and its goals, -->
+          <section class="description">
+            <div></div>
+            <div>
+              <h2>Our Purpose in Calapan City, OrMin Chamber of Commerce</h2>
+              <p>Our purpose is to help the small and large businesses including the young entrepreneur. In this organization,
+                we help them not just to raise more money but to see more business opportunities opened to them that would help 
+                their business grow faster and help the local communities find more employment. </p>
+            </div>
+          </section>
+
+    </div> <!-- End of Group A-->
+
+    <!-- local company advertisement section highlighting three local companies, -->
+    <aside>
+      <div class="advertisements"> 
+        <div class="store">
+          <div class="adds">
+            <h3>Casa Hotel and Restaurant</h3>
+            <p>We make you comfortable with our food and service!</p>
           </div>
-          <div>
-            <img src="images/robinsons-builders-ads.jpg" alt="Robinsons builders Ads">
-            <p>Robinsons Builders</p>
-          </div>
+          <img src="images/casa-hotel.jpg" alt="Casa Hotel and Restaurant">
         </div>
-      </aside>
-      <!-- a call to action to join the chamber leading to a membership application,  -->
-      <div class="join-images">
-          <img src="images/bridge-and-people.jpg" alt="loangest bridge in Oriental Mindoro with people on car">
-          <h2>Let us build communities.<br> Be one of us!</h2>
-          <input type="button" value="Join Now" class="button">
+        <div class="store"> 
+          <div class="adds">
+            <h3>Mahalta Beach Resort</h3>
+            <p>This is the paradise resort in Calapan City!</p>
+          </div>
+          <img src="images/mahalta.jpg" alt="Mahalta Hotel and Resort">
+        </div>
+        <div class="store">
+          <div class="adds">
+            <h3>Xentro Mall Calapan</h3>
+            <p>We bring all the things you want! Shop Now!</p>
+          </div>
+          <img src="images/mall.jpg" alt="Filipiniana Hotel and Resort">
+        </div>
       </div>
-      <!-- a description of the purpose of the chamber and its goals, -->
-      <section class="description">
-        <h2>Our Purpose in OrMin Chamber of Commerce</h2>
-        <p>Our purpose is to help the small and large businesses including the young entrepreneur. In this organization,
-           we help them not just to raise more money but to see more business opportunities opened to them that would help 
-           their business grow faster and help the local communities find more employment. </p>
-      </section>
+    </aside>
+  </div>  <!-- End of Group-->
       
       <!-- an upcoming events area, -->
       <div class="upcomingEvents">
         <h2>Upcomming Events</h2>
-        <p>April 24 : Bahag-hari Festival </p>
-        <p> April 25-29 : The Sabutan Festival and Mini- Trade Fair </p>
-        <p>June 24 : Lechon Festival and Gabi ng Pakulo  </p>
-        <p>June 29 : Biniray Festival</p>
+        <div class="event">
+          <div class="logo"><img src="images/chamber-of-commerce-logo.png" alt=""></div><p>April 24 : Bahag-hari Festival </p>
+        </div>
+        <div class="event">
+            <div class="logo"><img src="images/chamber-of-commerce-logo.png" alt=""></div><p> April 25-29 : The Sabutan Festival and Mini- Trade Fair </p>
+        </div>
+        <div class="event">
+          <div class="logo"><img src="images/chamber-of-commerce-logo.png" alt=""></div><p>June 24 : Lechon Festival and Gabi ng Pakulo  </p>
+        </div>
+        <div class="event">
+          <div class="logo"><img src="images/chamber-of-commerce-logo.png" alt=""></div><p>June 29 : Biniray Festival</p>
+        </div>
       </div>
-      <!-- the current weather information, obtained from the One Call API at openweathermap.org   -->
+      
 
       
+      <!-- the current weather information, obtained from the One Call API at openweathermap.org   -->
+      <div class="weatherSummary">
+        <h3><span id="city"></span> Weather Summary</h3>
+        <div id="table">
+              <div id="top"> 
+                    <div rowspan="4" id="currentimg"><img src="" alt="" id="icon"></div>
+                    <div id="cen">
+                          <div><span id="temperature"></span> &#x2109; </div>
+                          <div><span id="description"></span></div>
+                    </div>
+              </div>
+              <div id="bot">
+                    <div>Humidity: <span id="humidity"></span>&#176;</div>
+                    <div>Wind Speed: <span id="windspeed"></span> kph</div>
+              </div>
+        </div>
+      </div>
       <!-- - the current temperature, current condition description, and humidity-->
       <!-- - weather alerts if available (applicable) from the government and display it as a closeable message at the top of the page. (closeable means the user can click to remove the alert)-->
       <!-- - display and label a three day forecast of the "day" temperature using the current date. -->
+      <section class="threeDaysForecast">
+        <h2>3 Days Forecast</h2>
+        <div  class="tableForecast">
+          <div class="weatherDayForecast"> <h3><span id="dayofWeek1"></span></h3> <img src="" alt="" id="icon1"> <p><span id="temp1"></span>&#176;</p> </div>
+          <div class="weatherDayForecast"> <h3><span id="dayofWeek2"></span></h3> <img src="" alt="" id="icon2"> <p><span id="temp2"></span>&#176;</p> </div>
+          <div class="weatherDayForecast"> <h3><span id="dayofWeek3"></span></h3> <img src="" alt="" id="icon3"> <p><span id="temp3"></span>&#176;</p> </div>
+        </div>
+    </section>
 
     </main>
-    <footer>
       <!-- contact information, -->
-      <div>
-        <div ><img src="images/pin.png" alt="address pin icon" style='width: 18px;'>  #21 Molave, Zone 4, Socorro, Oriental Mindoro 5207</div>
-        <div> &#x260E;  999-999-999</div>
-        <div> &#x1F4E7; myemail.omcc.com</div>
+      <div class="contact">
+          <div class="contactus">
+            <h2>Contact Us!</h2>
+              <div ><img src="images/pin.png" alt="address pin icon" style='width: 18px;'>  #21 Molave, Camilmil, Calapan City, Oriental Mindoro 5207</div>
+              <div> &#x260E;  999-999-999</div>
+              <div> &#x1F4E7; myemail.omcc.com</div>
+          
+          <div class="social">
+              <img src="images/facebook.png" alt="facebooke pic"  style='width: 48px;'>
+              <img src="images/linkedin.png" alt="linkedin pic"  style='width: 48px;'>          
+          </div>
+        </div>
       </div>
-      <div class="social">
-        <img src="images/facebook.png" alt="facebooke pic"  style='width: 48px;'>
-        <img src="images/linkedin.png" alt="linkedin pic"  style='width: 48px;'>          
-    </div>
-
-
-      <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592021.1735733894!2d120.901068588105!3d12
-        .889385355184588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bb61471e778851%3A0x94f1306262b234f
-        !2sOriental%20Mindoro!5e0!3m2!1sen!2sph!4v1617362104992!5m2!1sen!2sph" 
-        width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      
+    <footer>
+      <div class="signature">
+        <div class="bar">            
+          <div class="barContent">
+              &COPY;<span id="year"></span> Earth Weather | Attributions | Joey M. Panganiban 
+              <div><span id="date"></span></div>
+          </div>
+      </div>
       </div>
       <!-- social media links (at least two and it is OK if they are not linked to a real account), -->
 
     </footer>
     
+    <script src="js/weather.js"></script>
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="js/webfontload.js"></script>
+    <script src="js/slides.js"></script>
 
-    <div>
-      sources:  https://vectr.com/joeymp30/b6wOAmAxB
-                https://www.facebook.com/chookstogo/photos/a.10151006257013604/10158778326183604
-                https://www.facebook.com/luzonpetron/
-                http://www.traveltothephilippines.info/tag/festivals-in-oriental-mindoro/page/7/
-                https://mindoropost.files.wordpress.com/2015/08/calapan-city-hall.jpg
-                https://scontent.fmnl3-3.fna.fbcdn.net/v/t1.6435-9/fr/cp0/e15/q65/61759214_1256326974534860_8525559972900110336_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=7aed08&efg=eyJpIjoidCJ9&_nc_ohc=K-clUSn1hQgAX8lpUjl&tn=cW_k0QfiHUTWcduc&_nc_ht=scontent.fmnl3-3.fna&tp=14&oh=f1eac0fb3af11f480b0789883ac57e3e&oe=608D0B40
-                http://www.puertogalera.gov.ph/puerto-galera/front-28/
-                http://www.angelynsdiveresort.com/diving.html
-                http://selecttravelphilippines.com/pst_locations/puerto-galera/
-                https://www.pinterest.ph/pin/383931936962741029/
-                https://i.pinimg.com/originals/62/f3/67/62f367a34df90a2038ff3eb136781f15.jpg
-                https://photos.ferdzdecena.com/Travel/2018/Oriental-Mindoro/Bulalacao-Island-Hopping/
-                https://www.flickr.com/photos/-lucie-/4309067444
-                https://mindorotv.com/oriental-mindoro-the-next-big-thing-in-agri-tourism-in-southern-tagalog/
-                http://www.traveltothephilippines.info/wp-content/uploads/2019/07/Mindoro-Oriental-Banana-Festival6-768x576.jpg
-                https://ormindoro.gov.ph/
-                https://mnlop.com.ph/2019/09/11/mangyans-life-and-culture/
-                https://upload.wikimedia.org/wikipedia/commons/e/ec/Naujan_Lake_National_Park_View_3.jpg
-                https://www.pinterest.ph/pin/571746115166438711/
-                https://www.tripadvisor.com/Tourism-g294254-Puerto_Galera_Oriental_Mindoro_Province_Mindoro-Vacations.html  
-                https://www.lakwatsero.com/destinations/travel-guide-bulalacao-2/#sthash.Mn5Gpwzq.dpbs
-    </div>
+    
 </body>
 </html>

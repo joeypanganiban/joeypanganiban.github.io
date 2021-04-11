@@ -1,0 +1,40 @@
+{
+    "calapan": [
+        {
+            "name": "Casa Estela Hotel Cafe",
+            "contact": "+63(908)-747-4892",
+            "photo": "casa-hotel-logo.jpg",
+            "website": "https://www.facebook.com/casaestelahotelcafe/"
+        },{
+            "name": "Filipiniana Hotel",
+            "contact": "(043) 288 6624",
+            "photo": "filipiniana-logo.jpg",
+            "website": "https://www.facebook.com/filipinianahotel/"
+        },{
+            "name": "Mahalta Resorts and Convention Center",
+            "contact": "0961 826 8892",
+            "photo": "mahalta-logo.jpg",
+            "website": "https://www.facebook.com/mahalta.resort/"
+        },{
+            "name": "XentroMall Calapan",
+            "contact": "0995 198 9923",
+            "photo": "xentro-logo.jpg",
+            "website": "https://xentromalls.com/"
+        },{
+            "name": "Halcon's Bar & Resto",
+            "contact": "0907 603 9301",
+            "photo": "halcon-logo.jpg",
+            "website": "https://www.facebook.com/halconsbar/"
+        },{
+            "name": "Auntie Lolas Restaurant",
+            "contact": "0966 783 3608",
+            "photo": "auntie-logo.jpg",
+            "website": "https://www.facebook.com/Auntie-Lolas-Restaurant-106293917776137/"
+        },{
+            "name": "CitiHardware",
+            "contact": "(043) 288 2041",
+            "photo": "hardware-logo.jpg",
+            "website": "http://www.citihardware.com/"
+        }
+    ]
+}

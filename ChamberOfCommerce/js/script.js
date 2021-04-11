@@ -1,61 +1,62 @@
-// Navigation 
-window.onscroll = function() {myFunction()};
+// Banner 
+var closebtns = document.getElementsByClassName("close");
+var i;
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
 }
 
-// slides images 
-var slideIndex = 0;
-    showSlides();
+// Navigation 
+
+function toggleMenu() {
+    document.getElementById("primaryNav").classList.toggle("hide");
+}
+
+    // Signature
+
     
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 5000); // Change image every 2 seconds
-    }
 
-// Upcoming Events
-const eventsAPI = "https://joeypanganiban.github.io/ChamberOfCommerce/events.json"
-fetch(eventsAPI)
-      .then(function (response) {
-          return response.json();
-      })
-      .then(function (jsonObject) {
-        console.table(jsonObject); // temporary checking for valid response and data parsing
-        const events = jsonObject['events'];
-        // select output location
-        const event = document.querySelector('.upcomingEvents');
-        // filter the towns
-            let card    = document.createElement('div');
-            let p1      = document.createElement('p');
-            let p2      = document.createElement('p');
-            let p3      = document.createElement('p');
 
-            p1.textContent    = `${events[0]}`;
-            p2.textContent    = `${events[1]}`;
-            p3.textContent    = `${events[2]}`;
+/**************** Footer *******************/
 
-            event.append(card);
-            card.append(p1);
-            card.append(p2);
-            card.append(p3);
-        });
+    
+/****************** Date String ******************/
+let daynames = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
+let months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December"
+];
+
+let d  = new Date();
+let hours       = d.getHours();
+let minutes     = d.getMinutes();
+let dayName     = daynames[d.getDay()];
+let monthName   = months[d.getMonth()];
+let year        = d.getFullYear();
+
+const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+document.getElementById("date").textContent = new Date()
+        .toLocaleDateString('en-US', options);
+const currentYear ={year: 'numeric'}
+document.getElementById("year").textContent = new Date()
+        .toLocaleDateString('en-US', currentYear);

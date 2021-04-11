@@ -1,0 +1,94 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 70rem) {
+    
+    header  {
+        font-size: 150%;
+        max-width: 1100px;
+    }
+    .header {
+        width: 100%;
+    }
+    header img {
+        width: 30%;
+    }
+    nav ul li {
+        padding: 10px;
+    }
+    .prev, .next {
+        top: 60%
+    }
+        
+
+    .weatherSummary {
+        right: 25%;
+        right: 0;
+        max-width: 55%;
+        padding: 3rem;
+    }
+    .advertisements {
+        margin: 0;
+    }.advertisements {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        margin: 6rem auto;
+        background-color: #f4efea;}
+    .advertisements div.store {
+        display: grid;
+        background-color: #f4efea;
+        grid-template-rows: 1fr 3fr;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+    }
+    .advertisements div.store:hover {
+        background-color: #0e6e3e50;
+        box-shadow: #000 0 0 8px;
+    }
+    .advertisements div.store img{
+        width: 100%;
+    }
+    .advertisements div.adds {
+        font-size: 100%;
+    }
+    .description {
+        font-size: 100%;
+        display: grid;
+        margin: 2rem;
+    }
+    .event {
+        max-width: 1200px;
+        margin: auto;
+    }
+    div#logo {
+        display: grid;
+        justify-items: end;
+        padding-right: 10px;
+    }
+    nav   {
+        z-index: 3;
+    }
+    .contactpic {
+        display: block;
+    }
+    .contactUs h2 {
+        display: none;
+    }
+    .contactform {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1025px;
+        margin: 2rem auto 5rem;
+        background-color: #0e6e3e50;
+        align-items: center;
+    }
+    
+    .contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1025px;
+        width: 100%;
+        height: 100%;
+    }
+}/* End Large*/
