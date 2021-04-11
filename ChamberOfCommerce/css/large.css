@@ -1,8 +1,8 @@
 /* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 70rem) {
     
-    header  {
-        font-size: 150%;
+    .header  {
+        font-size: 120%;
         max-width: 1100px;
     }
     .header {
@@ -10,6 +10,9 @@
     }
     header img {
         width: 30%;
+    }
+    nav ul {
+        
     }
     nav ul li {
         padding: 10px;

@@ -15,19 +15,20 @@
     <title>Calapan City, Oriental Mindoro | Chamber of Commerce</title>
 </head>
 <body>
+  <header>
     <div class="header">
-      <header>
-        <div id="logo">
-          <img src="images/chamber-of-commerce-logo.png" alt="Chamber of Commerce! Oriental Mindoro logo">
-        </div>
-        <div id="title">
-          <h1>The Calapan City</h1>
-          <div id="subtitle">Chamber of Commerce<img src="images/design.png" alt="Design leaves" class="design"></div>  
-        </div>
-        <div class="dropdown">   
+      <div id="logo">
+        <img src="images/chamber-of-commerce-logo.png" alt="Chamber of Commerce! Oriental Mindoro logo">
+      </div>
+      <div id="title">
+        <h1>Calapan City</h1>
+        <div id="subtitle">Chamber of Commerce<img src="images/design.png" alt="Design leaves" class="design"></div>  
+      </div>
+      <div class="dropdown">   
         <button type="button" onclick="toggleMenu()" class="menu-toggle">&#9776;</button>    
-        </div>
-      </header>
+      </div>
+    </div>
+  </header>
       <nav id="clearfix">     
           <ul id="primaryNav" class="hide">
             <li ><a href="../ChamberOfCommerce/index.html">Home</a></li>
@@ -41,8 +42,64 @@
     
     
   <main class="mainjoin">
+    <form class="table">
+      <table class="membership">
+        <tr>
+          <th colspan="5">Membership Level</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th>Non-Profit</th>
+          <th>Bronze</th>
+          <th>Silver</th>
+          <th>Gold</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td>$ 100</td>
+          <td>$ 200</td>
+          <td>$ 400</td>
+          <td>$ 1000</td>
+        </tr>
+        <tr>
+          <td>Directory Listing</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Business Trainings</td>
+          <td></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Social Media Post</td>
+          <td></td>
+          <td></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Luncheon Tickets</td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+        <tr>
+          <td>Sponsorships with level of Advertising</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><i class="fas fa-check"></i></td>
+        </tr>
+      </table>
+    </form>
     
-    <form action="thanks.html" method="get">
+    <form action="membership.html" method="get">
       <fieldset>
         <div class="imagelogoform">
           <img src="images/chamber-of-commerce-logo.png" width="100px">
@@ -52,12 +109,12 @@
         <label class="top" for="">Last Name*  <input type="text" name="lname" pattern="[A-Za-z]{3,}" title="*Minimum of 3 characters" required></label>
         <label class="top" for="">Email* <input type="email" name="email" placeholder="someone@gmail.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required  ></label>
         <label class="top" for="">Phone Number <input type="tel" name="phone" required></label>
-        <label class="top" for="">Business Name* <input type="text" name="bname"  pattern="[A-Za-z]{3,}" title="*Minimum of 3 characters" required></label>
+        <label class="top" for="">Business Name* <input type="text" name="bname"  pattern="[A-Za-z].{3,}" title="*Minimum of 3 characters" required></label>
         <label class="top" for="">Business Address <input type="text" name="address" ></label>
         <label class="top" for="">Business Website <input type="text" name="website" ></label>
         <label class="top" for="">Business Description <input type="text" name="description" ></label>
         <label class="top" for="">Membership </label>
-          <select name="Membership" id="region">
+          <select name="Membership" id="region" required>
               <option value="" selected disabled hidden>Select Membership...</option>
               <option value="Non-profit">Non-profit ($100)</option>
               <option value="Bronze">Bronze ($200)</option>
@@ -67,8 +124,9 @@
         </label>
         <div>
           <p>
-            There are different levels and different perks depends on your level of membership like directory listings, business trainings, social media posts, luncheon tickets, sponsorships with levels of advertising, etc.
+            By joining in Calapan City Chamber of Commerce, you are herby agree with our
           </p>
+          <input type="checkbox" name="terms" id="terms" required> Terms and Conditions
         </div>
         <input type="submit" value="Join in Calapan Chamber" class="submitBtn">
       </fieldset>
@@ -94,6 +152,7 @@
   <script src="js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webfontload.js"></script>
+  <script src="https://kit.fontawesome.com/e3e59cb842.js" crossorigin="anonymous"></script>
 
 
 </body>
