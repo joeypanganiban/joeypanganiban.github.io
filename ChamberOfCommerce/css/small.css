@@ -137,7 +137,7 @@ header {
 /******************** Navigation *****************************/
 nav {
   font-family: 'Mulish';
-  background-image: linear-gradient(to left, #14177D, #1E22FF);
+  background-color: #0e6e3e;
   margin: 0;
 }
 nav ul {
@@ -155,7 +155,7 @@ nav ul li {
   display: block;
 }
 nav ul li.active { 
-  background-color: #0e6e3e ; 
+  background-color: #1E22FF; 
   box-shadow: #f4efeA 2px 2px 0;
 }
 nav ul li a:hover {
@@ -173,12 +173,12 @@ nav ul.hide { display: none;}
   text-align: center;
   align-items: center;
   border: none;
-  font-size: 2rem;
-  width: 45px;
+  font-size: 1rem;
+  width: 35px;
   padding: 5px;
   border-radius: 10px;
   box-shadow: #000 2px 2px 8px;
-  background-image: linear-gradient(to bottom, #f4efeA, #0e6e3e);
+  background-color:   #0e6e3e;
 }
 
 .sticky {
@@ -215,7 +215,7 @@ nav ul.hide { display: none;}
 #currentimg {
   padding: 0 30px 0 0;
   text-align: justify;
-  background-image: linear-gradient(to left, #14177D, #f4efeA);
+  background-image: linear-gradient(to left, #14177D, #0e6e3e);
   border-radius: 10px;
   margin-right: 10px;
 }
@@ -259,6 +259,15 @@ nav ul.hide { display: none;}
 }
 
 /**************** Join the Chamber! *************************/
+table.membership {
+  border-collapse: collapse;
+}
+table.membership th:first-child{
+  background-image: linear-gradient(to left, #14177D, #0e6e3e);
+  color: #f4efeA;
+}
+
+
 .join-images {
   display: grid;
   justify-items: center;
@@ -275,7 +284,7 @@ nav ul.hide { display: none;}
 }
 .button {
   left: 20px;
-  background-image: linear-gradient(to bottom, #f4efeA, #0e6e3e);
+  background-image: linear-gradient(to left, #14177D, #0e6e3e);
   box-shadow: #000 2px 2px 8px;
   padding: 10px 20px;
   font-weight: bold;
@@ -340,7 +349,7 @@ section.threeDaysForecast{
 #icon2,
 #icon3,
 #icon1 {
-  background-image: linear-gradient(to left, #14177D, #f4efeA);
+  background-image: linear-gradient(to left, #14177D, #0e6e3e);
   border-radius: 10px;
 }
 .weatherDayForecast h3,
