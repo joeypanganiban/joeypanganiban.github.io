@@ -193,6 +193,12 @@ nav ul.hide { display: none;}
 
 .sticky + .content {
   padding-top: 60px;
+<<<<<<< HEAD
+
+
+
+  
+=======
 }
 
 #clearfix:after {
@@ -705,4 +711,5 @@ box-shadow: #000 10px 10px 20px;
 .directory button:hover {
   background-image: linear-gradient(to top, #f4efeA, #0e6e3e);
   box-shadow: #000 2px 2px 8px;
+>>>>>>> 1afaea3da7e558109028cbcf516abc94a0d9d641
 }
