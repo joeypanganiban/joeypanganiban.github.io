@@ -37,8 +37,6 @@ ul li.banner:hover {
   top: 50%;
   font-weight: 900;
   color: rgb(160, 23, 23);
-  border: rgb(160, 23, 23) solid 2px;
-  border-radius: 20px;
   right: 0%;
   padding: 5px 10px;
   margin-right: 1rem;
@@ -276,7 +274,10 @@ table.membership {
   border: #ccc solid 2px;
   text-align: center;
   max-width: 1025px;
-  margin: 1rem auto 5rem;
+  margin: 1rem auto;
+}
+form.table {
+  margin-bottom: 5rem;
 }
 table.membership th,
 table.membership td {
@@ -340,6 +341,78 @@ table.membership i {
 div.sections{
   margin: 5rem auto;
 }
+fieldset.showform {
+  display: none;
+}
+
+form fieldset {
+  max-width: 25rem;
+  font-family: 'Mulish';
+  background-color: #F4EFEA;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+legend {
+  display: none;
+}
+
+form fieldset label {
+  display: block;
+}
+
+/*** PADDING TOP */
+form label.top, 
+form label.sbs,
+form div.top {
+  padding-top: 20px;
+}
+
+/*** BORDER */
+label.top input,
+#storm-type,
+#textarea, #region {
+  display: block;
+  width: 95%;
+  height: 44px;
+  border-radius: 5px;
+  border: 2px solid #176bca;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+/*** TEXTAREA */
+#textarea {
+  height: 70px;
+}
+
+/*** BUTTON */
+.submitBtn {
+  margin: 20px auto 30px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-image: linear-gradient(to right, #1d5596 ,#05366e);
+  border: transparent;
+  border-radius: 5px;
+}
+
+.submitBtn:hover {
+  box-shadow:3px 3px 6px #000;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #176bca , #176bca);
+}
+
+
+
 
 /* Descirptiom & Upcoming Events & 3 Days Forcast**/
 .description, 
@@ -484,72 +557,6 @@ div.barContent {
 
 
 
-form fieldset {
-  max-width: 25rem;
-  font-family: 'Mulish';
-  background-color: #F4EFEA;
-  font-size: 12px;
-  font-weight: bold;
-  border: none;
-  border-radius: 10px;
-  margin: auto;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-legend {
-  display: none;
-}
-
-form fieldset label {
-  display: block;
-}
-
-/*** PADDING TOP */
-form label.top, 
-form label.sbs,
-form div.top {
-  padding-top: 20px;
-}
-
-/*** BORDER */
-label.top input,
-#storm-type,
-#textarea, #region {
-  display: block;
-  width: 95%;
-  height: 44px;
-  border-radius: 5px;
-  border: 2px solid #176bca;
-  font-size: 16px;
-  padding-left: 10px;
-}
-
-/*** TEXTAREA */
-#textarea {
-  height: 70px;
-}
-
-/*** BUTTON */
-.submitBtn {
-  margin: 20px auto 30px;
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  background-image: linear-gradient(to right, #1d5596 ,#05366e);
-  border: transparent;
-  border-radius: 5px;
-}
-
-.submitBtn:hover {
-  box-shadow:3px 3px 6px #000;
-  cursor: pointer;
-  background-image: linear-gradient(to right, #176bca , #176bca);
-}
-
 /******* THANKS.HTML */
 .thanks {
   margin: auto;
@@ -653,6 +660,7 @@ box-shadow: #000 10px 10px 20px;
   font-size: larger;
   background-color: #0e6e3e;
   color: #f4efeA;
+  box-shadow: #000 2px 2px 4px;
   border: none;
   margin: .5rem;
   border-radius: 5px;
@@ -700,7 +708,7 @@ box-shadow: #000 10px 10px 20px;
   padding: 4px 8px;
   background-image: linear-gradient(to bottom, #f4efeA, #0e6e3e);
   border: none;
-  box-shadow: #000 0 0 8px;
+  box-shadow: #000 2px 2px 4px;
 }
 .directory button:hover {
   background-image: linear-gradient(to top, #f4efeA, #0e6e3e);
