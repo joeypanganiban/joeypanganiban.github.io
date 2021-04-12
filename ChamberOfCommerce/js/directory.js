@@ -51,6 +51,4 @@ const card = document.querySelector('.card')
 const list = document.querySelector('.list')
 const grid = document.querySelector('.grid')
 
-grid.addEventListener("click", e => {
-  console.log('list 1')
-})
+grid.addEventListener("click", e => {console.log('list 1')})
