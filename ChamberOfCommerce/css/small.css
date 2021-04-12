@@ -152,7 +152,7 @@ nav ul li a {
   padding: 1rem;
 }
 ul#primaryNav.hide{
-  justify-content: end ;
+  justify-content: end;
   margin: auto;
   margin-right: 2rem;
 }
@@ -164,7 +164,7 @@ nav ul li.active {
   box-shadow: #f4efeA 2px 2px 0;
 }
 nav ul li a:hover {
-  background-color:  #F4EFEA;
+  background-color: #F4EFEA;
   text-decoration: underline #0e6e3e 2px;
   text-underline-position: under;
   transition: .5s;
@@ -193,12 +193,6 @@ nav ul.hide { display: none;}
 
 .sticky + .content {
   padding-top: 60px;
-<<<<<<< HEAD
-
-
-
-  
-=======
 }
 
 #clearfix:after {
@@ -711,5 +705,4 @@ box-shadow: #000 10px 10px 20px;
 .directory button:hover {
   background-image: linear-gradient(to top, #f4efeA, #0e6e3e);
   box-shadow: #000 2px 2px 8px;
->>>>>>> 1afaea3da7e558109028cbcf516abc94a0d9d641
 }
