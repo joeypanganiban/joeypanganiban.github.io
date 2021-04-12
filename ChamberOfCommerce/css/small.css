@@ -152,7 +152,7 @@ nav ul li a {
   padding: 1rem;
 }
 ul#primaryNav.hide{
-  justify-content: end;
+  justify-content: end ;
   margin: auto;
   margin-right: 2rem;
 }
@@ -164,7 +164,7 @@ nav ul li.active {
   box-shadow: #f4efeA 2px 2px 0;
 }
 nav ul li a:hover {
-  background-color: #F4EFEA;
+  background-color:  #F4EFEA;
   text-decoration: underline #0e6e3e 2px;
   text-underline-position: under;
   transition: .5s;
