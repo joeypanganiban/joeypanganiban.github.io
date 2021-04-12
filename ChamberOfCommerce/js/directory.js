@@ -52,3 +52,4 @@ const list = document.querySelector('.list')
 const grid = document.querySelector('.grid')
 
 grid.addEventListener("click", e => {console.log('list 1')})
+list.addEventListener("click", e => {console.log('list 2')})
