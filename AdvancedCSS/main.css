@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+
+body {
+    font-family: 'Helvetica', Arial,  sans-serif;
+    width: 100%;
+    margin: auto;
+}
+
+
+/*********** MOBILE ****************/
+
+/* Header *****/
+header {
+    background-color: #6495ED;
+    color: #fff;
+    text-align: end;
+    padding: 2rem;
+}
+h1, h2 {
+    font-family: "Lora";
+}
+h1 a,
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    padding-bottom: 1rem;
+}
+nav ul li:active,
+main a:active {
+    background-color: #DEB887;
+} 
+nav ul li:hover,
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Main *****/
+body {
+    background-color: #FAEBD7;
+}
+main h2 {
+    font-size: 180%;
+    margin: .5rem auto 5rem;
+}
+div.post-date {
+    display: block;
+    color: rgba( 0, 0, 0, .5);
+    font-weight: bold;
+}
+main article {
+    display: grid;
+    justify-content: center;
+    background-color: #fff;
+    margin: 2rem 1rem 2rem 1.5rem;
+    padding: 2rem;
+    box-shadow: #ccc 3px 3px 3px;
+}
+main a {
+    text-decoration: none;
+    color: #000;
+}
+p a:hover, 
+main h2 a:hover,
+p a {
+    color: #6495ED;
+}
+section.post-content {
+    width: 100%;
+}
+figure img {
+    width: 100%;
+}
+figure {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+
+/****************** TABLET *****************/
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em){
+body div {
+    font-size: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+main article {
+    margin: 2rem 3rem;
+}
+figure img {
+    width: 80%;
+}
+}/** End of Tablet**/
