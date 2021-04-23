@@ -61,13 +61,3 @@ const currentYear ={year: 'numeric'}
 document.getElementById("year").textContent = new Date()
         .toLocaleDateString('en-US', currentYear);
 
-
-// Join
-
-const signup = document.querySelector('.signup')
-const showform = document.querySelector('.showform')
-
-signup.addEventListener('click', e => {
-    e.preventDefault();
-    showform.style.display = 'block';
-})

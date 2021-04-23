@@ -47,12 +47,12 @@ fetch(requestURL)
 
 
   // addEventListener List Grid
-const card = json.querySelector('.card')
+const section = document.querySelector('.card')
 const list = document.querySelector('.list')
 const grid = document.querySelector('.grid')
 
 grid.addEventListener('click', e => {
-  console.log('Grid')
+  console.log('Grid');
+  card.style.gridTemplateRows = "none";
   e.preventDefault();
-  card.style.display = 'block';
-})
+}, false);
