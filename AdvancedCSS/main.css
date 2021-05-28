@@ -1,103 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap");
 body {
-    font-family: 'Helvetica', Arial,  sans-serif;
-    width: 100%;
-    margin: auto;
+  font-family: "Lora";
+  width: 100%;
+  margin: auto;
 }
-
 
 /*********** MOBILE ****************/
-
 /* Header *****/
 header {
-    background-color: #6495ED;
-    color: #fff;
-    text-align: end;
-    padding: 2rem;
+  background-color: #6495ED;
+  color: #fff;
+  text-align: end;
+  padding: 2rem;
 }
-h1, h2 {
-    font-family: "Lora";
+header h1 {
+  font-family: "Lora";
 }
-h1 a,
-nav a{
-    text-decoration: none;
-    color: #fff;
+header h1 a {
+  text-decoration: none;
+  color: #fff;
 }
-nav ul {
-    list-style: none;
-    padding: 0;
+header nav a {
+  text-decoration: none;
+  color: #fff;
 }
-nav ul li {
-    padding-bottom: 1rem;
+header nav ul {
+  list-style: none;
+  padding: 0;
 }
-nav ul li:active,
-main a:active {
-    background-color: #DEB887;
-} 
-nav ul li:hover,
-main a:hover {
-    text-decoration: underline;
+header nav li {
+  padding-bottom: 1rem;
+}
+header nav li:active {
+  background-color: #DEB887;
+}
+header nav li:hover {
+  text-decoration: underline;
+  color: #000;
 }
 
 /* Main *****/
 body {
-    background-color: #FAEBD7;
+  background-color: #FAEBD7;
 }
-main h2 {
-    font-size: 180%;
-    margin: .5rem auto 5rem;
+body main article {
+  display: grid;
+  justify-content: center;
+  background-color: #fff;
+  margin: 2rem 1rem 2rem 1.5rem;
+  padding: 2rem;
+  box-shadow: #ccc 3px 3px 3px;
 }
-div.post-date {
-    display: block;
-    color: rgba( 0, 0, 0, .5);
-    font-weight: bold;
+body main article section.post-content {
+  width: 100%;
 }
-main article {
-    display: grid;
-    justify-content: center;
-    background-color: #fff;
-    margin: 2rem 1rem 2rem 1.5rem;
-    padding: 2rem;
-    box-shadow: #ccc 3px 3px 3px;
+body main article h2 {
+  font-size: 180%;
+  margin: 0.5rem auto 5rem;
+  font-family: "Lora";
 }
-main a {
-    text-decoration: none;
-    color: #000;
+body main article h2 a:hover {
+  color: #6495ED;
 }
-p a:hover, 
-main h2 a:hover,
-p a {
-    color: #6495ED;
+body main article a {
+  text-decoration: none;
+  color: #000;
 }
-section.post-content {
-    width: 100%;
+body main article a:hover {
+  text-decoration: underline;
 }
-figure img {
-    width: 100%;
+body main article a:active {
+  color: #DEB887;
 }
-figure {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
+body main article div.post-date {
+  display: block;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
 }
-
+body main article p a:hover, body main article p a {
+  color: #6495ED;
+}
+body main article figure {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+}
+body main article figure img {
+  width: 100%;
+}
 
 /****************** TABLET *****************/
 /* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 35em){
-body div {
+@media only screen and (min-width: 35em) {
+  body div {
     font-size: 80%;
     display: grid;
     grid-template-columns: 1fr 3fr;
-}
-main article {
+  }
+
+  main article {
     margin: 2rem 3rem;
-}
-figure img {
+  }
+
+  figure img {
     width: 80%;
+  }
 }
-}/** End of Tablet**/
+/** End of Tablet**/
+
+/*# sourceMappingURL=main.css.map */

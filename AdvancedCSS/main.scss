@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+// Variables
+$bodytext: 'Helvetica', Arial, sans-serif;
+$headlines: "Lora";
+$bluecolor: #6495ED;
+$sidebarTextColor: #FAEBD7;
+$activeColor: #DEB887;
+$width1: 100%;
+$width2: 80%;
+@mixin a ($color: #fff, $text-decoration: none){
+    text-decoration: $text-decoration;
+    color: $color;
+}
+
+
+
+body {
+    font-family: $headlines;
+    width: $width1;
+    margin: auto;
+}
+
+
+/*********** MOBILE ****************/
+
+/* Header *****/
+header {
+    background-color: $bluecolor;
+    color: #fff;
+    text-align: end;
+    padding: 2rem;
+    h1 {
+        font-family: $headlines;
+    
+        a {
+            @include a;
+        }
+    }
+    nav {
+        a {
+            @include a
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding-bottom: 1rem;
+        
+            &:active {
+                background-color: $activeColor;
+            } 
+            &:hover {
+                @include a(#000, underline);
+            }
+        }
+    }
+}
+
+
+
+
+
+/* Main *****/
+body {
+    background-color: $sidebarTextColor;
+
+    main {
+        article {
+            display: grid;
+            justify-content: center;
+            background-color: #fff;
+            margin: 2rem 1rem 2rem 1.5rem;
+            padding: 2rem;
+            box-shadow: #ccc 3px 3px 3px;
+            section.post-content {
+                width: $width1;
+            }
+            h2 {
+                font-size: 180%;
+                margin: .5rem auto 5rem;
+                font-family: $headlines;
+
+                a:hover {
+                    color: $bluecolor;
+                }
+            }
+            a {
+                @include a(#000);
+            
+                &:hover {
+                    text-decoration: underline;
+                }
+                &:active {
+                    color: $activeColor;
+                }
+            } 
+            div.post-date {
+                display: block;
+                color: rgba( 0, 0, 0, .5);
+                font-weight: bold;
+            }
+            p a{
+                &:hover, 
+                & {
+                    color: $bluecolor;
+                }
+            }
+            figure {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                justify-items: center;
+                align-content: center;
+        
+                & img {
+                    width: $width1;
+                }
+            }
+        }
+    }
+}
+
+
+/****************** TABLET *****************/
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em){
+    body div {
+        font-size: 80%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    main article {
+        margin: 2rem 3rem;
+    }
+    figure img {
+        width: $width2;
+    }
+}/** End of Tablet**/
