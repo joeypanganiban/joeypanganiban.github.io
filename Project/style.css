@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&family=Red+Rose:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+#css-zen-garden {
+  margin: 0;
+  width: 100%;
+  padding: 1rem;
+  background: #dcf8fe;
+}
+
+header {
+  background: url(image/bird.png) bottom no-repeat;
+  margin: 0;
+}
+
+.intro h1 {
+  color: #086788;
+  background-color: #FFF1D0;
+  padding: 1.5rem;
+  border: solid 3px;
+  font-family: "Red Rose";
+  font-weight: 900;
+  border-radius: 8px;
+}
+
+.page-wrapper {
+  background: #06AED5;
+  padding: 1rem;
+  border: solid 5px #FFF1D0;
+}
+
+@media only screen and (min-width: 35em) {
+  #css-zen-garden {
+    background: #DD1C1A;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

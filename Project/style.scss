@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&family=Red+Rose:wght@300;400&display=swap');
+
+@import 'partials/typography';
+@import 'partials/navigation';
+
+$color-1: #06AED5; // Cerulean Crayola - Action color
+$color-2: #086788; // Blue Sapphire
+$color-3: #F0C808; // Jonquil
+$color-4: #FFF1D0; // Papaya Whip
+$color-5: #DD1C1A; // Maximum Red
+
+// additional colors
+
+$success: #6fce72; // green
+$alert: $color-5; // red
+
+// fonts
+$primary-font: 'Mulish';
+$secondary-font: 'Red Rose';
+
+* {box-sizing: border-box}
+
+#css-zen-garden {
+    margin: 0;
+    width: 100%;
+    padding: 1rem;
+    background: lighten($color-1, 50%);
+}
+
+header {
+    background: url(image/bird.png) bottom no-repeat;
+    margin: 0;
+}
+
+.intro h1 {
+    color: $color-2;
+    background-color: $color-4;
+    padding: 1.5rem;
+    border: solid 3px;
+    font-family: $secondary-font;
+    font-weight: 900;
+    border-radius: 8px;
+}
+
+.page-wrapper {
+    background: $color-1;
+    padding: 1rem;
+    border: solid 5px $color-4;
+}
+
+// MEDIUM - LARGE
+@media only screen and (min-width: 35em){
+    
+    #css-zen-garden {
+        background: $color-5;
+    }
+}
