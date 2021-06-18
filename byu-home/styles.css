@@ -1076,9 +1076,7 @@ header .title h1 {
   padding-left: 6rem;
 }
 
-.media, .newsroom,
-.info, .message,
-.links, .dates {
+main {
   padding: 1rem;
 }
 
@@ -1121,6 +1119,35 @@ header .title h1 {
 .newsroom .newsroom_newsroom .newsroom_section .newsroom_title {
   color: #056cb6;
   font-size: 90%;
+}
+
+.info h3 {
+  background: #eaeaea;
+  padding: 1rem;
+  border: 1px solid #b4b3b5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  border: solid 1px #b4b3b5;
+  padding: 0;
+}
+.links h2 {
+  background: #727272;
+  color: #fff;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-size: 150%;
+  font-weight: normal;
+}
+.links .links_links {
+  border: solid 1px #b4b3b5;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  color: #056cb6;
 }
 
 /*# sourceMappingURL=styles.css.map */

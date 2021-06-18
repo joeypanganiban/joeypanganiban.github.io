@@ -79,9 +79,7 @@ header {
     }
   }   
 }
-.media, .newsroom,
-.info, .message,
-.links, .dates {
+main {
   padding: 1rem;
 }
 // MEDIA
@@ -134,7 +132,36 @@ header {
 }
 
 // INFO
+.info {
+  h3 {
+    background: $light-gray;
+    padding: 1rem;
+    border: 1px solid $med-gray;
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+  }
+}
 
 // LINKS
+.links {
+  border: solid 1px $med-gray;
+  padding: 0;
+  h2 {
+    background: $dark-gray;
+    color: #fff;
+    margin: 0;
+    padding: .5rem 1rem;
+    font-size: 150%;
+    font-weight: normal;
+  }
+  .links_links {
+    border: solid 1px $med-gray;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    color: $byui-blue;
+  }
+}
 
 // MESSAGE
