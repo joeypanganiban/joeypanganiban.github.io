@@ -1,0 +1,140 @@
+@import 'typography';
+@import 'icons';
+
+$sm-break: 48em;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+
+// Utility classes
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+body {
+  font-family: BYUI Open Sans;
+  margin: auto;
+  width: 100%;
+}
+
+// HEADER 
+
+header {
+  width: 100%;
+  margin: auto;
+  .site-banner {
+    background: $link-blue;
+    font-size: 200%;
+    position: relative;
+  }
+  .white-text {
+    a, a:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .site-banner__left {
+    background: $body-font;
+    padding: 1rem .75rem;
+    position: absolute;
+  }
+  .site-banner__right {
+    padding: 1rem;
+    text-align: right;
+  }
+  button, input {
+    display: none;
+  }
+  .title{
+    border-bottom: solid 1px $body-font;
+    h1 {
+      background: $light-gray;
+      margin: 0;
+      color: $dark-gray;
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 120%;
+      padding: 1rem;
+      padding-left: 6rem;
+    }
+  }   
+}
+.media, .newsroom,
+.info, .message,
+.links, .dates {
+  padding: 1rem;
+}
+// MEDIA
+.media {
+  margin-bottom: 1rem;
+  .media_1 {
+    margin-bottom: 1rem;
+  }
+  .media_2 {
+    border: $med-gray solid .25px;
+    color: $byui-blue;
+    margin-bottom: 2rem;
+    figcaption {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.25rem .5rem .5rem;
+      font-size: 90%;
+      align-content: center;
+      align-items: center;
+    }
+  }
+}
+
+
+
+// NEWSROOM
+.newsroom {
+  h2 {
+    color: #fff;
+    background: $link-blue;
+  }
+  .newsroom_newsroom {
+    border-bottom: $med-gray solid 1px;
+    padding: 2rem 0;
+    picture img {
+      display: none;
+    }
+    .newsroom_section {
+      .newsroom_date {
+        color: $body-font;
+        font-weight: bolder;
+        font-size: 70%;
+      }
+      .newsroom_title {
+        color: $byui-blue;
+        font-size: 90%;
+      }
+    }
+  }
+}
+
+// INFO
+
+// LINKS
+
+// MESSAGE
