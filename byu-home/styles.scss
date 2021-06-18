@@ -145,7 +145,6 @@ main {
 
 // LINKS
 .links {
-  border: solid .1px $med-gray;
   padding: 0;
   h2 {
     background: $dark-gray;
@@ -156,13 +155,46 @@ main {
     font-weight: normal;
   }
   .links_links {
-    border: solid .1px $med-gray;
+    border: solid 1px $med-gray;
+    border-top: none;
     border-collapse: collapse;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     padding: .5rem 1rem;
     color: $byui-blue;
   }
 }
+
+
+// DATES
+.dates {
+  h2 {
+    color: #fff;
+    background: $link-blue;
+    padding: .5rem 1rem;
+    font-weight: normal;
+  }
+  .dates_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    padding: .5rem auto;
+
+    .dates_date {
+      font-weight: 1000;
+      font-size: 80%;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
+    .col {
+    }
+    .col, .dates_devotional {
+      font-size: 90%;
+    } 
+  }
+}
+
 
 // MESSAGE

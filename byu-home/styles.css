@@ -1131,7 +1131,6 @@ main {
 }
 
 .links {
-  border: solid 0.1px #b4b3b5;
   padding: 0;
 }
 .links h2 {
@@ -1143,12 +1142,37 @@ main {
   font-weight: normal;
 }
 .links .links_links {
-  border: solid 0.1px #b4b3b5;
+  border: solid 1px #b4b3b5;
+  border-top: none;
   border-collapse: collapse;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
   color: #056cb6;
+}
+
+.dates h2 {
+  color: #fff;
+  background: #0076b6;
+  padding: 0.5rem 1rem;
+  font-weight: normal;
+}
+.dates .dates_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr;
+  padding: 0.5rem auto;
+}
+.dates .dates_section .dates_date {
+  font-weight: 1000;
+  font-size: 80%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.dates .dates_section .col, .dates .dates_section .dates_devotional {
+  font-size: 90%;
 }
 
 /*# sourceMappingURL=styles.css.map */
