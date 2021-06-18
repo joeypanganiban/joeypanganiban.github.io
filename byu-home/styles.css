@@ -1131,7 +1131,7 @@ main {
 }
 
 .links {
-  border: solid 1px #b4b3b5;
+  border: solid 0.1px #b4b3b5;
   padding: 0;
 }
 .links h2 {
@@ -1143,7 +1143,8 @@ main {
   font-weight: normal;
 }
 .links .links_links {
-  border: solid 1px #b4b3b5;
+  border: solid 0.1px #b4b3b5;
+  border-collapse: collapse;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;

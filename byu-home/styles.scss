@@ -145,7 +145,7 @@ main {
 
 // LINKS
 .links {
-  border: solid 1px $med-gray;
+  border: solid .1px $med-gray;
   padding: 0;
   h2 {
     background: $dark-gray;
@@ -156,7 +156,8 @@ main {
     font-weight: normal;
   }
   .links_links {
-    border: solid 1px $med-gray;
+    border: solid .1px $med-gray;
+    border-collapse: collapse;
     display: flex;
     justify-content: space-between;
     padding: .5rem 1rem;
