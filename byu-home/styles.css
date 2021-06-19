@@ -1063,10 +1063,10 @@ header button, header input {
   display: none;
 }
 header .title {
-  border-bottom: solid 1px #020202;
+  border-bottom: solid 1px #727272;
+  background: #eaeaea;
 }
 header .title h1 {
-  background: #eaeaea;
   margin: 0;
   color: #727272;
   font-style: normal;
@@ -1100,12 +1100,21 @@ main {
   align-items: center;
 }
 
-.newsroom h2 {
+.newsroom {
+  margin-bottom: 5rem;
+}
+.newsroom button {
   color: #fff;
   background: #0076b6;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 100%;
+  float: right;
 }
 .newsroom .newsroom_newsroom {
-  border-bottom: #b4b3b5 solid 1px;
+  border-top: #b4b3b5 solid 1px;
   padding: 2rem 0;
 }
 .newsroom .newsroom_newsroom picture img {
@@ -1118,13 +1127,21 @@ main {
 }
 .newsroom .newsroom_newsroom .newsroom_section .newsroom_title {
   color: #056cb6;
+  font-size: 100%;
+}
+.newsroom .newsroom_newsroom .newsroom_section .newsroom_details {
   font-size: 90%;
 }
 
+.info {
+  margin-bottom: 2.3rem;
+}
 .info h3 {
   background: #eaeaea;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 100%;
   border: 1px solid #b4b3b5;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1132,6 +1149,7 @@ main {
 
 .links {
   padding: 0;
+  margin-bottom: 2.3rem;
 }
 .links h2 {
   background: #727272;
@@ -1152,27 +1170,83 @@ main {
   color: #056cb6;
 }
 
+.dates {
+  margin-bottom: 5rem;
+}
 .dates h2 {
   color: #fff;
   background: #0076b6;
   padding: 0.5rem 1rem;
   font-weight: normal;
+  margin: 0;
 }
 .dates .dates_section {
   display: grid;
-  grid-template-columns: 1fr 1fr 4fr;
-  padding: 0.5rem auto;
-}
-.dates .dates_section .dates_date {
-  font-weight: 1000;
-  font-size: 80%;
+  grid-template-columns: 4fr 1fr 8fr;
+  padding: 0.5rem 1rem;
+  margin: 0;
   justify-content: center;
   align-content: center;
   align-items: center;
   justify-content: center;
+  border-bottom: solid 1px #b4b3b5;
+}
+.dates .dates_section p {
+  margin: 0;
+}
+.dates .dates_section .dates_date {
+  font-weight: 1000;
+  font-size: 80%;
 }
 .dates .dates_section .col, .dates .dates_section .dates_devotional {
-  font-size: 90%;
+  font-size: 80%;
+}
+
+.message {
+  border: 1px solid #b4b3b5;
+  padding: 0 1rem 1rem;
+}
+.message h3 {
+  color: #056cb6;
+  font-size: 100%;
+  margin: 0;
+  padding-top: 1rem;
+}
+.message p {
+  font-size: 80%;
+}
+.message button {
+  color: #fff;
+  background: #0076b6;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  font-size: 80%;
+}
+
+@media only screen and (min-width: 32em) {
+  header .site-banner {
+    padding: 0 2.5rem;
+  }
+  header .site-banner__left {
+    padding: 1.25rem 0.75rem;
+  }
+  header .site-banner__right span {
+    display: none;
+  }
+  header button, header input {
+    display: block;
+  }
+  header .title {
+    border-bottom: none;
+    padding: 0 2.5rem;
+  }
+  header .title h1 {
+    padding-left: 0;
+    font-style: normal;
+    font-size: 180%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
