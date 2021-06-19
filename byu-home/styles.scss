@@ -85,6 +85,31 @@ main {
 }
 
 // MEDIA
+.banner {
+  text-align: center;
+  background: $body-font;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  .banner_title {
+    color: #fff;
+    text-align: center;
+    font-size: 180%;
+    font-weight: 300;
+    margin: 0;
+  }
+  button {
+    color: #fff;
+    background: $link-blue;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 100%;
+    
+  }
+}
 .media {
   margin-bottom: 1rem;
   .media_1 {
@@ -287,6 +312,14 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
+    
+.banner {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  button {
+    width: 75%;
+  }
+}
     .media {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;

@@ -1080,6 +1080,31 @@ main {
   padding: 1rem;
 }
 
+.banner {
+  text-align: center;
+  background: #020202;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.banner .banner_title {
+  color: #fff;
+  text-align: center;
+  font-size: 180%;
+  font-weight: 300;
+  margin: 0;
+}
+.banner button {
+  color: #fff;
+  background: #0076b6;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  margin: auto;
+  font-weight: bold;
+  font-size: 100%;
+}
+
 .media {
   margin-bottom: 1rem;
 }
@@ -1262,6 +1287,13 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
+  }
+  main .banner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+  main .banner button {
+    width: 75%;
   }
   main .media {
     display: grid;
