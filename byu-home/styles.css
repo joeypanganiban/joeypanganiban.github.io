@@ -1046,7 +1046,7 @@ header .site-banner {
   font-size: 200%;
   position: relative;
 }
-header .white-text a, header .white-text a:visited {
+header .white-text h3, header .white-text .nav, header .white-text a, header .white-text a:visited {
   color: #fff;
   text-decoration: none;
 }
@@ -1254,27 +1254,89 @@ main {
 }
 
 @media only screen and (min-width: 32em) {
+  .site-banner {
+    display: flex;
+    align-items: center;
+    background: #0076b6;
+  }
+  .site-banner .navigation {
+    display: flex;
+    font-size: 50%;
+    padding-left: 5rem;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .site-banner .navigation .nav {
+    padding-right: 1rem;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .site-banner .search {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .site-banner button {
+    border: none;
+    border-radius: 3px;
+  }
+  .site-banner .magnify {
+    margin-right: 1rem;
+  }
+  .site-banner .magnify button {
+    background: #1ebd1e;
+    padding: 0.25rem 0.5rem;
+  }
+  .site-banner .magnify button .icon-magnifying-glass {
+    color: #fff;
+    border: none;
+  }
+  .site-banner .apply {
+    margin-right: 1rem;
+  }
+  .site-banner .apply button {
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    background: #ff6f00;
+  }
+  .site-banner .signin button {
+    color: #fff;
+    background: #020202;
+    padding: 0.25rem 0.5rem;
+  }
+
   header {
-    max-width: 1048px;
     margin: auto;
   }
-  header .site-banner {
-    max-width: 1048px;
-    margin: auto;
+  header .siteBanner {
+    background: #0076b6;
   }
-  header .site-banner__left {
+  header .siteBanner .site-banner {
+    margin: auto;
+    max-width: 1048px;
+  }
+  header .siteBanner .site-banner__left {
     padding: 1.25rem 0.75rem;
   }
-  header .site-banner__right span {
+  header .siteBanner .site-banner__right span {
     display: none;
   }
-  header button, header input {
+  header .siteBanner button, header .siteBanner input {
     display: block;
   }
-  header .title {
+  header .siteBanner .title {
     border-bottom: none;
   }
-  header .title h1 {
+  header .siteBanner .title h1 {
+    max-width: 1048px;
+    margin: auto;
     font-style: normal;
     font-size: 180%;
     padding-left: 0;
@@ -1303,6 +1365,17 @@ main {
   }
   main .media .media_1 {
     grid-column: 1/4;
+  }
+  .newsroom {
+    margin-bottom: 5rem;
+  }
+  .newsroom .newsroom_newsroom {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 2rem;
+  }
+  .newsroom .newsroom_newsroom picture img {
+    display: block;
   }
 }
 

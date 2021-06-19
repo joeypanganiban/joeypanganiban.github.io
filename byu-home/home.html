@@ -9,61 +9,94 @@
 
   <body>
     <header>
-      <div class="site-banner white-text">
-        <div class="site-banner__left">
-          <a href="#"
-            ><span aria-hidden="true" class="icon-byui-logo">
-              <span class="sr-only">Link to BYU-Idaho home page</span>
-            </span></a
-          >
-        </div>
-        <div class="site-banner__right">
-          <a href="http://www.byui.edu/#">
-            <span class="icon-search text-white mobile-header-icon">
-              <span class="sr-only">Search BYU-I</span>
-            </span>
-          </a>
-          <a
-            href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
-          >
-            <span class="icon-audience text-white mobile-header-icon">
-              <span class="sr-only">Login</span>
-            </span>
-          </a>
-          <a href="http://www.byui.edu/#">
-            <span class="icon-menu text-white mobile-header-icon">
-              <span class="sr-only">Expand Menu</span>
-            </span>
-          </a>
-        </div>
-        <form
-          aria-label="Search byui.edu"
-          method="get"
-          action="https://www.byui.edu/search/result?"
-          role="search"
-        >
-          <div>
-            <label for="searchDesktop" class="sr-only"
-              >Search BYU-I websites:
-            </label>
-            <input
-              id="searchDesktop"
-              name="q"
-              placeholder="Powered by Google"
-              alt="Search BYU-I websites (powered by Google.com)."
-              type="text"
-            />
-
-            <button type="submit">
-              <span aria-hidden="true" class="icon icon-magnifying-glass ">
-                <span class="sr-only">Submit</span>
-              </span>
-            </button>
+      <div class="siteBanner">
+        <div class="site-banner white-text">
+          <div class="site-banner__left">
+            <a href="#"
+              ><span aria-hidden="true" class="icon-byui-logo">
+                <span class="sr-only">Link to BYU-Idaho home page</span>
+              </span></a
+            >
           </div>
-        </form>
-      </div>
-      <div class="title">
-        <h1>Brigham Young University-Idaho</h1>
+          <div class="site-banner__right">
+            <a href="http://www.byui.edu/#">
+              <span class="icon-search text-white mobile-header-icon">
+                <span class="sr-only">Search BYU-I</span>
+              </span>
+            </a>
+            <a
+              href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f"
+            >
+              <span class="icon-audience text-white mobile-header-icon">
+                <span class="sr-only">Login</span>
+              </span>
+            </a>
+            <a href="http://www.byui.edu/#">
+              <span class="icon-menu text-white mobile-header-icon">
+                <span class="sr-only">Expand Menu</span>
+              </span>
+            </a>
+          </div>
+          <!-- Navigation -->
+          <div class="navigation">
+            <div class="nav">
+              <h3>University</h3>
+              <span class="icon-triangle-down"></span>
+            </div>
+            <div class="nav">
+              <h3>Academics </h3>
+              <span class="icon-triangle-down"></span>
+            </div>
+            <div class="nav">
+              <h3>Living </h3>
+              <span class="icon-triangle-down"></span>
+            </div>
+            <div class="nav">
+              <h3>Services</h3>
+              <span class="icon-triangle-down"></span>
+            </div>
+            <div class="nav">
+              <h3>Find</h3>
+              <span class="icon-triangle-down"></span>
+            </div>
+          </div>
+          <form
+            aria-label="Search byui.edu"
+            method="get"
+            action="https://www.byui.edu/search/result?"
+            role="search"
+          >
+            <div class="search">
+              <label for="searchDesktop" class="sr-only"
+                >Search BYU-I websites:
+              </label>
+              <input
+                id="searchDesktop"
+                name="q"
+                placeholder="Search"
+                alt="Search BYU-I websites (powered by Google.com)."
+                type="text"
+              />
+
+              <div class="magnify">
+                <button type="submit">
+                  <span aria-hidden="true" class="icon icon-magnifying-glass ">
+                    <span class="sr-only">Submit</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="apply">
+            <button>Apply</button>
+          </div>
+          <div class="signin">
+            <button>Sign In</button>
+          </div>
+        </div>
+        <div class="title">
+          <h1>Brigham Young University-Idaho</h1>
+        </div>
       </div>
     </header>
     <main>
