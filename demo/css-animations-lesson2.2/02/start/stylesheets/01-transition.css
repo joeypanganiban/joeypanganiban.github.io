@@ -14,7 +14,7 @@
   left: 50%;
   position: absolute;
   top: 50%;
-
+  transition: transform .4s ease-out;
 }
 
 .demo-letter1 {

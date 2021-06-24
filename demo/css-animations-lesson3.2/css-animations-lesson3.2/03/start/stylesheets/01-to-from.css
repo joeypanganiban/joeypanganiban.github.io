@@ -1,0 +1,21 @@
+.demo {
+  animation: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-delay: .5s;
+  background: #3991AE;
+  color: #fff;
+  font-size: 6rem;
+  opacity: 0;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
