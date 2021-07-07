@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: auto;
+}
+
+.nav_list ul {
+  list-style: none;
+}
+.nav_list ul li {
+  padding: 3rem;
+  display: none;
+  text-align: center;
+}
+.nav_list ul li a, .nav_list ul li a:visited {
+  text-decoration: none;
+  color: #e4c202;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+}
+.nav_list ul li a:hover, .nav_list ul li a:visited:hover {
+  color: #645a5a;
+  text-decoration: underline 3px;
+  text-underline-offset: 2px;
+  transition: 0.5s;
+}
+
+nav {
+  width: 80vw;
+  height: 100vh;
+  position: relative;
+  display: block;
+}
+nav.open {
+  position: relative;
+  background: #5c9c9e;
+  animation: open-slide 0.8s cubic-bezier(0.17, 0.67, 0.29, 0.91);
+  transition: 1s;
+}
+nav.open ul {
+  margin: 0;
+}
+nav.open ul li {
+  display: block;
+}
+nav.open .menu-icon {
+  transform: translate(80%, 0);
+  padding: 25px;
+  top: 0;
+  right: 5rem;
+  position: absolute;
+}
+nav.open .menu-icon .line_1 {
+  transform: rotate(-45deg) translate(-6px, 8px);
+}
+nav.open .menu-icon .line_2 {
+  opacity: 0;
+}
+nav.open .menu-icon .line_3 {
+  transform: rotate(45deg) translate(-2.5px, -5px);
+}
+nav .menu-icon {
+  padding: 25px;
+  transition: 1s;
+}
+nav .menu-icon:hover {
+  display: block;
+}
+nav .menu-icon:hover .hamburger {
+  background: #e4c202;
+  transition: 1s;
+}
+nav .menu-icon .hamburger {
+  transition: 1s;
+  width: 30px;
+  height: 5px;
+  display: block;
+  margin: 2.5px;
+  background: #645a5a;
+  border-radius: 5px;
+}
+
+@keyframes open-slide {
+  from {
+    transform: translate(-100%, 0);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes button {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(80%, 0);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

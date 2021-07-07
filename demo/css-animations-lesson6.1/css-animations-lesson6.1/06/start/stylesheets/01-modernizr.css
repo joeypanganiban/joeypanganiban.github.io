@@ -1,0 +1,31 @@
+.centered {
+  transform-style: preserve3d;
+  perspective: 800px;
+}
+
+.demo {
+  background: #3991AE;
+  color: #fff;
+  font-size: 4rem;
+  padding: 2rem 3rem;
+  position: relative;
+  text-align: center;
+}
+.cssanimations .demo {
+  animation: no-transform 1s .5s cubic-bezier(0,.1,.5,1.5)
+  forwards;
+  transform: rotateX(-90deg);
+}
+@-webkit-keyframes no-transform {
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes no-transform {
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}

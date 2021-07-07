@@ -43,27 +43,27 @@
 }
 
 .linear {
-
+  animation-timing-function: cubic-bezier(0,0,1,1);
 }
 
 .ease-in {
-
+  animation-timing-function: cubic-bezier(1,0,1,1);
 }
 
 .ease-out {
-
+  animation-timing-function: cubic-bezier(0,1,1,1);
 }
 
 .ease-in-out {
-
+animation-timing-function: cubic-bezier(1,0,0,1);
 }
 
 .custom-1 {
-
+  animation-timing-function: cubic-bezier(0,.9,.9,1.4);
 }
 
 .custom-2 {
-
+  animation-timing-function: cubic-bezier(.3,1.5,.7,-1.5);
 }
 
 h2, h3 {
