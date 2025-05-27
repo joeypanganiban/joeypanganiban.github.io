@@ -46,13 +46,33 @@ fetch(requestURL)
   });
 
 
-  // addEventListener List Grid
-const section = document.querySelector('.card')
-const list = document.querySelector('.list')
-const grid = document.querySelector('.grid')
+//   // addEventListener List Grid
+// const section = document.querySelector('.card')
+// const list = document.querySelector('.list')
+// const grid = document.querySelector('.grid')
 
+// grid.addEventListener('click', e => {
+//   console.log('Grid');
+//   card.style.gridTemplateRows = "none";
+//   e.preventDefault();
+// }, false);
+
+const section = document.querySelector('.directory'); // Updated to target the parent container
+const list = document.querySelector('.list');
+const grid = document.querySelector('.grid');
+
+// Event listener for Grid mode
 grid.addEventListener('click', e => {
-  console.log('Grid');
-  card.style.gridTemplateRows = "none";
+  console.log('Grid mode activated');
+  section.classList.remove('list-mode');
+  section.classList.add('grid-mode');
+  e.preventDefault();
+}, false);
+
+// Event listener for List mode
+list.addEventListener('click', e => {
+  console.log('List mode activated');
+  section.classList.remove('grid-mode');
+  section.classList.add('list-mode');
   e.preventDefault();
 }, false);
